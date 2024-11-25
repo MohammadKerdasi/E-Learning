@@ -4,8 +4,12 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+
   theme: {
     extend: {
+      fontFamily: {
+        primary: 'Be Vietnam Pro, sans-serif',
+      },
       colors: {
         'Orange/50': '#FF9500',
         'Orange/70': '#FFBF66',
