@@ -25,6 +25,19 @@ export default {
         'Grey/60': '#98989A',
         'Grey/70': '#B3B3B3',
       },
+      spacing: {
+        '7.5': '30px',
+      },
+      screens: {
+        // 'tablet': '640px',
+        
+  
+        // 'laptop': '1024px',
+     
+  
+        'desktop': '1440px',
+        // => @media (min-width: 1280px) { ... }
+      },
     },
   },
   plugins: [],
