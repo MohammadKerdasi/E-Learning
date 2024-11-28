@@ -7,3 +7,9 @@ export interface Course {
     description: string;
     image: string;
   }
+export interface BasicHome{
+  text:string,
+  par:string,
+  btn:string,
+  varwidth:string
+}

@@ -32,6 +32,15 @@ export default {
       spacing: {
         '7.5': '30px',
       },
+      fontSize: {
+        '4.5xl': '38px',
+        '2.5xl' : '28px',
+      },
+      lineHeight: {
+        '11': '42px',
+        '12': '57px',
+        '13': '72px',
+      },
       screens: {
         // 'tablet': '640px',
         

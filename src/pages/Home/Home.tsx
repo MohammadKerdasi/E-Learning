@@ -1,19 +1,13 @@
-import { useSelector } from 'react-redux';
-import { RootState } from './../../redux/store/index';
-import CourseCard from './../../components/CourseCard';
+import OurCoursesLM from "../../components/OurCoursesLM/OurCoursesLM";
+
 
 export default function Home() {
-  const courses = useSelector((state: RootState) => state.course.courses);
-
-  console.log(courses);
+  
 
   return (
-    <div className="px-4 lg:px-20 desktop:px-40">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
-        {courses.map((course) => (
-          <CourseCard key={course.id} course={course} />
-        ))}
-      </div>
-    </div>
+   <div>
+    <OurCoursesLM/>
+
+   </div>
   )
 }
