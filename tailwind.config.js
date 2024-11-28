@@ -39,7 +39,7 @@ export default {
         // 'laptop': '1024px',
      
   
-        'desktop': '1440px',
+        'desktop': '1441px',
         // => @media (min-width: 1280px) { ... }
       },
     },
