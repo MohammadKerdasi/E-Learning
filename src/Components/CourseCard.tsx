@@ -1,4 +1,5 @@
-import { Course } from "./../data"; 
+import { Course } from "../interfaces";
+
 
 interface CourseCardProps {
   course: Course; 
