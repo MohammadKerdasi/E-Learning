@@ -1,17 +1,20 @@
 import { createSlice } from "@reduxjs/toolkit";
+import { courses } from "../../data";
 
-const initialState ={
-    
-}
-
+const initialState = {
+  courses: courses,
+  selectedCourse: null,
+};
 
 export const courseSlice = createSlice({
-    name: "courses",
-    initialState,
-    reducers: {
-      
+  name: "courses",
+  initialState,
+  reducers: {
+    setCourses: (state, action) => {
+      state.courses = action.payload;
     },
-  });
+  },
+});
 
-
+export const { setCourses } = courseSlice.actions;
 export default courseSlice.reducer;
