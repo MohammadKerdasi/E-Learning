@@ -18,6 +18,8 @@ export default {
         'Orange/90': '#FFEACC',
         'Orange/97': '#FFF9F0',
         'Orange/99': '#FFFDFA',
+        'Orange/95': '#FFF4E5',
+        'White/100': '#FFFFFF',
         'White/95': '#F1F1F3',
         'White/97': '#F7F7F8',
         'White/99': '#FCFCFD',
@@ -31,6 +33,23 @@ export default {
       },
       spacing: {
         '7.5': '30px',
+        '5px': '5px',
+        '60': '60px',
+        '174': '174px',
+        '142': '142px',
+        '154': '154px',
+        '63': '63px',
+        '62': '62px',
+        '30px': '30px',
+        '100px': '100px',
+        '72px': '72px',
+        'paddingBottom150': '150px',
+      },
+      fontSize: {
+        '38': '38px'
+      },
+      lineHeight: {
+        '27' : '27px'
       },
       screens: {
         // 'tablet': '640px',
