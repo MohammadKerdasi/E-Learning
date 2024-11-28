@@ -2,8 +2,8 @@ import { useSelector } from 'react-redux';
 import { RootState } from './../../redux/store/index';
 import CourseCard from './../../components/CourseCard';
 import imgVideo from '../../assets/images/home/section2/teamwork.png' 
-import HomeHero from '../../Components/HomeHero/HomeHero';
-import VideoSection from '../../Components/VideoSection/VideoSection';
+import HomeHero from '../../components/HomeHero/HomeHero';
+import VideoSection from '../../components/VideoSection/VideoSection';
 
 export default function Home() {
   const courses = useSelector((state: RootState) => state.course.courses);
