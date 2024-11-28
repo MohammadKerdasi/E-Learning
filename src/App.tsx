@@ -1,9 +1,11 @@
 import './App.css'
+import AboutUs from './pages/AboutUS/AboutUs'
 
 function App() {
 
   return (
     <>
+    <AboutUs/>
     </>
   )
 }
