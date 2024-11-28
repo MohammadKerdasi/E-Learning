@@ -8,12 +8,12 @@ export default function Home() {
   console.log(courses);
 
   return (
-    <div className="px-4 lg:px-5 desktop:px-7.5">
+    <div className="px-4 lg:px-20 desktop:px-40">
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-6">
         {courses.map((course) => (
           <CourseCard key={course.id} course={course} />
         ))}
       </div>
     </div>
-  );
+  )
 }
