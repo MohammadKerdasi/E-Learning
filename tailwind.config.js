@@ -16,7 +16,7 @@ export default {
         'Orange/75': '#FFCA80',
         'Orange/80': '#FFD599',
         'Orange/90': '#FFEACC',
-        'Orange/97': '#FFF9F0',
+        'Orange/97': '#FFF9F0', 
         'Orange/99': '#FFFDFA',
         'White/95': '#F1F1F3',
         'White/97': '#F7F7F8',
@@ -32,10 +32,32 @@ export default {
       spacing: {
         '7.5': '30px',
       },
+      lineHeight :
+      {
+        '27' : "27px",
+        '21' : "21px",
+      },
+      margin : 
+      {
+        '23' : "23px"
+      },
+      padding :
+      {
+        'nav' : '132px',
+        '8.5' : '34px',
+        '60' : '60px'
+      },
+      width :
+      {
+        '54' : '54px'
+      },
+      gap :
+      {
+        '50' : '50px'
+      },
       screens: {
-        // 'tablet': '640px',
+        'tablet': '391px',
         
-  
         // 'laptop': '1024px',
      
   
