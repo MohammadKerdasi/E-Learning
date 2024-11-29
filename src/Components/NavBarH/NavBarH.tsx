@@ -20,8 +20,8 @@ export default function NavBarH({ logo, navData }: navProps) {
 
   return (
     <nav
-      className={`sticky top-0 desktop:mx-7.5 tablet:mx-5 mx-4  desktop:pt-5 pt-4 pb-5  desktop:pb-6 flex items-center justify-between desktop:px-nav lg:px-60  transition-all duration-300 ${
-        isScrolled ? "bg-White/95 tablet:mx-0 mx-0 shadow-lg px-4" : ""
+      className={`sticky top-0  desktop:pt-5 pt-4 pb-5  desktop:pb-6 flex items-center justify-between desktop:px-nav lg:px-60  transition-all duration-300 ${
+        isScrolled ? "bg-White/95 tablet:mx-0 mx-0 shadow-lg px-4 desktop:mx-0" : "desktop:mx-7.5 tablet:mx-5 mx-4"
       }`}
     >
       <div className="flex justify-between gap-50 items-center">

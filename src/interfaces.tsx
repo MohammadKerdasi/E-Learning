@@ -24,3 +24,29 @@ interface navData{
   path : string;
   text : string;
 }
+
+export interface footerData
+{
+  copyRight: string;
+  logo : string
+  Info : footerInfo[]
+  Section : footerS[]
+  Socila : Socila[]
+}
+interface footerInfo 
+{
+  icon : string;
+  text: string;
+}
+interface footerS 
+{
+  title : string;
+  path : string;
+  li : Array<string>;
+}
+
+interface Socila 
+{
+  title : string;
+  icon : Array<string>;
+}
