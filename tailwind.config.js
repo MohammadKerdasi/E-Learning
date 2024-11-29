@@ -17,7 +17,7 @@ export default {
         'Orange/80': '#FFD599',
         'Orange/90': '#FFEACC',
         'Orange/95': '#FFF4E5',
-        'Orange/97': '#FFF9F0',
+        'Orange/97': '#FFF9F0', 
         'Orange/99': '#FFFDFA',
         'Orange/95': '#FFF4E5',
         'White/100': '#FFFFFF',
@@ -51,6 +51,8 @@ export default {
       fontSize: {
         '38': '38px',
         '28': '28px',
+        '2.5xl' : '28px',
+        '4.5xl': '38px',
       },
       lineHeight: {
         '27': '27px',
@@ -61,12 +63,6 @@ export default {
         '13' : '50px',
         '15' : '60px',
         '25' : '100px',
-      },
-      fontSize: {
-        '2.5xl' : '28px',
-        '4.5xl': '38px',
-      },
-      lineHeight: {
         '4.5' : '18px',
         '5.5' : '22px',
         '5.6' : '21px',
@@ -75,9 +71,33 @@ export default {
         '11': '42px',
         '12': '57px',
         '13': '72px',
-   
+        '27' : "27px",
+        '21' : "21px",
+      },
+      margin : 
+      {
+        '23' : "23px"
+      },
+      padding :
+      {
+        'nav' : '132px',
+        '8.5' : '34px',
+        '60' : '60px',
+        '12.5' : '50px',
+        '100' : '100px',
+      },
+      width :
+      {
+        '54' : '54px',
+        '57' : '57.6%'
+      },
+      gap :
+      {
+        '50' : '50px'
       },
       screens: {
+        'tablet': '391px',
+        
         // 'tablet': '640px',
 
 

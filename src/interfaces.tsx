@@ -65,3 +65,46 @@ export interface BasicHome{
   btn:string,
   varwidth:string
 }
+export interface TopBanner 
+{
+    text1: string;
+    text2 : string;
+    img1 : string;
+    img2 : string;
+}
+export interface navProps
+{
+  logo : string;
+  navData: navData[]
+
+}
+interface navData{
+  path : string;
+  text : string;
+}
+
+export interface footerData
+{
+  copyRight: string;
+  logo : string
+  Info : footerInfo[]
+  Section : footerS[]
+  Socila : Socila[]
+}
+interface footerInfo 
+{
+  icon : string;
+  text: string;
+}
+interface footerS 
+{
+  title : string;
+  path : string;
+  li : Array<string>;
+}
+
+interface Socila 
+{
+  title : string;
+  icon : Array<string>;
+}

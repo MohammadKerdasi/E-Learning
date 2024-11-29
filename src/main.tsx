@@ -64,7 +64,7 @@ const routes = createBrowserRouter(
     },
   ],
   {
-    basename : '/E-Learning'
+    basename : '/E-Learning/'
   }
 )
 
