@@ -22,11 +22,11 @@ const data1 = {
 const data2 = {
     link: '/Pricing',
     textLink: 'View Pricing',
-    className: 'border border-1 border-White/95 w-[127px] desktop:w-[159px]'
+    className: 'border border-1 border-White/95 w-[127px] desktop:w-[159px] bg-White/100'
 }
 export default function HomeHero() {
     return (
-        <div className="desktop:text-lg h-max desktop:h-screen 
+        <div className="max-w-largeScreen m-auto desktop:text-lg h-max desktop:h-screen 
         desktop:pt-[274px] lg:pt-[222px] pt-[204px] flex 
         flex-col items-center justify-center">
             <HeroTitle />
