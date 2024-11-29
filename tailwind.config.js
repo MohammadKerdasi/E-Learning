@@ -63,6 +63,25 @@ export default {
         'desktop': '1441px',
         // => @media (min-width: 1280px) { ... }
       },
+      keyframes: {
+        scroll: {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-100%)' },
+        },
+        'scroll-sm': {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-140.86%)' },
+        },
+        'scroll-xs': {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-235.06%)' },
+        },
+      },
+      animation: {
+        scroll: 'scroll 15s linear infinite',
+        'scroll-sm': 'scroll-sm 15s linear infinite',
+        'scroll-xs': 'scroll-xs 15s linear infinite',
+      },
     },
   },
   plugins: [],

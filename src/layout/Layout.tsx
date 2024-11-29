@@ -5,7 +5,7 @@ import NavBarH from "../components/NavBarH/NavBarH";
 
 export default function Layout() {
   return (
-    <div className="bg-White/99 text-lg">
+    <div className="text-lg">
       <NavBarH/>
       <Outlet/>
       <FooterH/>
