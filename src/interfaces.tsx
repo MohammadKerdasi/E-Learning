@@ -3,10 +3,10 @@ export interface Course {
   id: string;
   title: string;
   name: string;
-  duration: string;
-  level: string;
+  category: Category[];
   description: string;
   image: string;
+  btn:string;
 }
 export interface DataPropsVideoSection {
   img: string;
@@ -52,4 +52,16 @@ export interface AccordionNAProps {
 
 export interface AccordionListProps {
   accordions: Accordion[];
+}
+
+
+interface Category{
+  id:number,
+  name:string
+}
+export interface BasicHome{
+  text:string,
+  par:string,
+  btn:string,
+  varwidth:string
 }

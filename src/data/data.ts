@@ -11,55 +11,73 @@ export const courses: Course[] = [
     {
       id: '1',
       title: 'Web Design Fundamentals',
-      name: 'John Smith',
-      duration: '8 Weeks',
-      level: 'Beginner',
-      description: 'Learn the fundamentals of web design, including HTML, CSS, and responsive design principles.',
+      name: 'By John Smith',
+      category :[
+      {id:1,name:'4 Weeks'},
+      {id:2,name:'Beginner'}
+      ],
+      description: 'Learn the fundamentals of web design, including HTML, CSS, and responsive design principles. Develop the skills to create visually appealing and user-friendly websites.',
       image: Course_img1,
+      btn:'Get it Now'
     },
     {
       id: '2',
       title: 'UI/UX Design',
-      name: 'Emily Johnson',
-      duration: '6 Weeks',
-      level: 'Intermediate',
-      description: 'Master the art of creating intuitive user interfaces and enhancing user experience.',
-      image: Course_img2,
+      name: 'By Emily Johnson',
+      category :[
+        {id:1,name:'6 Weeks'},
+        {id:2,name:'Intermediate'}
+        ],
+      description: 'Master the art of creating intuitive user interfaces (UI) and enhancing user experiences (UX). Learn design principles, wireframing, prototyping, and usability testing techniques.',
+      image:Course_img6,
+      btn:'Get it Now'
     },
     {
       id: '3',
-      title: 'Advanced JavaScript',
-      name: 'Michael Brown',
-      duration: '10 Weeks',
-      level: 'Advanced',
-      description: 'Dive deep into advanced JavaScript concepts and modern frameworks.',
-      image: Course_img3,
+      title: 'Mobile App Development',
+      name: 'By David Brown',
+      category :[
+        {id:1,name:'8 Weeks'},
+        {id:2,name:'Intermediate'}
+        ],
+      description: 'Dive into the world of mobile app development. Learn to build native iOS and Android applications using industry-leading frameworks like Swift and Kotlin.',
+      image: Course_img5,
+      btn:'Get it Now'
     },
     {
       id: '4',
-      title: 'Responsive Web Design',
-      name: 'Sarah Lee',
-      duration: '7 Weeks',
-      level: 'Intermediate',
-      description: 'Learn to create websites that look great on any device using responsive design techniques.',
+      title: 'Graphic Design for Beginners',
+      name: 'By Sarah Thompson',
+      category :[
+        {id:1,name:'10 Weeks'},
+        {id:2,name:'Beginner'}
+        ],
+      description: 'Discover the fundamentals of graphic design, including typography, color theory, layout design, and image manipulation techniques. Create visually stunning designs for print and digital media.',
       image: Course_img4,
+      btn:'Get it Now'
     },
     {
       id: '5',
-      title: 'Full Stack Development',
-      name: 'David Wilson',
-      duration: '12 Weeks',
-      level: 'Advanced',
-      description: 'Master both front-end and back-end technologies to become a full stack developer.',
-      image: Course_img5,
+      title: 'Front-End Web Development',
+      name: 'By Michael Adams',
+      category :[
+        {id:1,name:'10 Weeks'},
+        {id:2,name:'Intermediate'}
+        ],
+      description: 'Become proficient in front-end web development. Learn HTML, CSS, JavaScript, and popular frameworks like Bootstrap and React. Build interactive and responsive websites.',
+      image: Course_img3,
+      btn:'Get it Now'
     },
     {
       id: '6',
-      title: 'Mobile App Design',
-      name: 'Lisa Chen',
-      duration: '8 Weeks',
-      level: 'Intermediate',
-      description: 'Learn to design intuitive and engaging mobile applications for iOS and Android platforms.',
-      image: Course_img6,
+      title: 'Advanced JavaScript',
+      name: 'By Jennifer Wilson',
+      category :[
+        {id:1,name:'6 Weeks'},
+        {id:2,name:'Advance'}
+        ],
+      description: 'Take your JavaScript skills to the next level. Explore advanced concepts like closures, prototypes, asynchronous programming, and ES6 features. Build complex applications with confidence.',
+      image: Course_img2,
+      btn:'Get it Now'
     },
   ]
