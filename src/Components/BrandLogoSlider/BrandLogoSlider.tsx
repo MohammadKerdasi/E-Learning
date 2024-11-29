@@ -1,4 +1,3 @@
-import './BrandLogoSlider.css';
 
 const LogoSlider = ({ logos }: { logos: string[] }) => {
     return (
@@ -7,7 +6,8 @@ const LogoSlider = ({ logos }: { logos: string[] }) => {
             desktop:px-30 desktop:py-[29px] bg-White/99 
             ml-[1px] desktop:ml-[3px] desktop:mr-0.5">
             <div
-                className="flex animate-scroll w-full"
+                className="flex animate-scroll md:animate-scroll-md 
+                xl:animate-scroll-xl w-full"
                 style={{
                     whiteSpace: 'nowrap',
                 }}
@@ -17,7 +17,7 @@ const LogoSlider = ({ logos }: { logos: string[] }) => {
                         key={index}
                         className="flex-shrink-0 flex items-center 
                         justify-center h-16 lg:h-[68px] 
-                        desktop:h-[94px] xl:w-[14.286%] sm:w-[20%] w-[33.4%]
+                        desktop:h-[94px] md:w-[20%] xl:w-[14.286%] w-[33.4%]
                         border-r-[1px] border-White/95"
                     >
                         <img
@@ -33,4 +33,3 @@ const LogoSlider = ({ logos }: { logos: string[] }) => {
 };
 
 export default LogoSlider;
-

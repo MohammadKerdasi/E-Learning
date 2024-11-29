@@ -44,43 +44,44 @@ export default {
         'paddingBottom150': '150px',
         'paddingBottom100': '100px',
         'paddingBottom50': '50px',
+        'largeScreen': '1597px'
       },
       fontSize: {
         '38': '38px',
         '28': '28px',
       },
       lineHeight: {
-        '27' : '27px',
-        '42' : '42px',
+        '27': '27px',
+        '42': '42px',
       },
       screens: {
         // 'tablet': '640px',
-        
-  
+
+
         // 'laptop': '1024px',
-     
-  
+
+
         'desktop': '1441px',
         // => @media (min-width: 1280px) { ... }
       },
       keyframes: {
         scroll: {
           '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-233.8%)' },
+        },
+        'scroll-md': {
+          '0%': { transform: 'translateX(0)' },
+          '100%': { transform: 'translateX(-139.96%)' },
+        },
+        'scroll-xl': {
+          '0%': { transform: 'translateX(0)' },
           '100%': { transform: 'translateX(-100%)' },
-        },
-        'scroll-sm': {
-          '0%': { transform: 'translateX(0)' },
-          '100%': { transform: 'translateX(-140.86%)' },
-        },
-        'scroll-xs': {
-          '0%': { transform: 'translateX(0)' },
-          '100%': { transform: 'translateX(-235.06%)' },
         },
       },
       animation: {
-        scroll: 'scroll 15s linear infinite',
-        'scroll-sm': 'scroll-sm 15s linear infinite',
-        'scroll-xs': 'scroll-xs 15s linear infinite',
+        scroll: 'scroll 13s linear infinite',
+        'scroll-md': 'scroll-md 13s linear infinite',
+        'scroll-xl': 'scroll-xl 13s linear infinite',
       },
     },
   },
