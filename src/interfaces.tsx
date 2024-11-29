@@ -19,6 +19,7 @@ export interface DataPropsButton {
 export interface DataPropsButtonIcon {
   icon: string;
   className?: string;
+  classNameIcon?: string;
 }
 export interface DataPropsDynamicTitle {
   orangeText: string;

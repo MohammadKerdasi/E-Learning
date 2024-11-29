@@ -35,8 +35,6 @@ export default {
         '7.5': '30px',
         '5px': '5px',
         '60': '60px',
-        '174': '174px',
-        '142': '142px',
         '154': '154px',
         '63': '63px',
         '62': '62px',
@@ -44,12 +42,16 @@ export default {
         '100px': '100px',
         '72px': '72px',
         'paddingBottom150': '150px',
+        'paddingBottom100': '100px',
+        'paddingBottom50': '50px',
       },
       fontSize: {
-        '38': '38px'
+        '38': '38px',
+        '28': '28px',
       },
       lineHeight: {
-        '27' : '27px'
+        '27' : '27px',
+        '42' : '42px',
       },
       screens: {
         // 'tablet': '640px',
