@@ -16,6 +16,7 @@ export default {
         'Orange/75': '#FFCA80',
         'Orange/80': '#FFD599',
         'Orange/90': '#FFEACC',
+        'Orange/95': '#FFF4E5',
         'Orange/97': '#FFF9F0',
         'Orange/99': '#FFFDFA',
         'Orange/95': '#FFF4E5',
@@ -53,6 +54,9 @@ export default {
       lineHeight: {
         '27': '27px',
         '42': '42px',
+        '8.5': '34px',
+        '12.5': '50px',
+        '13': '52px'
       },
       screens: {
         // 'tablet': '640px',
@@ -64,6 +68,7 @@ export default {
         'desktop': '1441px',
         // => @media (min-width: 1280px) { ... }
       },
+
       keyframes: {
         scroll: {
           '0%': { transform: 'translateX(0)' },
@@ -83,6 +88,11 @@ export default {
         'scroll-md': 'scroll-md 13s linear infinite',
         'scroll-xl': 'scroll-xl 13s linear infinite',
       },
+
+      fontSize: {
+        '1.5xl': '22px',
+        '7.5xl': '80px'
+      }
     },
   },
   plugins: [],
