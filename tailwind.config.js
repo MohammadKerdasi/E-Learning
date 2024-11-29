@@ -30,16 +30,26 @@ export default {
         'Grey/70': '#B3B3B3',
       },
       spacing: {
+        '4.5' : '18px',
         '7.5': '30px',
+        '13' : '50px',
+        '15' : '60px',
+        '25' : '100px',
       },
       fontSize: {
-        '4.5xl': '38px',
         '2.5xl' : '28px',
+        '4.5xl': '38px',
       },
       lineHeight: {
+        '4.5' : '18px',
+        '5.5' : '22px',
+        '5.6' : '21px',
+        '6.5' : '27px',
+        '7.5' : '30px',
         '11': '42px',
         '12': '57px',
         '13': '72px',
+   
       },
       screens: {
         // 'tablet': '640px',
@@ -48,7 +58,7 @@ export default {
         // 'laptop': '1024px',
      
   
-        'desktop': '1440px',
+        'desktop': '1441px',
         // => @media (min-width: 1280px) { ... }
       },
     },

@@ -3,7 +3,7 @@ import courseReducer from './../slice/index.ts';
 
 export const store = configureStore({
   reducer: {
-    course: courseReducer,
+    courses: courseReducer,
   },
 });
 
