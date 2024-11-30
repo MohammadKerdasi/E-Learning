@@ -26,8 +26,9 @@ const data2 = {
 }
 export default function HomeHero() {
     return (
-        <div className="max-w-largeScreen m-auto desktop:text-lg h-max desktop:h-screen 
-        desktop:pt-[274px] lg:pt-[222px] pt-[204px] flex 
+        <div className="max-w-largeScreen m-auto desktop:text-lg
+         h-max desktop:h-screen 
+        desktop:pt-0 lg:pt-20 pt-[50px] flex 
         flex-col items-center justify-center">
             <HeroTitle />
             <div className="mt-4 desktop:mt-5 mb-1.5 desktop:mb-2.5">

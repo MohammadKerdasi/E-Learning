@@ -49,8 +49,6 @@ export default {
         'largeScreen': '1597px'
       },
       fontSize: {
-        '38': '38px',
-        '28': '28px',
         '2.5xl' : '28px',
         '4.5xl': '38px',
       },
@@ -89,7 +87,9 @@ export default {
       width :
       {
         '54' : '54px',
-        '57' : '57.6%'
+        '57' : '57.6%',
+        '1.5xl': '22px',
+        '7.5xl': '80px'
       },
       gap :
       {
@@ -126,11 +126,6 @@ export default {
         scroll: 'scroll 13s linear infinite',
         'scroll-md': 'scroll-md 13s linear infinite',
         'scroll-xl': 'scroll-xl 13s linear infinite',
-      },
-
-      fontSize: {
-        '1.5xl': '22px',
-        '7.5xl': '80px'
       }
     },
   },
