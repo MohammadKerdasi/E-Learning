@@ -37,6 +37,7 @@ export default {
         '7.5': '30px',
         '5px': '5px',
         '60': '60px',
+        '13': '52px',
         '154': '154px',
         '63': '63px',
         '62': '62px',
@@ -46,13 +47,19 @@ export default {
         'paddingBottom150': '150px',
         'paddingBottom100': '100px',
         'paddingBottom50': '50px',
-        'largeScreen': '1597px'
+        'largeScreen': '1597px',
+        '5-80': '5%',
+        '5.5-30': '5.5%',
+        '2.7': '11px',
+        '2.3': '9px'
       },
       fontSize: {
         '38': '38px',
         '28': '28px',
         '2.5xl' : '28px',
         '4.5xl': '38px',
+         '1.5xl': '22px',
+        '7.5xl': '80px'
       },
       lineHeight: {
         '27': '27px',
@@ -89,7 +96,8 @@ export default {
       width :
       {
         '54' : '54px',
-        '57' : '57.6%'
+        '57' : '57.6%',
+
       },
       gap :
       {
@@ -106,6 +114,7 @@ export default {
 
         'desktop': '1441px',
         // => @media (min-width: 1280px) { ... }
+        '1600': '1600px'
       },
 
       keyframes: {
@@ -127,11 +136,6 @@ export default {
         'scroll-md': 'scroll-md 13s linear infinite',
         'scroll-xl': 'scroll-xl 13s linear infinite',
       },
-
-      fontSize: {
-        '1.5xl': '22px',
-        '7.5xl': '80px'
-      }
     },
   },
   plugins: [],
