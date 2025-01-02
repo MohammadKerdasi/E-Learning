@@ -54,6 +54,14 @@ export interface AccordionListProps {
   accordions: Accordion[];
 }
 
+export interface PricingTabsNAProps {
+  categories: string[];
+}
+
+
+
+
+
 
 interface Category{
   id:number,
@@ -62,7 +70,7 @@ interface Category{
 export interface BasicHome{
   text:string,
   par:string,
-  btn:string,
+  btn?:string,
   varwidth:string
 }
 export interface TopBanner 
