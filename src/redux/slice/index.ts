@@ -2,7 +2,6 @@ import { createSlice } from "@reduxjs/toolkit";
 import { courses } from "./../../data/data";
 import { Course } from "./../../interfaces";
 
-
 interface CourseState {
   courses: Course[];
   selectedCourse: Course[];
@@ -12,7 +11,6 @@ const initialState: CourseState = {
   courses: courses,
   selectedCourse: [],
 };
-
 
 export const courseSlice = createSlice({
   name: "courses",
@@ -30,14 +28,14 @@ export const courseSlice = createSlice({
 
         return filteredCourse;
       });
-
       state.selectedCourse = selectedCourses as Course[];
+    },
+    sliceFirstFiveCourses: (state) => {
+      state.selectedCourse = state.selectedCourse.slice(0, 5);
     },
   },
 });
 
-export const { showSomeCourse } = courseSlice.actions;
+export const { showSomeCourse, sliceFirstFiveCourses } = courseSlice.actions;
 
 export default courseSlice.reducer;
-
-

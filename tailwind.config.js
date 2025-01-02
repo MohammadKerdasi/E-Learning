@@ -53,6 +53,7 @@ export default {
         '28': '28px',
         '2.5xl' : '28px',
         '4.5xl': '38px',
+        '18' :  '18px',
       },
       lineHeight: {
         '27': '27px',
@@ -73,10 +74,13 @@ export default {
         '13': '72px',
         '27' : "27px",
         '21' : "21px",
+        '36' : '36px',
+        
       },
       margin : 
       {
-        '23' : "23px"
+        '23' : "23px",
+        '50' : '50px'
       },
       padding :
       {
@@ -85,6 +89,9 @@ export default {
         '60' : '60px',
         '12.5' : '50px',
         '100' : '100px',
+        '10' : '10px',
+        '6' : '6px',
+        '24' : '24px'
       },
       width :
       {
@@ -101,7 +108,7 @@ export default {
         // 'tablet': '640px',
 
 
-        // 'laptop': '1024px',
+        'laptop': '1024px',
 
 
         'desktop': '1441px',

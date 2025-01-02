@@ -4,14 +4,16 @@ import TitleLK from "../TitleLK/TitleLK";
 
 
 
-export default function HomeBasicLK({text,par,btn,varwidth}:BasicHome) {
+export default function HomeBasicLK({text,par,btn,varwidth,fontSize,flex}:BasicHome) {
   return (
     <div className="flex justify-between items-end flex-wrap gap-y-5">
         <div className={`flex flex-col ${varwidth}`}>
-        <TitleLK text={text} />
+        <TitleLK text={text} fontSize={fontSize}  />
         <PargraphCommonLK par={par}/>
         </div>
-            {btn ? <button className="px-4 desktop:px-5 py-3.5 desktop:py-4 text-sm leading-5.6 desktop:text-lg font-medium desktop:leading-6.5 text-neutral-800 rounded-md bg-White/99 border">{btn}</button> : ''}
+        <div className={`${flex}`}>
+            {btn ? <button className={`px-4 desktop:px-5 py-3.5 desktop:py-4 text-sm leading-5.6 desktop:text-lg font-medium desktop:leading-6.5 text-neutral-800 rounded-md bg-White/99 border"`}>{btn}</button> : ''}
+            </div>
     </div>
   )
 }
