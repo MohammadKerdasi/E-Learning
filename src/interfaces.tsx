@@ -69,6 +69,10 @@ export interface Pricing {
     availability: boolean;
   }[];
 }
+export interface PricingTabsNAProps {
+  categories: string[];
+}
+
 
 export interface Accordion {
   question: string;

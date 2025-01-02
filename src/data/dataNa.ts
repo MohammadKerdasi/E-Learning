@@ -3,6 +3,7 @@ import { Accordion, Pricing } from "../interfaces";
 export const pricingCardsData: Pricing[] = [
     {
         plan: "free plan",
+        category: "monthly",
         price: 0,
         features: [
             {
@@ -10,12 +11,90 @@ export const pricingCardsData: Pricing[] = [
                 availability: true,
             },
             {
-                text: "Access to selected free courses.",
+                text: "Limited course materials and resources.",
+                availability: true,
+            },
+            {
+                text: "Basic community support.",
+                availability: true,
+            },
+            {
+                text: "No certification upon completion.",
+                availability: true,
+            },
+            {
+                text: "Ad-supported platform.",
+                availability: true,
+            },
+            {
+                text: "Access to exclusive Pro Plan community forums.",
+                availability: false,
+            },
+            {
+                text: "Early access to new courses and updates.",
+                availability: false,
+            }
+        ]
+    },
+    {
+        plan: "pro plan",
+        category: "monthly",
+        price: 79,
+        features: [
+            {
+                text: "Unlimited access to all courses.",
+                availability: true,
+            },
+            {
+                text: "Unlimited course materials and resources.",
+                availability: true,
+            },
+            {
+                text: "Priority support from instructors.",
+                availability: false,
+            },
+            {
+                text: "Course completion certificates.",
+                availability: true,
+            },
+            {
+                text: "Ad-free experience.",
+                availability: true,
+            },
+            {
+                text: "Access to exclusive Pro Plan community forums.",
+                availability: true,
+            },
+            {
+                text: "Early access to new courses and updates.",
+                availability: true,
+            }
+        ]
+    },
+    {
+        plan: "pro plan",
+        category: "yearly",
+        price: 40,
+        features: [
+            {
+                text: "Course completion certificates.",
+                availability: true,
+            },
+            {
+                text: "Ad-free experience.",
+                availability: true,
+            },
+            {
+                text: "Access to exclusive Pro Plan community forums.",
+                availability: true,
+            },
+            {
+                text: "Early access to new courses and updates.",
                 availability: true,
             },
             {
                 text: "Access to selected free courses.",
-                availability: true,
+                availability: false,
             },
             {
                 text: "Access to selected free courses.",
@@ -29,7 +108,8 @@ export const pricingCardsData: Pricing[] = [
     },
     {
         plan: "pro plan",
-        price: 0,
+        category: "yearly",
+        price: 65,
         features: [
             {
                 text: "Access to selected free courses.",
@@ -44,11 +124,19 @@ export const pricingCardsData: Pricing[] = [
                 availability: false,
             },
             {
-                text: "Access to selected free courses.",
+                text: "Course completion certificates.",
                 availability: true,
             },
             {
-                text: "Access to selected free courses.",
+                text: "Ad-free experience.",
+                availability: true,
+            },
+            {
+                text: "Access to exclusive Pro Plan community forums.",
+                availability: true,
+            },
+            {
+                text: "Early access to new courses and updates.",
                 availability: true,
             }
         ]

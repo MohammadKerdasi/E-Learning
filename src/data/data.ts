@@ -136,27 +136,27 @@ export const courses: Course[] = [
             {
               id : 1,
               num : '01',
-              desc : 'Introduction to HTML'
+              desc : 'Introduction to UI/UX Design'
             },
             {
               id : 2,
               num : '02',
-              desc : 'Styling with CSS'
+              desc : 'User Research and Personas'
             },
             {
               id : 3,
               num : '03',
-              desc : 'Introduction to Responsive Design'
+              desc : 'Wireframing and Prototyping'
             },
             {
               id : 4,
               num : '04',
-              desc : 'Design Principles for Web'
+              desc : 'Visual Design and Branding'
             },
             {
               id : 5,
               num : '05',
-              desc : 'Building a Basic Website'
+              desc : 'Usability Testing and Iteration'
             },
           ]
 
@@ -205,27 +205,27 @@ export const courses: Course[] = [
             {
               id : 1,
               num : '01',
-              desc : 'Introduction to HTML'
+              desc : 'Introduction to Mobile App Development'
             },
             {
               id : 2,
               num : '02',
-              desc : 'Styling with CSS'
+              desc : 'Fundamentals of Swift Programming (iOS)'
             },
             {
               id : 3,
               num : '03',
-              desc : 'Introduction to Responsive Design'
+              desc : 'Fundamentals of Kotlin Programming (Android)'
             },
             {
               id : 4,
               num : '04',
-              desc : 'Design Principles for Web'
+              desc : 'Building User Interfaces'
             },
             {
               id : 5,
               num : '05',
-              desc : 'Building a Basic Website'
+              desc : 'App Deployment and Testing'
             },
           ]
 
@@ -274,27 +274,27 @@ export const courses: Course[] = [
             {
               id : 1,
               num : '01',
-              desc : 'Introduction to HTML'
+              desc : 'Introduction to Graphic Design'
             },
             {
               id : 2,
               num : '02',
-              desc : 'Styling with CSS'
+              desc : 'Typography and Color Theory'
             },
             {
               id : 3,
               num : '03',
-              desc : 'Introduction to Responsive Design'
+              desc : 'Layout Design and Composition'
             },
             {
               id : 4,
               num : '04',
-              desc : 'Design Principles for Web'
+              desc : 'Image Editing and Manipulation'
             },
             {
               id : 5,
               num : '05',
-              desc : 'Building a Basic Website'
+              desc : 'Designing for Print and Digital Media'
             },
           ]
 
@@ -343,27 +343,27 @@ export const courses: Course[] = [
             {
               id : 1,
               num : '01',
-              desc : 'Introduction to HTML'
+              desc : 'HTML Fundamentals'
             },
             {
               id : 2,
               num : '02',
-              desc : 'Styling with CSS'
+              desc : 'CSS Styling and Layouts'
             },
             {
               id : 3,
               num : '03',
-              desc : 'Introduction to Responsive Design'
+              desc : 'JavaScript Basics'
             },
             {
               id : 4,
               num : '04',
-              desc : 'Design Principles for Web'
+              desc : 'Building Responsive Websites'
             },
             {
               id : 5,
               num : '05',
-              desc : 'Building a Basic Website'
+              desc : 'Introduction to Bootstrap and React'
             },
           ]
 
