@@ -4,7 +4,7 @@ export default function DynamicTitle({ orangeText, blackText }: DataPropsDynamic
     return (
         <p className="text-center text-base lg:text-4xl m-auto 
         desktop:text-5xl font-semibold leading-6 
-        lg:leading-[54px] desktop:leading-[72px]">
+        lg:leading-[54px] desktop:leading-[72px] text-Grey/10">
             <span className="text-Orange/50 pr-3">
                 {orangeText}</span>{blackText}
         </p>
