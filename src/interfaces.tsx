@@ -40,6 +40,8 @@ export interface items {
   num: string;
   desc: string;
 }
+
+// Noura ________________________________________________________________________________________
 export interface DataPropsVideoSection {
   img: string;
   alt: string;
@@ -57,6 +59,64 @@ export interface DataPropsButtonIcon {
 export interface DataPropsDynamicTitle {
   orangeText: string;
   blackText: string;
+}
+export interface DataPropsHeadline {
+  text: string;
+  para: string;
+  className?: string;
+  classTitle?: string;
+  classPara?: string;
+}
+
+export interface DataPropsInput {
+  label: string;
+  placeholder: string;
+  type: string;
+  name: string;
+  className?: string;
+  classLabel?: string;
+  classInput?: string;
+  icon?: string;
+  classIcon?: string;
+  classParent?: string;
+  onClickInput?:  (event: React.MouseEvent<HTMLInputElement>) => void;
+  onClickIcon?:  (event: React.MouseEvent<HTMLImageElement>) => void;
+  onClickTextarea?:  (event: React.MouseEvent<HTMLTextAreaElement>) => void;
+  onChangeInput?: (event: React.ChangeEvent<HTMLInputElement>) => void;
+  defaultValue?: string | number;
+}
+
+export interface DataPropsButtonSubmit {
+  textButton: string;
+   classButtonSubmit?: string;
+}
+
+export interface Submission {
+  firstName: string;
+  lastName: string;
+  email: string;
+  phone: string;
+  subject: string;
+  message: string;
+}
+
+export interface FormState {
+  submissions: Submission[];
+}
+
+export interface ContactBox {
+  href:string;
+  icon: string;
+  text:string;
+}
+
+export interface SocialIcons {
+  src: string;
+}
+
+export interface SocialIconsBox {
+  icons: SocialIcons[];
+  text:string;
 }
 
 // nahla ________________________________________________________________________________________

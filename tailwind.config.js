@@ -25,6 +25,7 @@ export default {
         'White/97': '#F7F7F8',
         'White/99': '#FCFCFD',
         'Grey/10': '#1A1A1A',
+        'Grey/15' : '#262626',
         'Grey/20': '#333333',
         'Grey/30': '#4C4C4D',
         'Grey/35': '#59595A',
@@ -46,7 +47,8 @@ export default {
         'paddingBottom150': '150px',
         'paddingBottom100': '100px',
         'paddingBottom50': '50px',
-        'largeScreen': '1597px'
+        'largeScreen': '1597px',
+        '1860px': '1860px',
       },
       fontSize: {
         '38': '38px',
