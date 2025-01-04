@@ -1,7 +1,8 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { courses } from "./../../data/data";
-import { Course, Pricing } from "./../../interfaces";
+import { benefit, Course, Pricing } from "./../../interfaces";
 import { pricingCardsData } from "../../data/dataNa";
+import { benefites } from "../../data/benefitsDataLK";
 
 // ------------------------------------
 // Course Slice
@@ -9,11 +10,15 @@ import { pricingCardsData } from "../../data/dataNa";
 interface CourseState {
   courses: Course[];
   selectedCourse: Course[];
+  benefitesData :  benefit[];
+  fewBenefite : benefit[]
 }
 
 const initialCourseState: CourseState = {
   courses: courses,
   selectedCourse: [],
+  benefitesData:  benefites,
+  fewBenefite : []
 };
 
 export const courseSlice = createSlice({
@@ -37,10 +42,14 @@ export const courseSlice = createSlice({
     sliceFirstFiveCourses: (state) => {
       state.selectedCourse = state.selectedCourse.slice(0, 5);
     },
+    sliceBenefites : (state,action) =>{
+      const { count } = action.payload;
+      state.fewBenefite= state.benefitesData.slice(0,count)
+    }
   },
 });
 
-export const { showSomeCourse, sliceFirstFiveCourses } = courseSlice.actions;
+export const { showSomeCourse, sliceFirstFiveCourses ,  sliceBenefites} = courseSlice.actions;
 
 // ------------------------------------
 // Pricing Slice

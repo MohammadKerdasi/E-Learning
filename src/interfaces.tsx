@@ -97,10 +97,11 @@ interface Category {
 export interface BasicHome {
   text: string;
   par: string;
-  btn: string;
+  btn?: string;
   varwidth: string;
-  fontSize: string;
+  fontSize?: string;
   flex? : string;
+  href?: string;
 }
 export interface TopBanner {
   text1: string;
@@ -137,4 +138,12 @@ interface footerS {
 interface Socila {
   title: string;
   icon: Array<string>;
+}
+// -------benefits-------- //
+export interface benefit{
+  id?:number,
+  imag:string,
+  numberB:string,
+  title:string,
+  par:string
 }
