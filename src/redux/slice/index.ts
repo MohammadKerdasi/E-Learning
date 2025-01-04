@@ -45,6 +45,7 @@ export const { showSomeCourse, sliceFirstFiveCourses } = courseSlice.actions;
 // ------------------------------------
 // Pricing Slice
 // ------------------------------------
+// Pricing slice ? nahla
 interface PricingState {
   pricingCards: Pricing[];
   selectedCategory: string;
@@ -61,7 +62,7 @@ initialPricingState.filteredPricingCards = initialPricingState.pricingCards.filt
   (card) => card.category === initialPricingState.selectedCategory
 );
 
-export const pricingSlice = createSlice({
+const pricingSlice = createSlice({
   name: "pricing",
   initialState: initialPricingState,
   reducers: {
@@ -77,6 +78,7 @@ export const pricingSlice = createSlice({
 });
 
 export const { filterPricingCardsByCategory } = pricingSlice.actions;
+// 
 
 // ------------------------------------
 // Export Reducers
