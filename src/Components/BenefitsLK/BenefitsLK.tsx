@@ -27,9 +27,9 @@ export default function BenefitsLK() {
   return (
     <div>
 
-      <div className="flex w-full justify-between items-end flex-wrap gap-y-5">
+      <div className="flex flex-col md:flex-row w-full justify-between items-start md:items-end gap-y-5">
         <HomeBasicLK
-          varwidth="w-full md:w-[73%]"
+          varwidth="w-full md:w-[75%]"
           text="Benefits"
           par="Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in."
         />

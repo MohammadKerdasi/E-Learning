@@ -6,6 +6,7 @@ import HomeHero from "../../components/HomeHero/HomeHero";
 import VideoSection from "../../components/VideoSection/VideoSection";
 import OurCoursesLM from "../../components/OurCoursesLM/OurCoursesLM";
 import BenefitsLK from "../../components/BenefitsLK/BenefitsLK";
+import PricingSection from "../../components/PricingSection/PricingSection";
 
 
 export default function Home() {
@@ -18,12 +19,13 @@ export default function Home() {
       <BenefitsLK/>
     <OurCoursesLM/>
 
-      {/* <div className="flex justify-between bg-between p-20 gap-7.5">
+      <div className="flex justify-between bg-between p-20 gap-7.5">
         {pricingCardsData.map((item, i) => {
           return <PricingCardNA key={i} pricing={item} />;
         })}
       </div>
-      <QuestionsSection /> */}
+      {/* <PricingSection/> */}
+      <QuestionsSection />
    </div>
   );
 }
