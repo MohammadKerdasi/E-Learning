@@ -5,17 +5,14 @@ import VideoSection from "../../components/VideoSection/VideoSection";
 import OurCoursesLM from "../../components/OurCoursesLM/OurCoursesLM";
 import PricingSection from "../../components/PricingSection/PricingSection";
 
-
 export default function Home() {
-  
-
   return (
-   <div className="px-4 lg:px-20 desktop:px-40">
+    <div className="px-4 lg:px-20 desktop:px-40">
       <HomeHero />
       <VideoSection img={imgVideo} alt="teamwork" />
-    <OurCoursesLM/>
-    <PricingSection/>
+      <OurCoursesLM />
+      <PricingSection />
       <QuestionsSection />
-   </div>
+    </div>
   );
 }
