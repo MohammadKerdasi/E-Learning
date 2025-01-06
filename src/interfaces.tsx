@@ -50,6 +50,7 @@ export interface DataPropsButton {
   link: string;
   textLink: string;
   className?: string;
+  onClick?:  () => void;
 }
 export interface DataPropsButtonIcon {
   icon: string;
