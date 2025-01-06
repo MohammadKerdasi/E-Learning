@@ -1,8 +1,8 @@
 import { useSelector } from "react-redux";
-import { RootState } from "../../redux/store/index";
-import PricingTabsNA from "./../../components/PricingSection/PricingSection";
-import HomeBasicLK from "./../../components/HomeBasicLK/HomeBasicLK";
-import PricingCardNA from "./../../components/PricingCardNA/PricingCardNA";
+import { RootState } from "../../redux/store";
+import PricingTabsNA from "../PricingTabsNA/PricingTabsNA";
+import HomeBasicLK from "../HomeBasicLK/HomeBasicLK";
+import PricingCardNA from "../PricingCardNA/PricingCardNA";
 import { Pricing } from "../../interfaces";
 
 const PricingSection = () => {
