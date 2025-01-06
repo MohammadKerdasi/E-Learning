@@ -10,7 +10,7 @@ import { footerInfo, footerSection, footerSocial } from "../data/footerData";
 
 export default function Layout() {
   return (
-    <div className="bg-White/99 text-lg">
+    <div className="text-sm lg:text-base desktop:text-lg">
       <TopBanner text1="Free Courses" text2="Sale Ends Soon, Get It Now" img1={star} img2={arrow}/>
       <NavBarH logo={logo} navData={nav}/>
       <Outlet/>

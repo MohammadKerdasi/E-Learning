@@ -6,4 +6,8 @@
     html {
       @apply font-primary bg-White/97;
     }
+     /* by Noura */
+     input::placeholder {
+      @apply text-Grey/40 text-sm lg:text-base desktop:text-lg; 
+    }
   }

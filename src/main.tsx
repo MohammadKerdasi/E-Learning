@@ -28,13 +28,10 @@ const routes = createBrowserRouter(
         {
           path: 'Courses',
           element: <Courses/>,
-          children:
-          [
-            {
-              path: 'OpenPage/:id',
-              element: <CoursesOpen/>
-            }
-          ]
+        },
+        {
+          path: 'OpenPage/:id',
+          element: <CoursesOpen/>
         },
         {
           path: 'About',
