@@ -1,6 +1,6 @@
 // mohammad ________________________________________________________________________________________
 export interface Course {
-  id: string;
+  id: number;
   title: string;
   name: string;
   category: Category[];
@@ -8,7 +8,20 @@ export interface Course {
   image: string;
   btn: string;
   coursePageData: CoursePageData[];
+  coursePageDataUl : items[]
+  videosLK : videosDataLK []
 
+}
+interface videosDataLK{
+  id: number,
+  numberVideos: string,
+  titleVideos: string,
+  lessons : {
+    id: number,
+    title: string,
+    duration: string,
+    lessonNum: string,
+  }[]
 }
 export interface CoursePageData {
   id: number;
@@ -33,7 +46,7 @@ export interface CoursePageData {
     },
 ]
   secTitle: string;
-  ul: items[];
+  
 }
 export interface items {
   id: number;

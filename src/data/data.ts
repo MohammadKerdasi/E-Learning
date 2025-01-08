@@ -25,7 +25,7 @@ import CoursesPage_img15 from '../assets/images/courses/all-courses/front-model3
 
 export const courses: Course[] = [
     {
-      id: '1',
+      id: 1,
       title: 'Web Design Fundamentals',
       name: 'By John Smith',
       category :[
@@ -63,39 +63,169 @@ export const courses: Course[] = [
           ],
 
           secTitle : 'Curriculum',
-          ul : [
-            {
-              id : 1,
-              num : '01',
-              desc : 'Introduction to HTML'
-            },
-            {
-              id : 2,
-              num : '02',
-              desc : 'Styling with CSS'
-            },
-            {
-              id : 3,
-              num : '03',
-              desc : 'Introduction to Responsive Design'
-            },
-            {
-              id : 4,
-              num : '04',
-              desc : 'Design Principles for Web'
-            },
-            {
-              id : 5,
-              num : '05',
-              desc : 'Building a Basic Website'
-            },
-          ]
+      
 
         }
       ]
+      ,coursePageDataUl : [
+        {
+          id : 1,
+          num : '01',
+          desc : 'Introduction to HTML'
+        },
+        {
+          id : 2,
+          num : '02',
+          desc : 'Styling with CSS'
+        },
+        {
+          id : 3,
+          num : '03',
+          desc : 'Introduction to Responsive Design'
+        },
+        {
+          id : 4,
+          num : '04',
+          desc : 'Design Principles for Web'
+        },
+        {
+          id : 5,
+          num : '05',
+          desc : 'Building a Basic Website'
+        },
+      ]
+      ,
+      videosLK : [
+        {
+          id: 1,
+          numberVideos: '01',
+          titleVideos: 'Introduction to UI/UX Design',
+          lessons : [
+            { 
+              id: 1,
+              title: "Understanding UI/UX Design Principles",
+              duration: "45 Minutes",
+              lessonNum: 'Lesson 01'
+            },
+            {
+              id: 2,
+              title: "Importance of User-Centered Design",
+              duration: "1 Hour",
+              lessonNum: 'Lesson 02'
+            },
+            {
+              id: 3,
+              title: "The Role of UI/UX Design in Product Development",
+              duration: "45 Minutes",
+              lessonNum: 'Lesson 03'
+            }
+          ]
+        },
+        {
+          id: 2,
+          numberVideos: '02',
+          titleVideos: 'User Research and Analysis',
+          lessons : [
+            { 
+              id: 1,
+              title: "Conducting User Research and Interviews",
+              duration: "1 Hour",
+              lessonNum: 'Lesson 01'
+            },
+            {
+              id: 2,
+              title: "Analyzing User Needs and Behavior",
+              duration: "1 Hour",
+              lessonNum: 'Lesson 02'
+            },
+            {
+              id: 3,
+              title: "Creating User Personas and Scenarios",
+              duration: "1 Hour",
+              lessonNum: 'Lesson 03'
+            }
+          ]
+        },
+        {
+          id: 3,
+          numberVideos: '03',
+          titleVideos: 'Wireframing and Prototyping',
+          lessons : [
+            { 
+              id: 1,
+              title: "Introduction to Wireframing Tools and Techniques",
+              duration: "1 Hour",
+              lessonNum: 'Lesson 01'
+            },
+            {
+              id: 2,
+              title: "Creating Low-Fidelity Wireframes",
+              duration: "1 Hour",
+              lessonNum: 'Lesson 02'
+            },
+            {
+              id: 3,
+              title: "Prototyping and Interactive Mockups",
+              duration: "1 Hour",
+              lessonNum: 'Lesson 03'
+            }
+          ]
+        },
+        {
+          id: 4,
+          numberVideos: '04',
+          titleVideos: 'Visual Design and Branding',
+          lessons : [
+            { 
+              id: 1,
+              title: "Color Theory and Typography in UI Design",
+              duration: "1 Hour",
+               lessonNum: 'Lesson 01'
+            },
+            {
+              id: 2,
+              title: "Visual Hierarchy and Layout Design",
+              duration: "1 Hour",
+               lessonNum: 'Lesson 02'
+            },
+            {
+              id: 3,
+              title: "Creating a Strong Brand Identity",
+              duration: "45 Minutes",
+               lessonNum: 'Lesson 03'
+            }
+          ]
+        },
+        {
+          id: 5,
+          numberVideos: '05',
+          titleVideos: 'Usability Testing and Iteration',
+          lessons : [
+            { 
+              id: 1,
+              title: "Usability Testing Methods and Techniques",
+              duration: "1 Hour",
+              lessonNum: 'Lesson 0'
+            },
+            {
+              id: 2,
+              title: "Analyzing Usability Test Results",
+              duration: "45 Minutes",
+              lessonNum: 'Lesson 02'
+            },
+            {
+              id: 3,
+              title: "Iterating and Improving UX Designs",
+              duration: "45 Minutes",
+              lessonNum: 'Lesson 03'
+            }
+          ]
+        },
+
+      ]
     },
     {
-      id: '2',
+      id: 2,
       title: 'UI/UX Design',
       name: 'By Emily Johnson',
       category :[
@@ -132,39 +262,169 @@ export const courses: Course[] = [
             },
           ],
           secTitle : 'Curriculum',
-          ul : [
-            {
-              id : 1,
-              num : '01',
-              desc : 'Introduction to UI/UX Design'
-            },
-            {
-              id : 2,
-              num : '02',
-              desc : 'User Research and Personas'
-            },
-            {
-              id : 3,
-              num : '03',
-              desc : 'Wireframing and Prototyping'
-            },
-            {
-              id : 4,
-              num : '04',
-              desc : 'Visual Design and Branding'
-            },
-            {
-              id : 5,
-              num : '05',
-              desc : 'Usability Testing and Iteration'
-            },
-          ]
+         
 
         }
       ]
+      ,coursePageDataUl : [
+        {
+          id : 1,
+          num : '01',
+          desc : 'Introduction to UI/UX Design'
+        },
+        {
+          id : 2,
+          num : '02',
+          desc : 'User Research and Personas'
+        },
+        {
+          id : 3,
+          num : '03',
+          desc : 'Wireframing and Prototyping'
+        },
+        {
+          id : 4,
+          num : '04',
+          desc : 'Visual Design and Branding'
+        },
+        {
+          id : 5,
+          num : '05',
+          desc : 'Usability Testing and Iteration'
+        },
+
+      ]
+      ,videosLK : [
+        {
+          id: 1,
+          numberVideos: '01',
+          titleVideos: 'Introduction to UI/UX Design',
+          lessons : [
+            { 
+              id: 1,
+              title: "Understanding UI/UX Design Principles",
+              duration: "45 Minutes",
+              lessonNum: 'Lesson 01'
+            },
+            {
+              id: 2,
+              title: "Importance of User-Centered Design",
+              duration: "1 Hour",
+              lessonNum: 'Lesson 02'
+            },
+            {
+              id: 3,
+              title: "The Role of UI/UX Design in Product Development",
+              duration: "45 Minutes",
+              lessonNum: 'Lesson 03'
+            }
+          ]
+        },
+        {
+          id: 2,
+          numberVideos: '02',
+          titleVideos: 'User Research and Analysis',
+          lessons : [
+            { 
+              id: 1,
+              title: "Conducting User Research and Interviews",
+              duration: "1 Hour",
+              lessonNum: 'Lesson 01'
+            },
+            {
+              id: 2,
+              title: "Analyzing User Needs and Behavior",
+              duration: "1 Hour",
+              lessonNum: 'Lesson 02'
+            },
+            {
+              id: 3,
+              title: "Creating User Personas and Scenarios",
+              duration: "1 Hour",
+              lessonNum: 'Lesson 03'
+            }
+          ]
+        },
+        {
+          id: 3,
+          numberVideos: '03',
+          titleVideos: 'Wireframing and Prototyping',
+          lessons : [
+            { 
+              id: 1,
+              title: "Introduction to Wireframing Tools and Techniques",
+              duration: "1 Hour",
+              lessonNum: 'Lesson 01'
+            },
+            {
+              id: 2,
+              title: "Creating Low-Fidelity Wireframes",
+              duration: "1 Hour",
+              lessonNum: 'Lesson 02'
+            },
+            {
+              id: 3,
+              title: "Prototyping and Interactive Mockups",
+              duration: "1 Hour",
+              lessonNum: 'Lesson 03'
+            }
+          ]
+        },
+        {
+          id: 4,
+          numberVideos: '04',
+          titleVideos: 'Visual Design and Branding',
+          lessons : [
+            { 
+              id: 1,
+              title: "Color Theory and Typography in UI Design",
+              duration: "1 Hour",
+               lessonNum: 'Lesson 01'
+            },
+            {
+              id: 2,
+              title: "Visual Hierarchy and Layout Design",
+              duration: "1 Hour",
+               lessonNum: 'Lesson 02'
+            },
+            {
+              id: 3,
+              title: "Creating a Strong Brand Identity",
+              duration: "45 Minutes",
+               lessonNum: 'Lesson 03'
+            }
+          ]
+        },
+        {
+          id: 5,
+          numberVideos: '05',
+          titleVideos: 'Usability Testing and Iteration',
+          lessons : [
+            { 
+              id: 1,
+              title: "Usability Testing Methods and Techniques",
+              duration: "1 Hour",
+              lessonNum: 'Lesson 0'
+            },
+            {
+              id: 2,
+              title: "Analyzing Usability Test Results",
+              duration: "45 Minutes",
+              lessonNum: 'Lesson 02'
+            },
+            {
+              id: 3,
+              title: "Iterating and Improving UX Designs",
+              duration: "45 Minutes",
+              lessonNum: 'Lesson 03'
+            }
+          ]
+        },
+
+      ]
     },
     {
-      id: '3',
+      id: 3,
       title: 'Mobile App Development',
       name: 'By David Brown',
       category :[
@@ -201,39 +461,168 @@ export const courses: Course[] = [
             },
           ],
           secTitle : 'Curriculum',
-          ul : [
-            {
-              id : 1,
-              num : '01',
-              desc : 'Introduction to Mobile App Development'
-            },
-            {
-              id : 2,
-              num : '02',
-              desc : 'Fundamentals of Swift Programming (iOS)'
-            },
-            {
-              id : 3,
-              num : '03',
-              desc : 'Fundamentals of Kotlin Programming (Android)'
-            },
-            {
-              id : 4,
-              num : '04',
-              desc : 'Building User Interfaces'
-            },
-            {
-              id : 5,
-              num : '05',
-              desc : 'App Deployment and Testing'
-            },
-          ]
+      
 
         }
+      ],
+      coursePageDataUl : [
+        {
+          id : 1,
+          num : '01',
+          desc : 'Introduction to Mobile App Development'
+        },
+        {
+          id : 2,
+          num : '02',
+          desc : 'Fundamentals of Swift Programming (iOS)'
+        },
+        {
+          id : 3,
+          num : '03',
+          desc : 'Fundamentals of Kotlin Programming (Android)'
+        },
+        {
+          id : 4,
+          num : '04',
+          desc : 'Building User Interfaces'
+        },
+        {
+          id : 5,
+          num : '05',
+          desc : 'App Deployment and Testing'
+        },
+      ]
+      ,videosLK : [
+        {
+          id: 1,
+          numberVideos: '01',
+          titleVideos: 'Introduction to UI/UX Design',
+          lessons : [
+            { 
+              id: 1,
+              title: "Understanding UI/UX Design Principles",
+              duration: "45 Minutes",
+              lessonNum: 'Lesson 01'
+            },
+            {
+              id: 2,
+              title: "Importance of User-Centered Design",
+              duration: "1 Hour",
+              lessonNum: 'Lesson 02'
+            },
+            {
+              id: 3,
+              title: "The Role of UI/UX Design in Product Development",
+              duration: "45 Minutes",
+              lessonNum: 'Lesson 03'
+            }
+          ]
+        },
+        {
+          id: 2,
+          numberVideos: '02',
+          titleVideos: 'User Research and Analysis',
+          lessons : [
+            { 
+              id: 1,
+              title: "Conducting User Research and Interviews",
+              duration: "1 Hour",
+              lessonNum: 'Lesson 01'
+            },
+            {
+              id: 2,
+              title: "Analyzing User Needs and Behavior",
+              duration: "1 Hour",
+              lessonNum: 'Lesson 02'
+            },
+            {
+              id: 3,
+              title: "Creating User Personas and Scenarios",
+              duration: "1 Hour",
+              lessonNum: 'Lesson 03'
+            }
+          ]
+        },
+        {
+          id: 3,
+          numberVideos: '03',
+          titleVideos: 'Wireframing and Prototyping',
+          lessons : [
+            { 
+              id: 1,
+              title: "Introduction to Wireframing Tools and Techniques",
+              duration: "1 Hour",
+              lessonNum: 'Lesson 01'
+            },
+            {
+              id: 2,
+              title: "Creating Low-Fidelity Wireframes",
+              duration: "1 Hour",
+              lessonNum: 'Lesson 02'
+            },
+            {
+              id: 3,
+              title: "Prototyping and Interactive Mockups",
+              duration: "1 Hour",
+              lessonNum: 'Lesson 03'
+            }
+          ]
+        },
+        {
+          id: 4,
+          numberVideos: '04',
+          titleVideos: 'Visual Design and Branding',
+          lessons : [
+            { 
+              id: 1,
+              title: "Color Theory and Typography in UI Design",
+              duration: "1 Hour",
+               lessonNum: 'Lesson 01'
+            },
+            {
+              id: 2,
+              title: "Visual Hierarchy and Layout Design",
+              duration: "1 Hour",
+               lessonNum: 'Lesson 02'
+            },
+            {
+              id: 3,
+              title: "Creating a Strong Brand Identity",
+              duration: "45 Minutes",
+               lessonNum: 'Lesson 03'
+            }
+          ]
+        },
+        {
+          id: 5,
+          numberVideos: '05',
+          titleVideos: 'Usability Testing and Iteration',
+          lessons : [
+            { 
+              id: 1,
+              title: "Usability Testing Methods and Techniques",
+              duration: "1 Hour",
+              lessonNum: 'Lesson 0'
+            },
+            {
+              id: 2,
+              title: "Analyzing Usability Test Results",
+              duration: "45 Minutes",
+              lessonNum: 'Lesson 02'
+            },
+            {
+              id: 3,
+              title: "Iterating and Improving UX Designs",
+              duration: "45 Minutes",
+              lessonNum: 'Lesson 03'
+            }
+          ]
+        },
+
       ]
     },
     {
-      id: '4',
+      id: 4,
       title: 'Graphic Design for Beginners',
       name: 'By Sarah Thompson',
       category :[
@@ -270,39 +659,169 @@ export const courses: Course[] = [
             },
           ],
           secTitle : 'Curriculum',
-          ul : [
-            {
-              id : 1,
-              num : '01',
-              desc : 'Introduction to Graphic Design'
-            },
-            {
-              id : 2,
-              num : '02',
-              desc : 'Typography and Color Theory'
-            },
-            {
-              id : 3,
-              num : '03',
-              desc : 'Layout Design and Composition'
-            },
-            {
-              id : 4,
-              num : '04',
-              desc : 'Image Editing and Manipulation'
-            },
-            {
-              id : 5,
-              num : '05',
-              desc : 'Designing for Print and Digital Media'
-            },
-          ]
+         
 
         }
+      ],
+      coursePageDataUl : [
+        {
+          id : 1,
+          num : '01',
+          desc : 'Introduction to Graphic Design'
+        },
+        {
+          id : 2,
+          num : '02',
+          desc : 'Typography and Color Theory'
+        },
+        {
+          id : 3,
+          num : '03',
+          desc : 'Layout Design and Composition'
+        },
+        {
+          id : 4,
+          num : '04',
+          desc : 'Image Editing and Manipulation'
+        },
+        {
+          id : 5,
+          num : '05',
+          desc : 'Designing for Print and Digital Media'
+        },
+
+      ]
+      ,videosLK : [
+        {
+          id: 1,
+          numberVideos: '01',
+          titleVideos: 'Introduction to UI/UX Design',
+          lessons : [
+            { 
+              id: 1,
+              title: "Understanding UI/UX Design Principles",
+              duration: "45 Minutes",
+              lessonNum: 'Lesson 01'
+            },
+            {
+              id: 2,
+              title: "Importance of User-Centered Design",
+              duration: "1 Hour",
+              lessonNum: 'Lesson 02'
+            },
+            {
+              id: 3,
+              title: "The Role of UI/UX Design in Product Development",
+              duration: "45 Minutes",
+              lessonNum: 'Lesson 03'
+            }
+          ]
+        },
+        {
+          id: 2,
+          numberVideos: '02',
+          titleVideos: 'User Research and Analysis',
+          lessons : [
+            { 
+              id: 1,
+              title: "Conducting User Research and Interviews",
+              duration: "1 Hour",
+              lessonNum: 'Lesson 01'
+            },
+            {
+              id: 2,
+              title: "Analyzing User Needs and Behavior",
+              duration: "1 Hour",
+              lessonNum: 'Lesson 02'
+            },
+            {
+              id: 3,
+              title: "Creating User Personas and Scenarios",
+              duration: "1 Hour",
+              lessonNum: 'Lesson 03'
+            }
+          ]
+        },
+        {
+          id: 3,
+          numberVideos: '03',
+          titleVideos: 'Wireframing and Prototyping',
+          lessons : [
+            { 
+              id: 1,
+              title: "Introduction to Wireframing Tools and Techniques",
+              duration: "1 Hour",
+              lessonNum: 'Lesson 01'
+            },
+            {
+              id: 2,
+              title: "Creating Low-Fidelity Wireframes",
+              duration: "1 Hour",
+              lessonNum: 'Lesson 02'
+            },
+            {
+              id: 3,
+              title: "Prototyping and Interactive Mockups",
+              duration: "1 Hour",
+              lessonNum: 'Lesson 03'
+            }
+          ]
+        },
+        {
+          id: 4,
+          numberVideos: '04',
+          titleVideos: 'Visual Design and Branding',
+          lessons : [
+            { 
+              id: 1,
+              title: "Color Theory and Typography in UI Design",
+              duration: "1 Hour",
+               lessonNum: 'Lesson 01'
+            },
+            {
+              id: 2,
+              title: "Visual Hierarchy and Layout Design",
+              duration: "1 Hour",
+               lessonNum: 'Lesson 02'
+            },
+            {
+              id: 3,
+              title: "Creating a Strong Brand Identity",
+              duration: "45 Minutes",
+               lessonNum: 'Lesson 03'
+            }
+          ]
+        },
+        {
+          id: 5,
+          numberVideos: '05',
+          titleVideos: 'Usability Testing and Iteration',
+          lessons : [
+            { 
+              id: 1,
+              title: "Usability Testing Methods and Techniques",
+              duration: "1 Hour",
+              lessonNum: 'Lesson 0'
+            },
+            {
+              id: 2,
+              title: "Analyzing Usability Test Results",
+              duration: "45 Minutes",
+              lessonNum: 'Lesson 02'
+            },
+            {
+              id: 3,
+              title: "Iterating and Improving UX Designs",
+              duration: "45 Minutes",
+              lessonNum: 'Lesson 03'
+            }
+          ]
+        },
+
       ]
     },
     {
-      id: '5',
+      id: 5,
       title: 'Front-End Web Development',
       name: 'By Michael Adams',
       category :[
@@ -314,32 +833,34 @@ export const courses: Course[] = [
       btn:'Get it Now',
       coursePageData : [
         {
-          id: 1 ,
-          title : 'Web Design Fundamentals',
+          id: 1,
+          title: 'Web Design Fundamentals',
           desc: 'Learn the fundamentals of web design, including HTML, CSS, and responsive design principles. Develop the skills to create visually appealing and user-friendly websites.',
-          btn :
-            {
-            view : 'View Course' ,
-            href : '',
-            }
-          ,
-          coursePageImgs :
-          [
+          btn: {
+            view: 'View Course',
+            href: '',
+          },
+
+          coursePageImgs: [
             {
               id: 1,
-              src : CoursesPage_img13
+              src: CoursesPage_img13
             },
             {
               id: 2,
-              src : CoursesPage_img14
+              src: CoursesPage_img14
             },
             {
               id: 3,
-              src : CoursesPage_img15
+              src: CoursesPage_img15
             },
           ],
-          secTitle : 'Curriculum',
-          ul : [
+          secTitle: 'Curriculum',
+          // ul: []
+        }
+      ],
+      coursePageDataUl : [
+      
             {
               id : 1,
               num : '01',
@@ -365,13 +886,139 @@ export const courses: Course[] = [
               num : '05',
               desc : 'Introduction to Bootstrap and React'
             },
-          ]
 
-        }
+      ]
+      ,videosLK : [
+        {
+          id: 1,
+          numberVideos: '01',
+          titleVideos: 'Introduction to UI/UX Design',
+          lessons : [
+            { 
+              id: 1,
+              title: "Understanding UI/UX Design Principles",
+              duration: "45 Minutes",
+              lessonNum: 'Lesson 01'
+            },
+            {
+              id: 2,
+              title: "Importance of User-Centered Design",
+              duration: "1 Hour",
+              lessonNum: 'Lesson 02'
+            },
+            {
+              id: 3,
+              title: "The Role of UI/UX Design in Product Development",
+              duration: "45 Minutes",
+              lessonNum: 'Lesson 03'
+            }
+          ]
+        },
+        {
+          id: 2,
+          numberVideos: '02',
+          titleVideos: 'User Research and Analysis',
+          lessons : [
+            { 
+              id: 1,
+              title: "Conducting User Research and Interviews",
+              duration: "1 Hour",
+              lessonNum: 'Lesson 01'
+            },
+            {
+              id: 2,
+              title: "Analyzing User Needs and Behavior",
+              duration: "1 Hour",
+              lessonNum: 'Lesson 02'
+            },
+            {
+              id: 3,
+              title: "Creating User Personas and Scenarios",
+              duration: "1 Hour",
+              lessonNum: 'Lesson 03'
+            }
+          ]
+        },
+        {
+          id: 3,
+          numberVideos: '03',
+          titleVideos: 'Wireframing and Prototyping',
+          lessons : [
+            { 
+              id: 1,
+              title: "Introduction to Wireframing Tools and Techniques",
+              duration: "1 Hour",
+              lessonNum: 'Lesson 01'
+            },
+            {
+              id: 2,
+              title: "Creating Low-Fidelity Wireframes",
+              duration: "1 Hour",
+              lessonNum: 'Lesson 02'
+            },
+            {
+              id: 3,
+              title: "Prototyping and Interactive Mockups",
+              duration: "1 Hour",
+              lessonNum: 'Lesson 03'
+            }
+          ]
+        },
+        {
+          id: 4,
+          numberVideos: '04',
+          titleVideos: 'Visual Design and Branding',
+          lessons : [
+            { 
+              id: 1,
+              title: "Color Theory and Typography in UI Design",
+              duration: "1 Hour",
+               lessonNum: 'Lesson 01'
+            },
+            {
+              id: 2,
+              title: "Visual Hierarchy and Layout Design",
+              duration: "1 Hour",
+               lessonNum: 'Lesson 02'
+            },
+            {
+              id: 3,
+              title: "Creating a Strong Brand Identity",
+              duration: "45 Minutes",
+               lessonNum: 'Lesson 03'
+            }
+          ]
+        },
+        {
+          id: 5,
+          numberVideos: '05',
+          titleVideos: 'Usability Testing and Iteration',
+          lessons : [
+            { 
+              id: 1,
+              title: "Usability Testing Methods and Techniques",
+              duration: "1 Hour",
+              lessonNum: 'Lesson 0'
+            },
+            {
+              id: 2,
+              title: "Analyzing Usability Test Results",
+              duration: "45 Minutes",
+              lessonNum: 'Lesson 02'
+            },
+            {
+              id: 3,
+              title: "Iterating and Improving UX Designs",
+              duration: "45 Minutes",
+              lessonNum: 'Lesson 03'
+            }
+          ]
+        },
+
       ]
     },
     {
-      id: '6',
+      id: 6,
       title: 'Advanced JavaScript',
       name: 'By Jennifer Wilson',
       category :[
@@ -399,35 +1046,165 @@ export const courses: Course[] = [
             img_3 : CoursesPage_img3 ,
           },
           secTitle : 'Curriculum',
-          ul : [
-            {
-              id : 1,
-              num : '01',
-              desc : 'Introduction to HTML'
-            },
-            {
-              id : 2,
-              num : '02',
-              desc : 'Styling with CSS'
-            },
-            {
-              id : 3,
-              num : '03',
-              desc : 'Introduction to Responsive Design'
-            },
-            {
-              id : 4,
-              num : '04',
-              desc : 'Design Principles for Web'
-            },
-            {
-              id : 5,
-              num : '05',
-              desc : 'Building a Basic Website'
-            },
-          ]
+          
 
         }
+      ]
+      , coursePageDataUl :[
+        {
+          id : 1,
+          num : '01',
+          desc : 'Introduction to HTML'
+        },
+        {
+          id : 2,
+          num : '02',
+          desc : 'Styling with CSS'
+        },
+        {
+          id : 3,
+          num : '03',
+          desc : 'Introduction to Responsive Design'
+        },
+        {
+          id : 4,
+          num : '04',
+          desc : 'Design Principles for Web'
+        },
+        {
+          id : 5,
+          num : '05',
+          desc : 'Building a Basic Website'
+        },
+
+      ]
+      ,videosLK : [
+        {
+          id: 1,
+          numberVideos: '01',
+          titleVideos: 'Introduction to UI/UX Design',
+          lessons : [
+            { 
+              id: 1,
+              title: "Understanding UI/UX Design Principles",
+              duration: "45 Minutes",
+              lessonNum: 'Lesson 01'
+            },
+            {
+              id: 2,
+              title: "Importance of User-Centered Design",
+              duration: "1 Hour",
+              lessonNum: 'Lesson 02'
+            },
+            {
+              id: 3,
+              title: "The Role of UI/UX Design in Product Development",
+              duration: "45 Minutes",
+              lessonNum: 'Lesson 03'
+            }
+          ]
+        },
+        {
+          id: 2,
+          numberVideos: '02',
+          titleVideos: 'User Research and Analysis',
+          lessons : [
+            { 
+              id: 1,
+              title: "Conducting User Research and Interviews",
+              duration: "1 Hour",
+              lessonNum: 'Lesson 01'
+            },
+            {
+              id: 2,
+              title: "Analyzing User Needs and Behavior",
+              duration: "1 Hour",
+              lessonNum: 'Lesson 02'
+            },
+            {
+              id: 3,
+              title: "Creating User Personas and Scenarios",
+              duration: "1 Hour",
+              lessonNum: 'Lesson 03'
+            }
+          ]
+        },
+        {
+          id: 3,
+          numberVideos: '03',
+          titleVideos: 'Wireframing and Prototyping',
+          lessons : [
+            { 
+              id: 1,
+              title: "Introduction to Wireframing Tools and Techniques",
+              duration: "1 Hour",
+              lessonNum: 'Lesson 01'
+            },
+            {
+              id: 2,
+              title: "Creating Low-Fidelity Wireframes",
+              duration: "1 Hour",
+              lessonNum: 'Lesson 02'
+            },
+            {
+              id: 3,
+              title: "Prototyping and Interactive Mockups",
+              duration: "1 Hour",
+              lessonNum: 'Lesson 03'
+            }
+          ]
+        },
+        {
+          id: 4,
+          numberVideos: '04',
+          titleVideos: 'Visual Design and Branding',
+          lessons : [
+            { 
+              id: 1,
+              title: "Color Theory and Typography in UI Design",
+              duration: "1 Hour",
+               lessonNum: 'Lesson 01'
+            },
+            {
+              id: 2,
+              title: "Visual Hierarchy and Layout Design",
+              duration: "1 Hour",
+               lessonNum: 'Lesson 02'
+            },
+            {
+              id: 3,
+              title: "Creating a Strong Brand Identity",
+              duration: "45 Minutes",
+               lessonNum: 'Lesson 03'
+            }
+          ]
+        },
+        {
+          id: 5,
+          numberVideos: '05',
+          titleVideos: 'Usability Testing and Iteration',
+          lessons : [
+            { 
+              id: 1,
+              title: "Usability Testing Methods and Techniques",
+              duration: "1 Hour",
+              lessonNum: 'Lesson 0'
+            },
+            {
+              id: 2,
+              title: "Analyzing Usability Test Results",
+              duration: "45 Minutes",
+              lessonNum: 'Lesson 02'
+            },
+            {
+              id: 3,
+              title: "Iterating and Improving UX Designs",
+              duration: "45 Minutes",
+              lessonNum: 'Lesson 03'
+            }
+          ]
+        },
+
       ]
     },
   ]

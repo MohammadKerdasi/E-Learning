@@ -52,6 +52,11 @@ export default {
         'paddingBottom100': '100px',
         'paddingBottom50': '50px',
         'largeScreen': '1597px',
+        '5-80': '5%',
+        '5.5-30': '5.5%',
+        '2.7': '11px',
+        '2.3': '9px',
+        '13' : '52px',       
         '1860px': '1860px',
       },
       fontSize: {
@@ -111,14 +116,10 @@ export default {
       },
       screens: {
         'tablet': '391px',
-        
         // 'tablet': '640px',
-
-
         'laptop': '1024px',
-
-
         'desktop': '1441px',
+        '1600': '1600px'
         // => @media (min-width: 1280px) { ... }
       },
 

@@ -11,23 +11,38 @@ interface CourseState {
   courses: Course[];
   selectedCourse: Course[];
   benefitesData :  benefit[];
-  fewBenefite : benefit[]
+  fewBenefite : benefit[];
+  customCard : Course []
 }
 
 const initialCourseState: CourseState = {
   courses: courses,
   selectedCourse: [],
   benefitesData:  benefites,
-  fewBenefite : []
+  fewBenefite : [] ,
+  customCard : []
 };
 
 export const courseSlice = createSlice({
   name: "courses",
   initialState: initialCourseState,
   reducers: {
-    showSomeCourse: (state, action: PayloadAction<{ keepKeys: (keyof Course)[] }>) => {
-      const { keepKeys } = action.payload;
-
+    showSomeCourse: (state, action: PayloadAction<{id ? :number , keepKeys: (keyof Course)[] }>) => {
+      const { keepKeys , id} = action.payload;
+       if (id){
+        state.customCard = state.courses.filter((blogItem) => blogItem.id == id);
+        const selectedCoursesById = state.customCard.map((courseData) => {
+          const filteredCourse: Record<keyof Course, unknown> = {} as Record<keyof Course, unknown>;
+  
+          keepKeys.forEach((key) => {
+            filteredCourse[key] = courseData[key];
+          });
+  
+          return filteredCourse;
+        });
+        state.customCard = selectedCoursesById  as Course[];
+       }
+       if ( typeof id !== "number"){
       const selectedCourses = state.courses.map((courseData) => {
         const filteredCourse: Record<keyof Course, unknown> = {} as Record<keyof Course, unknown>;
 
@@ -38,6 +53,7 @@ export const courseSlice = createSlice({
         return filteredCourse;
       });
       state.selectedCourse = selectedCourses as Course[];
+    }
     },
     sliceFirstFiveCourses: (state) => {
       state.selectedCourse = state.selectedCourse.slice(0, 5);
@@ -46,14 +62,16 @@ export const courseSlice = createSlice({
       const { count } = action.payload;
       state.fewBenefite= state.benefitesData.slice(0,count)
     }
+  
   },
 });
 
-export const { showSomeCourse, sliceFirstFiveCourses ,  sliceBenefites} = courseSlice.actions;
+export const { showSomeCourse, sliceFirstFiveCourses ,  sliceBenefites } = courseSlice.actions;
 
 // ------------------------------------
 // Pricing Slice
 // ------------------------------------
+// Pricing slice ? nahla
 interface PricingState {
   pricingCards: Pricing[];
   selectedCategory: string;
@@ -70,7 +88,7 @@ initialPricingState.filteredPricingCards = initialPricingState.pricingCards.filt
   (card) => card.category === initialPricingState.selectedCategory
 );
 
-export const pricingSlice = createSlice({
+const pricingSlice = createSlice({
   name: "pricing",
   initialState: initialPricingState,
   reducers: {
@@ -86,6 +104,7 @@ export const pricingSlice = createSlice({
 });
 
 export const { filterPricingCardsByCategory } = pricingSlice.actions;
+// 
 
 // ------------------------------------
 // Export Reducers

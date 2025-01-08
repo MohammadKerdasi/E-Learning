@@ -1,5 +1,5 @@
-import HeadlineNM from "../../Components/ContactNM/HeadlineNM";
-import SectionFormContactNM from "../../Components/SectionFormContactNM/SectionFormContactNM";
+import HeadlineNM from "../../components/ContactNM/HeadlineNM";
+import SectionFormContactNM from "../../components/SectionFormContactNM/SectionFormContactNM";
 import { dataHaedLineNm } from '../../data/dataHeadlineNM'
 export default function Contact() {
   return (
