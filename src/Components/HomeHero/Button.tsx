@@ -1,4 +1,4 @@
-import {  NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { DataPropsButton } from '../../interfaces'
 
 export default function Button({ data }: { data: DataPropsButton }) {

@@ -1,9 +1,8 @@
 import { NavLink } from "react-router-dom";
 import { navProps } from "../../interfaces";
 import { useEffect, useState } from "react";
-import { useSelector, useDispatch } from "react-redux";
+import { useSelector } from "react-redux";
 import { RootState } from "../../redux/store"; // استبدل بمسار ملف Redux store
-import { logout } from "../../redux/authSlice/index"; // إضافة دالة تسجيل الخروج من authSlice
 import menu from "../../assets/images/nav/icon/toggle.svg";
 import Button from "../HomeHero/Button";
 import { data1, data2 } from "../../data/dataNavButtonHH";
@@ -23,10 +22,10 @@ export default function NavBarH({ logo, navData }: navProps) {
   }, []);
   return (
     <nav
-      className={`sticky top-0 z-50 desktop:pt-5 pt-4 pb-5 desktop:pb-6 flex items-center justify-between lg:px-60 transition-all duration-300 ${
+      className={`sticky top-0 z-50 desktop:pt-5 pt-4 pb-5 desktop:pb-6 flex items-center justify-between  transition-all duration-300 ${
         isScrolled
-          ? "bg-White/97 tablet:mx-0 mx-0 shadow-lg px-4 desktop:mx-0 desktop:px-[162px]"
-          : "desktop:px-nav desktop:mx-7.5 tablet:mx-5 mx-4"
+          ? "bg-White/97 tablet:mx-0 mx-0 shadow-lg px-4 desktop:mx-0 lg:px-20 desktop:px-[162px]"
+          : "desktop:px-nav desktop:mx-7.5 tablet:mx-5 mx-4 lg:px-60"
       }`}
     >
       <div className="flex justify-between gap-50 items-center">

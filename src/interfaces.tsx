@@ -182,6 +182,31 @@ export interface SideBarProps {
   setIsMenuOpen: (value: boolean) => void;
   navData: { path: string; text: string }[]; // Define structure for `navData`
 }
+
+export interface formDataHH {
+  title: string;
+  p: string;
+  data: DataPropsInput[];
+  link?: string;
+  dataBtn: DataPropsButtonSubmit;
+  formType: "login" | "signup"; 
+  labelCheck :  React.ReactNode;
+  googleBtn : string;
+  dataLink?: dataLinkHH[];
+
+}
+export interface LinkPropsHH 
+{
+    data?: dataLinkHH[]
+    arrow: string;
+}
+
+export interface dataLinkHH
+{
+    linkPath: string;
+    ptext: string;
+    location: string;
+}
 export interface footerData {
   copyRight: string;
   logo: string;
