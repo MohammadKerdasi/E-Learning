@@ -83,7 +83,7 @@ export interface DataPropsInput {
   onClickIcon?:  (event: React.MouseEvent<HTMLImageElement>) => void;
   onClickTextarea?:  (event: React.MouseEvent<HTMLTextAreaElement>) => void;
   onChangeInput?: (event: React.ChangeEvent<HTMLInputElement>) => void;
-  defaultValue?: string | number;
+  value?: string | number;
 }
 
 export interface DataPropsButtonSubmit {
