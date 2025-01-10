@@ -1,7 +1,7 @@
 import { Outlet } from "react-router-dom";
-import FooterH from "../components/FooterH/FooterH";
-import NavBarH from "../components/NavBarH/NavBarH";
-import TopBanner from "../components/TopBanner/TopBanner";
+import FooterH from "../Components/FooterH/FooterH";
+import NavBarH from "../Components/NavBarH/NavBarH";
+import TopBanner from "../Components/TopBanner/TopBanner";
 import star from '../assets/images/TopBanner/icon/star-icon.png'
 import arrow from '../assets/images/TopBanner/icon/Icon .png'
 import logo from '../assets/images/nav/image/big-logo.svg'

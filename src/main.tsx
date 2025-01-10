@@ -10,9 +10,8 @@ import Courses from './pages/Courses/Courses.tsx';
 import AboutUs from './pages/AboutUS/AboutUs.tsx';
 import Pricing from './pages/Pricing/Pricing.tsx';
 import Contact from './pages/Contact/Contact.tsx';
-import Login from './pages/Login/Login.tsx';
-import SignUp from './pages/SignUp/SignUp.tsx';
 import CoursesOpen from './pages/CoursesOoen/CoursesOpen.tsx';
+import Auth from './pages/Auth/Auth.tsx';
 
 const routes = createBrowserRouter(
   [
@@ -46,12 +45,8 @@ const routes = createBrowserRouter(
           element: <Contact/>
         },
         {
-          path: 'Login',
-          element: <Login/>
-        },
-        {
-          path: 'SignUp',
-          element: <SignUp/>
+          path: '/auth/:formType',
+          element: <Auth/>,
         },
         {
           path : '*',

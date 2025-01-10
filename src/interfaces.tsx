@@ -93,7 +93,7 @@ export interface DataPropsInput {
   onClickIcon?:  (event: React.MouseEvent<HTMLImageElement>) => void;
   onClickTextarea?:  (event: React.MouseEvent<HTMLTextAreaElement>) => void;
   onChangeInput?: (event: React.ChangeEvent<HTMLInputElement>) => void;
-  defaultValue?: string | number;
+  value?: string | number;
 }
 
 export interface DataPropsButtonSubmit {
@@ -173,6 +173,7 @@ export interface BasicHome {
   flex? : string;
   href?: string;
 }
+// haneen ___________________________________________________________________________________
 export interface TopBanner {
   text1: string;
   text2: string;
@@ -187,7 +188,36 @@ interface navData {
   path: string;
   text: string;
 }
+export interface SideBarProps {
+  isMenuOpen: boolean;
+  setIsMenuOpen: (value: boolean) => void;
+  navData: { path: string; text: string }[]; // Define structure for `navData`
+}
 
+export interface formDataHH {
+  title: string;
+  p: string;
+  data: DataPropsInput[];
+  link?: string;
+  dataBtn: DataPropsButtonSubmit;
+  formType: "login" | "signup"; 
+  labelCheck :  React.ReactNode;
+  googleBtn : string;
+  dataLink?: dataLinkHH[];
+
+}
+export interface LinkPropsHH 
+{
+    data?: dataLinkHH[]
+    arrow: string;
+}
+
+export interface dataLinkHH
+{
+    linkPath: string;
+    ptext: string;
+    location: string;
+}
 export interface footerData {
   copyRight: string;
   logo: string;
