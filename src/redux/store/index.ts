@@ -1,12 +1,15 @@
 import { configureStore } from '@reduxjs/toolkit';
 import { courseReducer, pricingReducer } from '../slice';
 import contactFormReducer from './../contactFormSlice/index.ts';
+import authReducer from './../authSlice/index.ts';
+
 
 export const store = configureStore({
   reducer: {
     courses: courseReducer,
     pricing: pricingReducer,
-    contactForm: contactFormReducer 
+    contactForm: contactFormReducer ,
+    auth: authReducer,
   },
 });
 
