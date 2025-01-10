@@ -71,35 +71,7 @@ export const courses: Course[] = [
         {
           id : 1,
           num : '01',
-          desc : 'Introduction to HTML'
-        },
-        {
-          id : 2,
-          num : '02',
-          desc : 'Styling with CSS'
-        },
-        {
-          id : 3,
-          num : '03',
-          desc : 'Introduction to Responsive Design'
-        },
-        {
-          id : 4,
-          num : '04',
-          desc : 'Design Principles for Web'
-        },
-        {
-          id : 5,
-          num : '05',
-          desc : 'Building a Basic Website'
-        },
-      ]
-      ,
-      videosLK : [
-        {
-          id: 1,
-          numberVideos: '01',
-          titleVideos: 'Introduction to UI/UX Design',
+          desc : 'Introduction to HTML',
           lessons : [
             { 
               id: 1,
@@ -122,9 +94,9 @@ export const courses: Course[] = [
           ]
         },
         {
-          id: 2,
-          numberVideos: '02',
-          titleVideos: 'User Research and Analysis',
+          id : 2,
+          num : '02',
+          desc : 'Styling with CSS',
           lessons : [
             { 
               id: 1,
@@ -147,9 +119,9 @@ export const courses: Course[] = [
           ]
         },
         {
-          id: 3,
-          numberVideos: '03',
-          titleVideos: 'Wireframing and Prototyping',
+          id : 3,
+          num : '03',
+          desc : 'Introduction to Responsive Design',
           lessons : [
             { 
               id: 1,
@@ -172,9 +144,9 @@ export const courses: Course[] = [
           ]
         },
         {
-          id: 4,
-          numberVideos: '04',
-          titleVideos: 'Visual Design and Branding',
+          id : 4,
+          num : '04',
+          desc : 'Design Principles for Web',
           lessons : [
             { 
               id: 1,
@@ -197,9 +169,9 @@ export const courses: Course[] = [
           ]
         },
         {
-          id: 5,
-          numberVideos: '05',
-          titleVideos: 'Usability Testing and Iteration',
+          id : 5,
+          num : '05',
+          desc : 'Building a Basic Website',
           lessons : [
             { 
               id: 1,
@@ -221,8 +193,9 @@ export const courses: Course[] = [
             }
           ]
         },
-
       ]
+      ,
+     
     },
     {
       id: 2,
@@ -270,35 +243,7 @@ export const courses: Course[] = [
         {
           id : 1,
           num : '01',
-          desc : 'Introduction to UI/UX Design'
-        },
-        {
-          id : 2,
-          num : '02',
-          desc : 'User Research and Personas'
-        },
-        {
-          id : 3,
-          num : '03',
-          desc : 'Wireframing and Prototyping'
-        },
-        {
-          id : 4,
-          num : '04',
-          desc : 'Visual Design and Branding'
-        },
-        {
-          id : 5,
-          num : '05',
-          desc : 'Usability Testing and Iteration'
-        },
-
-      ]
-      ,videosLK : [
-        {
-          id: 1,
-          numberVideos: '01',
-          titleVideos: 'Introduction to UI/UX Design',
+          desc : 'Introduction to UI/UX Design',
           lessons : [
             { 
               id: 1,
@@ -321,9 +266,9 @@ export const courses: Course[] = [
           ]
         },
         {
-          id: 2,
-          numberVideos: '02',
-          titleVideos: 'User Research and Analysis',
+          id : 2,
+          num : '02',
+          desc : 'User Research and Personas',
           lessons : [
             { 
               id: 1,
@@ -346,9 +291,9 @@ export const courses: Course[] = [
           ]
         },
         {
-          id: 3,
-          numberVideos: '03',
-          titleVideos: 'Wireframing and Prototyping',
+          id : 3,
+          num : '03',
+          desc : 'Wireframing and Prototyping',
           lessons : [
             { 
               id: 1,
@@ -371,9 +316,9 @@ export const courses: Course[] = [
           ]
         },
         {
-          id: 4,
-          numberVideos: '04',
-          titleVideos: 'Visual Design and Branding',
+          id : 4,
+          num : '04',
+          desc : 'Visual Design and Branding',
           lessons : [
             { 
               id: 1,
@@ -396,9 +341,9 @@ export const courses: Course[] = [
           ]
         },
         {
-          id: 5,
-          numberVideos: '05',
-          titleVideos: 'Usability Testing and Iteration',
+          id : 5,
+          num : '05',
+          desc : 'Usability Testing and Iteration',
           lessons : [
             { 
               id: 1,
@@ -422,6 +367,7 @@ export const courses: Course[] = [
         },
 
       ]
+      
     },
     {
       id: 3,
@@ -469,34 +415,7 @@ export const courses: Course[] = [
         {
           id : 1,
           num : '01',
-          desc : 'Introduction to Mobile App Development'
-        },
-        {
-          id : 2,
-          num : '02',
-          desc : 'Fundamentals of Swift Programming (iOS)'
-        },
-        {
-          id : 3,
-          num : '03',
-          desc : 'Fundamentals of Kotlin Programming (Android)'
-        },
-        {
-          id : 4,
-          num : '04',
-          desc : 'Building User Interfaces'
-        },
-        {
-          id : 5,
-          num : '05',
-          desc : 'App Deployment and Testing'
-        },
-      ]
-      ,videosLK : [
-        {
-          id: 1,
-          numberVideos: '01',
-          titleVideos: 'Introduction to UI/UX Design',
+          desc : 'Introduction to Mobile App Development',
           lessons : [
             { 
               id: 1,
@@ -519,9 +438,9 @@ export const courses: Course[] = [
           ]
         },
         {
-          id: 2,
-          numberVideos: '02',
-          titleVideos: 'User Research and Analysis',
+          id : 2,
+          num : '02',
+          desc : 'Fundamentals of Swift Programming (iOS)',
           lessons : [
             { 
               id: 1,
@@ -544,9 +463,9 @@ export const courses: Course[] = [
           ]
         },
         {
-          id: 3,
-          numberVideos: '03',
-          titleVideos: 'Wireframing and Prototyping',
+          id : 3,
+          num : '03',
+          desc : 'Fundamentals of Kotlin Programming (Android)',
           lessons : [
             { 
               id: 1,
@@ -569,9 +488,9 @@ export const courses: Course[] = [
           ]
         },
         {
-          id: 4,
-          numberVideos: '04',
-          titleVideos: 'Visual Design and Branding',
+          id : 4,
+          num : '04',
+          desc : 'Building User Interfaces',
           lessons : [
             { 
               id: 1,
@@ -594,9 +513,9 @@ export const courses: Course[] = [
           ]
         },
         {
-          id: 5,
-          numberVideos: '05',
-          titleVideos: 'Usability Testing and Iteration',
+          id : 5,
+          num : '05',
+          desc : 'App Deployment and Testing',
           lessons : [
             { 
               id: 1,
@@ -618,8 +537,8 @@ export const courses: Course[] = [
             }
           ]
         },
-
       ]
+      
     },
     {
       id: 4,
@@ -667,35 +586,7 @@ export const courses: Course[] = [
         {
           id : 1,
           num : '01',
-          desc : 'Introduction to Graphic Design'
-        },
-        {
-          id : 2,
-          num : '02',
-          desc : 'Typography and Color Theory'
-        },
-        {
-          id : 3,
-          num : '03',
-          desc : 'Layout Design and Composition'
-        },
-        {
-          id : 4,
-          num : '04',
-          desc : 'Image Editing and Manipulation'
-        },
-        {
-          id : 5,
-          num : '05',
-          desc : 'Designing for Print and Digital Media'
-        },
-
-      ]
-      ,videosLK : [
-        {
-          id: 1,
-          numberVideos: '01',
-          titleVideos: 'Introduction to UI/UX Design',
+          desc : 'Introduction to Graphic Design',
           lessons : [
             { 
               id: 1,
@@ -718,9 +609,9 @@ export const courses: Course[] = [
           ]
         },
         {
-          id: 2,
-          numberVideos: '02',
-          titleVideos: 'User Research and Analysis',
+          id : 2,
+          num : '02',
+          desc : 'Typography and Color Theory',
           lessons : [
             { 
               id: 1,
@@ -743,9 +634,9 @@ export const courses: Course[] = [
           ]
         },
         {
-          id: 3,
-          numberVideos: '03',
-          titleVideos: 'Wireframing and Prototyping',
+          id : 3,
+          num : '03',
+          desc : 'Layout Design and Composition',
           lessons : [
             { 
               id: 1,
@@ -768,9 +659,9 @@ export const courses: Course[] = [
           ]
         },
         {
-          id: 4,
-          numberVideos: '04',
-          titleVideos: 'Visual Design and Branding',
+          id : 4,
+          num : '04',
+          desc : 'Image Editing and Manipulation',
           lessons : [
             { 
               id: 1,
@@ -793,9 +684,9 @@ export const courses: Course[] = [
           ]
         },
         {
-          id: 5,
-          numberVideos: '05',
-          titleVideos: 'Usability Testing and Iteration',
+          id : 5,
+          num : '05',
+          desc : 'Designing for Print and Digital Media',
           lessons : [
             { 
               id: 1,
@@ -819,6 +710,7 @@ export const courses: Course[] = [
         },
 
       ]
+     
     },
     {
       id: 5,
@@ -864,158 +756,131 @@ export const courses: Course[] = [
             {
               id : 1,
               num : '01',
-              desc : 'HTML Fundamentals'
+              desc : 'HTML Fundamentals',
+              lessons : [
+                { 
+                  id: 1,
+                  title: "Understanding UI/UX Design Principles",
+                  duration: "45 Minutes",
+                  lessonNum: 'Lesson 01'
+                },
+                {
+                  id: 2,
+                  title: "Importance of User-Centered Design",
+                  duration: "1 Hour",
+                  lessonNum: 'Lesson 02'
+                },
+                {
+                  id: 3,
+                  title: "The Role of UI/UX Design in Product Development",
+                  duration: "45 Minutes",
+                  lessonNum: 'Lesson 03'
+                }
+              ]
             },
             {
               id : 2,
               num : '02',
-              desc : 'CSS Styling and Layouts'
+              desc : 'CSS Styling and Layouts',
+              lessons : [
+                { 
+                  id: 1,
+                  title: "Conducting User Research and Interviews",
+                  duration: "1 Hour",
+                  lessonNum: 'Lesson 01'
+                },
+                {
+                  id: 2,
+                  title: "Analyzing User Needs and Behavior",
+                  duration: "1 Hour",
+                  lessonNum: 'Lesson 02'
+                },
+                {
+                  id: 3,
+                  title: "Creating User Personas and Scenarios",
+                  duration: "1 Hour",
+                  lessonNum: 'Lesson 03'
+                }
+              ]
             },
             {
               id : 3,
               num : '03',
-              desc : 'JavaScript Basics'
+              desc : 'JavaScript Basics',
+              lessons : [
+                { 
+                  id: 1,
+                  title: "Introduction to Wireframing Tools and Techniques",
+                  duration: "1 Hour",
+                  lessonNum: 'Lesson 01'
+                },
+                {
+                  id: 2,
+                  title: "Creating Low-Fidelity Wireframes",
+                  duration: "1 Hour",
+                  lessonNum: 'Lesson 02'
+                },
+                {
+                  id: 3,
+                  title: "Prototyping and Interactive Mockups",
+                  duration: "1 Hour",
+                  lessonNum: 'Lesson 03'
+                }
+              ]
             },
             {
               id : 4,
               num : '04',
-              desc : 'Building Responsive Websites'
+              desc : 'Building Responsive Websites',
+              lessons : [
+                { 
+                  id: 1,
+                  title: "Color Theory and Typography in UI Design",
+                  duration: "1 Hour",
+                   lessonNum: 'Lesson 01'
+                },
+                {
+                  id: 2,
+                  title: "Visual Hierarchy and Layout Design",
+                  duration: "1 Hour",
+                   lessonNum: 'Lesson 02'
+                },
+                {
+                  id: 3,
+                  title: "Creating a Strong Brand Identity",
+                  duration: "45 Minutes",
+                   lessonNum: 'Lesson 03'
+                }
+              ]
             },
             {
               id : 5,
               num : '05',
-              desc : 'Introduction to Bootstrap and React'
+              desc : 'Introduction to Bootstrap and React',
+              lessons : [
+                { 
+                  id: 1,
+                  title: "Usability Testing Methods and Techniques",
+                  duration: "1 Hour",
+                  lessonNum: 'Lesson 0'
+                },
+                {
+                  id: 2,
+                  title: "Analyzing Usability Test Results",
+                  duration: "45 Minutes",
+                  lessonNum: 'Lesson 02'
+                },
+                {
+                  id: 3,
+                  title: "Iterating and Improving UX Designs",
+                  duration: "45 Minutes",
+                  lessonNum: 'Lesson 03'
+                }
+              ]
             },
 
       ]
-      ,videosLK : [
-        {
-          id: 1,
-          numberVideos: '01',
-          titleVideos: 'Introduction to UI/UX Design',
-          lessons : [
-            { 
-              id: 1,
-              title: "Understanding UI/UX Design Principles",
-              duration: "45 Minutes",
-              lessonNum: 'Lesson 01'
-            },
-            {
-              id: 2,
-              title: "Importance of User-Centered Design",
-              duration: "1 Hour",
-              lessonNum: 'Lesson 02'
-            },
-            {
-              id: 3,
-              title: "The Role of UI/UX Design in Product Development",
-              duration: "45 Minutes",
-              lessonNum: 'Lesson 03'
-            }
-          ]
-        },
-        {
-          id: 2,
-          numberVideos: '02',
-          titleVideos: 'User Research and Analysis',
-          lessons : [
-            { 
-              id: 1,
-              title: "Conducting User Research and Interviews",
-              duration: "1 Hour",
-              lessonNum: 'Lesson 01'
-            },
-            {
-              id: 2,
-              title: "Analyzing User Needs and Behavior",
-              duration: "1 Hour",
-              lessonNum: 'Lesson 02'
-            },
-            {
-              id: 3,
-              title: "Creating User Personas and Scenarios",
-              duration: "1 Hour",
-              lessonNum: 'Lesson 03'
-            }
-          ]
-        },
-        {
-          id: 3,
-          numberVideos: '03',
-          titleVideos: 'Wireframing and Prototyping',
-          lessons : [
-            { 
-              id: 1,
-              title: "Introduction to Wireframing Tools and Techniques",
-              duration: "1 Hour",
-              lessonNum: 'Lesson 01'
-            },
-            {
-              id: 2,
-              title: "Creating Low-Fidelity Wireframes",
-              duration: "1 Hour",
-              lessonNum: 'Lesson 02'
-            },
-            {
-              id: 3,
-              title: "Prototyping and Interactive Mockups",
-              duration: "1 Hour",
-              lessonNum: 'Lesson 03'
-            }
-          ]
-        },
-        {
-          id: 4,
-          numberVideos: '04',
-          titleVideos: 'Visual Design and Branding',
-          lessons : [
-            { 
-              id: 1,
-              title: "Color Theory and Typography in UI Design",
-              duration: "1 Hour",
-               lessonNum: 'Lesson 01'
-            },
-            {
-              id: 2,
-              title: "Visual Hierarchy and Layout Design",
-              duration: "1 Hour",
-               lessonNum: 'Lesson 02'
-            },
-            {
-              id: 3,
-              title: "Creating a Strong Brand Identity",
-              duration: "45 Minutes",
-               lessonNum: 'Lesson 03'
-            }
-          ]
-        },
-        {
-          id: 5,
-          numberVideos: '05',
-          titleVideos: 'Usability Testing and Iteration',
-          lessons : [
-            { 
-              id: 1,
-              title: "Usability Testing Methods and Techniques",
-              duration: "1 Hour",
-              lessonNum: 'Lesson 0'
-            },
-            {
-              id: 2,
-              title: "Analyzing Usability Test Results",
-              duration: "45 Minutes",
-              lessonNum: 'Lesson 02'
-            },
-            {
-              id: 3,
-              title: "Iterating and Improving UX Designs",
-              duration: "45 Minutes",
-              lessonNum: 'Lesson 03'
-            }
-          ]
-        },
-
-      ]
+     
     },
     {
       id: 6,
@@ -1054,35 +919,7 @@ export const courses: Course[] = [
         {
           id : 1,
           num : '01',
-          desc : 'Introduction to HTML'
-        },
-        {
-          id : 2,
-          num : '02',
-          desc : 'Styling with CSS'
-        },
-        {
-          id : 3,
-          num : '03',
-          desc : 'Introduction to Responsive Design'
-        },
-        {
-          id : 4,
-          num : '04',
-          desc : 'Design Principles for Web'
-        },
-        {
-          id : 5,
-          num : '05',
-          desc : 'Building a Basic Website'
-        },
-
-      ]
-      ,videosLK : [
-        {
-          id: 1,
-          numberVideos: '01',
-          titleVideos: 'Introduction to UI/UX Design',
+          desc : 'Introduction to HTML',
           lessons : [
             { 
               id: 1,
@@ -1105,9 +942,9 @@ export const courses: Course[] = [
           ]
         },
         {
-          id: 2,
-          numberVideos: '02',
-          titleVideos: 'User Research and Analysis',
+          id : 2,
+          num : '02',
+          desc : 'Styling with CSS',
           lessons : [
             { 
               id: 1,
@@ -1130,9 +967,9 @@ export const courses: Course[] = [
           ]
         },
         {
-          id: 3,
-          numberVideos: '03',
-          titleVideos: 'Wireframing and Prototyping',
+          id : 3,
+          num : '03',
+          desc : 'Introduction to Responsive Design',
           lessons : [
             { 
               id: 1,
@@ -1155,9 +992,9 @@ export const courses: Course[] = [
           ]
         },
         {
-          id: 4,
-          numberVideos: '04',
-          titleVideos: 'Visual Design and Branding',
+          id : 4,
+          num : '04',
+          desc : 'Design Principles for Web',
           lessons : [
             { 
               id: 1,
@@ -1180,9 +1017,9 @@ export const courses: Course[] = [
           ]
         },
         {
-          id: 5,
-          numberVideos: '05',
-          titleVideos: 'Usability Testing and Iteration',
+          id : 5,
+          num : '05',
+          desc : 'Building a Basic Website',
           lessons : [
             { 
               id: 1,
@@ -1206,5 +1043,6 @@ export const courses: Course[] = [
         },
 
       ]
+      
     },
   ]

@@ -9,19 +9,15 @@ export interface Course {
   btn: string;
   coursePageData: CoursePageData[];
   coursePageDataUl : items[]
-  videosLK : videosDataLK []
+  
 
 }
-interface videosDataLK{
-  id: number,
-  numberVideos: string,
-  titleVideos: string,
-  lessons : {
+export interface lessonsLK{
     id: number,
     title: string,
     duration: string,
     lessonNum: string,
-  }[]
+  
 }
 export interface CoursePageData {
   id: number;
@@ -52,6 +48,7 @@ export interface items {
   id: number;
   num: string;
   desc: string;
+  lessons :lessonsLK[]
 }
 
 // Noura ________________________________________________________________________________________
@@ -220,3 +217,7 @@ export interface benefit{
   title:string,
   par:string
 }
+ export interface parCommon{
+  changeColor?:boolean,
+  par:string
+ }
