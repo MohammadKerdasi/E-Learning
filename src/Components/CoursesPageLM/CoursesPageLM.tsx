@@ -15,8 +15,8 @@ export default function CoursesPageLM() {
   }, [dispatch]);
 
   return (
-    <div className="py-13 lg:py-25">
-      <div className="grid grid-cols-1 gap-7.5 pt-10 lg:pt-15 desktop:pt-20">
+    <div className="pb-13 lg:pb-25">
+      <div className="grid grid-cols-1 gap-7.5">
         {selectedCourses.map((course: Course) => (
           <CoursesCardsMK key={course.id} course={course} />
         ))}

@@ -9,7 +9,11 @@ export default function Home() {
   return (
     <div className="px-4 lg:px-20 desktop:px-40">
       <HomeHero />
-      <VideoSection img={imgVideo} alt="teamwork" />
+      <div className="mb-paddingBottom50 
+        lg:mb-paddingBottom100 desktop:mb-paddingBottom150
+        mt-30px lg:mt-20 desktop:mt-100px">
+        <VideoSection img={imgVideo} alt="teamwork" />
+      </div>
       <OurCoursesLM />
       <PricingSection />
       <QuestionsSection />

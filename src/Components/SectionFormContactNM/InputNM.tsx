@@ -2,7 +2,6 @@ import { DataPropsInput } from "../../interfaces";
 
 export default function InputNM({ data }: { data: DataPropsInput }) {
   const { className, name, classLabel, label, type, placeholder, classInput, icon, classIcon, classParent, onClickInput, onClickIcon, onClickTextarea, onChangeInput, value } = data;
-  
   return (
     <div className={`${name === 'message' ? 'h-[171px] lg:h-[181px] desktop:h-[213px]' : 'h-[93px] lg:h-24 desktop:h-[111px]'} ${className}`}>
       <label htmlFor={name} className={`text-sm lg:text-base desktop:text-lg text-Grey/15 h-21 font-medium leading-5.6 lg:leading-6 desktop:leading-27 ${classLabel}`}>
@@ -32,6 +31,7 @@ export default function InputNM({ data }: { data: DataPropsInput }) {
         )}
         {name === 'password' && (
           <img src={icon} alt="icon" className={classIcon} onClick={onClickIcon} />
+
         )}
       </div>
     </div>
