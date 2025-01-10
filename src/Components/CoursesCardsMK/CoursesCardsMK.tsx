@@ -57,18 +57,24 @@ export default function CoursesCardsMK({ course }: CourseCardProps) {
             {course.coursePageData.map((item ,index) => (
               <div key={index}>
                 <p className="py-24 px-7.5 font-semibold desktop:text-2xl border-b border-white/95">{item.secTitle}</p>
-                <div className="flex justify-around flex-wrap desktop:flex-row laptop:flex-row flex-col w-full laptop:pt-[6px] laptop:pb-7.5 px-[24px] py-[24px]   ">
-                  {item.ul.map((item ,index) => (
+              
+              </div>
+            ))}
+              <div className="flex justify-around flex-wrap desktop:flex-row laptop:flex-row flex-col w-full laptop:pt-[6px] laptop:pb-7.5 px-[24px] py-[24px]   ">
+             {/* {course.coursePageDataUl.map((item ,index) => (
                     <div className="desktop:w-[17.5%] laptop:w-[150px] first:p-0 last:p-0 last:border-0 laptop:border-e-2 laptop:border-white/95 laptop:border-b-0 border-b border-white/95 " key={index}>
                       <div className="mx-auto my-0 desktop:pe-[50px] laptop:pe-[40px] py-[20px]  ">
                       <p className="desktop:text-[50px] laptop:text-[40px] text-[30px] font-extrabold desktop:mb-[20px] laptop:mb-[14px] mb-[12px]  ">{item.num}</p>
                       <p className="font-medium desktop:text-lg laptop:text-[16px] text-sm">{item.desc}</p>
                       </div>
                     </div>
-                  ))}
-                </div>
-              </div>
-            ))}
+                  ))} */}
+                  {/* <div>{course.coursePageDataUl.map((i)=>{
+                    return(
+                      <h1>{i.num}</h1>
+                    )
+                  })}</div> */}
+                  </div>
           </div>
         </div>
       ))}

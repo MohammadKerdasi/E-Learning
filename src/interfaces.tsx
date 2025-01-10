@@ -1,6 +1,6 @@
 // mohammad ________________________________________________________________________________________
 export interface Course {
-  id: string;
+  id: number;
   title: string;
   name: string;
   category: Category[];
@@ -8,7 +8,20 @@ export interface Course {
   image: string;
   btn: string;
   coursePageData: CoursePageData[];
+  coursePageDataUl : items[]
+  videosLK : videosDataLK []
 
+}
+interface videosDataLK{
+  id: number,
+  numberVideos: string,
+  titleVideos: string,
+  lessons : {
+    id: number,
+    title: string,
+    duration: string,
+    lessonNum: string,
+  }[]
 }
 export interface CoursePageData {
   id: number;
@@ -33,7 +46,7 @@ export interface CoursePageData {
     },
 ]
   secTitle: string;
-  ul: items[];
+  
 }
 export interface items {
   id: number;
@@ -157,10 +170,11 @@ interface Category {
 export interface BasicHome {
   text: string;
   par: string;
-  btn: string;
+  btn?: string;
   varwidth: string;
-  fontSize: string;
+  fontSize?: string;
   flex? : string;
+  href?: string;
 }
 // haneen ___________________________________________________________________________________
 export interface TopBanner {
@@ -227,4 +241,12 @@ interface footerS {
 interface Socila {
   title: string;
   icon: Array<string>;
+}
+// -------benefits-------- //
+export interface benefit{
+  id?:number,
+  imag:string,
+  numberB:string,
+  title:string,
+  par:string
 }

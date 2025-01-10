@@ -35,8 +35,10 @@ export default {
       },
       spacing: {
         '4.5' : '18px',
+        '6.8' : '26px',
         '7.5': '30px',
         '5px': '5px',
+        '13' : '50px',
         '60': '60px',
         '154': '154px',
         '63': '63px',
@@ -44,6 +46,8 @@ export default {
         '30px': '30px',
         '100px': '100px',
         '72px': '72px',
+        '18' :'74px',
+        '13.8' : '54px',
         'paddingBottom150': '150px',
         'paddingBottom100': '100px',
         'paddingBottom50': '50px',
@@ -56,13 +60,12 @@ export default {
         '1860px': '1860px',
       },
       fontSize: {
-        '38': '38px',
-        '28': '28px',
         '2.5xl' : '28px',
         '4.5xl': '38px',
         '18' :  '18px',
         '1.5xl': '22px',
-        '7.5xl': '80px'
+        '7.5xl': '80px',
+        '5.5xl': '50px'
       },
       lineHeight: {
         '27': '27px',
@@ -134,11 +137,6 @@ export default {
         'scroll-md': 'scroll-md 13s linear infinite',
         'scroll-xl': 'scroll-xl 13s linear infinite',
       },
-
-      fontSize: {
-        '1.5xl': '22px',
-        '7.5xl': '80px'
-      }
     },
   },
   plugins: [],
