@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { footerData } from "../../interfaces";
+import IconBoxNM from "../SectionFormContactNM/IconBoxNM";
 
 
 export default function FooterH({copyRight , Socila ,logo , Info , Section} : footerData) {
@@ -34,7 +35,8 @@ export default function FooterH({copyRight , Socila ,logo , Info , Section} : fo
                 <h3 className=" desktop:text-xl font-semibold mb-4">{e.title}</h3>
                 <div className="flex gap-3.5">
                 {e.icon.map((link, i) => (
-                  <Link className="bg-White/97  desktop:p-3.5  p-3 rounded-lg" key={i} to={'#'}><img src={link} className=" desktop:w-auto w-5" alt="icon"/></Link>
+                  <IconBoxNM key={i} src={link} />
+               
                 ))}
                 </div>
               </div>
