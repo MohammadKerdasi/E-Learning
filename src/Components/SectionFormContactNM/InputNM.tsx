@@ -1,6 +1,6 @@
 import { DataPropsInput } from '../../interfaces'
 export default function InputNM({ data }: { data: DataPropsInput }) {
-  const { className, name, classLabel, label, type, placeholder, classInput, icon, classIcon, classParent, onClickInput, onClickIcon, onClickTextarea, onChangeInput, defaultValue } = data;
+  const { className, name, classLabel, label, type, placeholder, classInput, icon, classIcon, classParent, onClickInput, onClickIcon, onClickTextarea, onChangeInput, value } = data;
   return (
     <div className={`${name === 'message'
       ? 'h-[171px] lg:h-[181px] desktop:h-[213px]'
@@ -22,7 +22,7 @@ export default function InputNM({ data }: { data: DataPropsInput }) {
             name="message"
             id="message"
             placeholder={placeholder}
-            className='w-full bg-White/99 focus:outline-none'
+            className="w-full bg-White/99 focus:outline-none"
             onClick={onClickTextarea}
           />) :
           (
@@ -34,13 +34,13 @@ export default function InputNM({ data }: { data: DataPropsInput }) {
               className={`w-full bg-White/99 focus:outline-none ${classInput}`}
               onClick={onClickInput}
               onChange={onChangeInput}
-              defaultValue={defaultValue}
+              value={value}
             />
           )}
         {/* for login & sign up pages */}
         {name === 'password' && (
           <img src={icon} alt="icon"
-            className={`absolute ${classIcon}`}
+            className={`${classIcon}`}
             onClick={onClickIcon} />
         )}
       </div>
