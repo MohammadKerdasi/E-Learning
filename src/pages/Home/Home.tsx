@@ -5,6 +5,7 @@ import VideoSection from "../../components/VideoSection/VideoSection";
 import OurCoursesLM from "../../components/OurCoursesLM/OurCoursesLM";
 import BenefitsLK from "../../components/BenefitsLK/BenefitsLK";
 import PricingSection from "../../components/PricingSection/PricingSection";
+import TestimonialsLKHH from "../../components/TestimonialsLK+HH/TestimonialsLK+HH";
 
 
 export default function Home() {
@@ -14,6 +15,7 @@ export default function Home() {
       <VideoSection img={imgVideo} alt="teamwork" />
       <BenefitsLK/>
       <OurCoursesLM />
+      <TestimonialsLKHH/>
       <PricingSection />
       <QuestionsSection />
     </div>

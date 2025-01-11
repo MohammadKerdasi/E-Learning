@@ -239,6 +239,14 @@ interface Socila {
   title: string;
   icon: Array<string>;
 }
+// -------Testmonials----- //
+export interface datatest{
+  id:number,
+  par:string,
+  imag:string,
+  theName: string,
+  btn:string
+}
 // -------benefits-------- //
 export interface benefit{
   id?:number,
