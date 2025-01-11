@@ -10,6 +10,9 @@ export default {
       fontFamily: {
         primary: 'Be Vietnam Pro, sans-serif',
       },
+      boxShadow: {
+        "videoLK" : ' 0px 0px 0px 4px #FFF4E5;'
+      },
       colors: {
         'Orange/50': '#FF9500',
         'Orange/70': '#FFBF66',
@@ -58,6 +61,7 @@ export default {
         '2.3': '9px',
         '13' : '52px',       
         '1860px': '1860px',
+        '29' : '120px'
       },
       fontSize: {
         '2.5xl' : '28px',

@@ -25,7 +25,7 @@ export default function BenefitsLK() {
   }, [viewAll, dispatch]);
 
   return (
-    <div>
+    <div className="pt-12.5 lg:pt-100 desktop:pt-paddingBottom150">
 
       <div className="flex flex-col md:flex-row w-full justify-between items-start md:items-end gap-y-5">
         <HomeBasicLK

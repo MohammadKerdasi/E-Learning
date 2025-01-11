@@ -27,34 +27,67 @@ export const courseSlice = createSlice({
   name: "courses",
   initialState: initialCourseState,
   reducers: {
-    showSomeCourse: (state, action: PayloadAction<{id ? :number , keepKeys: (keyof Course)[] }>) => {
-      const { keepKeys , id} = action.payload;
-       if (id){
+  
+    showSomeCourse: (state, action: PayloadAction<{ id?: string | number; keepKeys: (keyof Course | string)[] }>) => {
+      const { keepKeys, id } = action.payload;
+    
+      const getValueByPath = (obj: any, path: string) => {
+        return path.split('.').reduce((acc, key) => {
+          if (Array.isArray(acc)) {
+            return acc.map((item) => {
+              if (typeof key === 'string' && key.includes(',')) {
+                const keys = key.split(',').map((k) => k.trim());
+                return keys.reduce((res: Record<string, any>, k) => {
+                  res[k] = item[k]; 
+                  return res;
+                }, {});
+              }
+              return item[key];
+            });
+          }
+          return acc && acc[key];
+        }, obj);
+      };
+    
+      if (id) {
         state.customCard = state.courses.filter((blogItem) => blogItem.id == id);
         const selectedCoursesById = state.customCard.map((courseData) => {
-          const filteredCourse: Record<keyof Course, unknown> = {} as Record<keyof Course, unknown>;
-  
+          const filteredCourse: Record<string, any> = {}; 
+    
           keepKeys.forEach((key) => {
-            filteredCourse[key] = courseData[key];
+            if (typeof key === 'string' && key.includes('.')) {
+           
+              filteredCourse[key.split('.')[0]] = getValueByPath(courseData, key); 
+            } else {
+              filteredCourse[key] = courseData[key as keyof Course];
+            }
           });
-  
+    
           return filteredCourse;
         });
-        state.customCard = selectedCoursesById  as Course[];
-       }
-       if ( typeof id !== "number"){
-      const selectedCourses = state.courses.map((courseData) => {
-        const filteredCourse: Record<keyof Course, unknown> = {} as Record<keyof Course, unknown>;
-
-        keepKeys.forEach((key) => {
-          filteredCourse[key] = courseData[key];
+        state.customCard = selectedCoursesById;
+      }
+    
+      if (typeof id !== 'number') {
+        const selectedCourses = state.courses.map((courseData) => {
+          const filteredCourse: Record<string , any> = {}; 
+    
+          keepKeys.forEach((key) => {
+            if (typeof key === 'string' && key.includes('.')) {
+             
+              filteredCourse[key.split('.')[0]] = getValueByPath(courseData, key); 
+            } else {
+              filteredCourse[key] = courseData[key as keyof Course];
+            }
+          });
+    
+          return filteredCourse;
         });
-
-        return filteredCourse;
-      });
-      state.selectedCourse = selectedCourses as Course[];
-    }
+        state.selectedCourse = selectedCourses;
+      }
     },
+    
+    
     sliceFirstFiveCourses: (state) => {
       state.selectedCourse = state.selectedCourse.slice(0, 5);
     },

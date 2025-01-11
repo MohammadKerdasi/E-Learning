@@ -25,7 +25,9 @@ export default function OurCoursesLM() {
         ],
       })
     );
-  }, [dispatch]);
+    console.log(selectedBlogs);
+    
+  },[dispatch]);
   return (
     <div className="py-13 lg:py-25">
       <HomeBasicLK
