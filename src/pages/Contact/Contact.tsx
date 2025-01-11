@@ -1,4 +1,4 @@
-import SubmissionsTable from "../../Components/SectionFormContactNM/SubmissionsTable";
+import SubmissionsTable from "../../components/SectionFormContactNM/SubmissionsTable";
 import HeadlineNM from "../../components/ContactNM/HeadlineNM";
 import SectionFormContactNM from "../../components/SectionFormContactNM/SectionFormContactNM";
 import { dataHaedLineNm } from '../../data/dataHeadlineNM'
@@ -9,7 +9,7 @@ export default function Contact() {
       <HeadlineNM data={dataHaedLineNm} />
       <SectionFormContactNM />
       {/* for testing  */}
-      {/* <SubmissionsTable /> */}
+       <SubmissionsTable /> 
     </div>
   )
 }
