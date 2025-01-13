@@ -52,8 +52,11 @@ export default {
         '5.5-30': '5.5%',
         '2.7': '11px',
         '2.3': '9px',
+        '12.5' : '50px',
         '13' : '52px',       
         '1860px': '1860px',
+        '29' : '120px',
+        '17': '66px',
       },
       fontSize: {
         '38': '38px',
@@ -96,11 +99,10 @@ export default {
         'nav' : '132px',
         '8.5' : '34px',
         '60' : '60px',
-        '12.5' : '50px',
         '100' : '100px',
-        '10' : '10px',
-        '6' : '6px',
-        '24' : '24px'
+        // '10' : '10px',
+        // '6' : '6px',
+        // '24' : '24px'
       },
       width :
       {
@@ -139,11 +141,6 @@ export default {
         'scroll-md': 'scroll-md 13s linear infinite',
         'scroll-xl': 'scroll-xl 13s linear infinite',
       },
-
-      fontSize: {
-        '1.5xl': '22px',
-        '7.5xl': '80px'
-      }
     },
   },
   plugins: [],

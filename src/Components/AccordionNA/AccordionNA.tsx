@@ -4,7 +4,7 @@ import more from "./../../assets/images/home/questions/icon/moreArrow.svg";
 
 const AccordionNA = ({ accordion, isOpen, onToggle }: AccordionNAProps) => {
   return (
-    <div className="border border-White/95 py-10 px-12.5 rounded-xl max-lg:px-6 max-lg:py-5 gap-2">
+    <div className="border border-White/95 py-10 px-12.5 rounded-xl max-lg:px-6 max-lg:py-5 gap-2 max-lg:w-[550px]">
       <div
         className={`flex justify-between items-center  cursor-pointer  ${
           isOpen ? "border-b border-White/95 pb-8" : ""
