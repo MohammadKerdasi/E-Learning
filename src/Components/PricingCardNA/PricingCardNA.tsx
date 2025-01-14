@@ -4,7 +4,7 @@ import check from "./../../assets/images/home/our-pricing/icon/Vector (Stroke).s
 
 const PricingCardNA = ({ pricing }: { pricing: Pricing }) => {
   return (
-    <div className="bg-White/99 p-7.5 pt-12.5 w-2/4 border-White/95 border rounded-xl max-md:w-full max-lg:px-4 ">
+    <div className="bg-White/99 p-7.5 pt-12.5 w-2/4 border-White/95 border rounded-xl max-md:w-full max-lg:px-5 max-lg:w-[550px]">
       <h2 className="w-full text-center bg-Orange/97 border border-Orange/90 rounded-md text-1.5xl capitalize py-3 font-medium max-desktop:text-lg max-lg:text-base">
         {pricing.plan}
       </h2>
@@ -13,8 +13,8 @@ const PricingCardNA = ({ pricing }: { pricing: Pricing }) => {
         <span className="text-xl font-medium text-Grey/30 max-desktop:text-base">/month</span>
       </p>
 
-      <div className=" bg-white border border-White/95 pt-10 max-lg:pt-5">
-        <div className="px-10 max-xl:px-5 flex flex-col items-center">
+      <div className=" bg-white border border-White/95 pt-10 max-lg:pt-5 rounded-xl">
+        <div className="px-10 max-xl:px-5 flex flex-col items-center ">
           <h4 className="font-medium text-xl capitalize mb-7.5  max-lg:mb-5  max-desktop:text-lg">
             Available features
           </h4>

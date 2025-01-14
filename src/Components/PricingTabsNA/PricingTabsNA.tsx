@@ -4,7 +4,7 @@ import { PricingTabsNAProps } from "../../interfaces";
 import { filterPricingCardsByCategory } from "../../redux/slice";
 import { RootState } from "../../redux/store";
 
-const PricingTabsNA: React.FC<PricingTabsNAProps> = ({ categories }) => {
+const PricingTabsNA: React.FC<PricingTabsNAProps> = ({ categories, className }) => {
   const dispatch = useDispatch();
   const selectedCategory = useSelector(
     (state: RootState) => state.pricing.selectedCategory
@@ -15,7 +15,7 @@ const PricingTabsNA: React.FC<PricingTabsNAProps> = ({ categories }) => {
   };
 
   return (
-    <div className="flex p-3 bg-white rounded-lg">
+    <div className={`flex p-3 bg-white rounded-lg ${className}`}>
       {categories.map((category) => (
         <button
           key={category}
