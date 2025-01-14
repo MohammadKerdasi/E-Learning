@@ -17,7 +17,7 @@ const logos = [
 export default function HomeHero() {
     return (
         <div className="max-w-largeScreen m-auto desktop:text-lg
-         h-max desktop:pt-[100px] lg:pt-20 pt-[50px] flex 
+         h-max desktop:pt-[100px] lg:pt-20 pt-10 flex 
         flex-col items-center justify-center">
             <HeroTitle />
             <div className="mt-4 desktop:mt-5 mb-1.5 desktop:mb-2.5">

@@ -36,9 +36,9 @@ export default function InputsContact({ inputs, additionalInputs }: { inputs: Da
         e.currentTarget.reset();
     }
     return (
-        <form className="w-full lg:w-[67.41854637%] p-30px 
-        lg:p-60 desktop:p-20 bg-White/100 lg:border-r-[1px] 
-        lg:border-r-White/95 border-b-[1px] border-b-White/95"
+        <form className="w-full lg:w-[67.96875%] 2xl:w-[67.41854637%] p-30px 
+        xl:p-60 2xl:p-20 bg-White/100 lg:border-r-[1px] 
+        lg:border-r-White/95"
             onSubmit={handleSubmit}
         >
             <div className="grid grid-cols-1 lg:grid-cols-2 

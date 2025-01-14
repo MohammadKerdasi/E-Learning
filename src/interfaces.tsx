@@ -79,10 +79,8 @@ export interface DataPropsDynamicTitle {
 export interface DataPropsHeadline {
   text: string;
   para: string;
-  className?: string;
-  classTitle?: string;
-  classPara?: string;
-}  
+}
+
 
 export interface DataPropsInput {
   label: string;
