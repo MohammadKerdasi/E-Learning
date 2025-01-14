@@ -1,7 +1,8 @@
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 import { courses } from "./../../data/data";
-import { Course, Pricing } from "./../../interfaces";
+import { benefit, Course, Pricing } from "./../../interfaces";
 import { pricingCardsData } from "../../data/dataNa";
+import { benefites } from "../../data/benefitsDataLK";
 
 // ------------------------------------
 // Course Slice
@@ -9,38 +10,96 @@ import { pricingCardsData } from "../../data/dataNa";
 interface CourseState {
   courses: Course[];
   selectedCourse: Course[];
+  benefitesData :  benefit[];
+  fewBenefite : benefit[];
+  customCard : Course []
 }
 
 const initialCourseState: CourseState = {
   courses: courses,
   selectedCourse: [],
+  benefitesData:  benefites,
+  fewBenefite : [] ,
+  customCard : []
 };
 
 export const courseSlice = createSlice({
   name: "courses",
   initialState: initialCourseState,
   reducers: {
-    showSomeCourse: (state, action: PayloadAction<{ keepKeys: (keyof Course)[] }>) => {
-      const { keepKeys } = action.payload;
-
-      const selectedCourses = state.courses.map((courseData) => {
-        const filteredCourse: Record<keyof Course, unknown> = {} as Record<keyof Course, unknown>;
-
-        keepKeys.forEach((key) => {
-          filteredCourse[key] = courseData[key];
+  
+    showSomeCourse: (state, action: PayloadAction<{ id?: string | number; keepKeys: (keyof Course | string)[] }>) => {
+      const { keepKeys, id } = action.payload;
+    
+      const getValueByPath = (obj: any, path: string) => {
+        return path.split('.').reduce((acc, key) => {
+          if (Array.isArray(acc)) {
+            return acc.map((item) => {
+              if (typeof key === 'string' && key.includes(',')) {
+                const keys = key.split(',').map((k) => k.trim());
+                return keys.reduce((res: Record<string, any>, k) => {
+                  res[k] = item[k]; 
+                  return res;
+                }, {});
+              }
+              return item[key];
+            });
+          }
+          return acc && acc[key];
+        }, obj);
+      };
+    
+      if (id) {
+        state.customCard = state.courses.filter((blogItem) => blogItem.id == id);
+        const selectedCoursesById = state.customCard.map((courseData) => {
+          const filteredCourse: Record<string, any> = {}; 
+    
+          keepKeys.forEach((key) => {
+            if (typeof key === 'string' && key.includes('.')) {
+           
+              filteredCourse[key.split('.')[0]] = getValueByPath(courseData, key); 
+            } else {
+              filteredCourse[key] = courseData[key as keyof Course];
+            }
+          });
+    
+          return filteredCourse;
         });
-
-        return filteredCourse;
-      });
-      state.selectedCourse = selectedCourses as Course[];
+        state.customCard = selectedCoursesById;
+      }
+    
+      if (typeof id !== 'number') {
+        const selectedCourses = state.courses.map((courseData) => {
+          const filteredCourse: Record<string , any> = {}; 
+    
+          keepKeys.forEach((key) => {
+            if (typeof key === 'string' && key.includes('.')) {
+             
+              filteredCourse[key.split('.')[0]] = getValueByPath(courseData, key); 
+            } else {
+              filteredCourse[key] = courseData[key as keyof Course];
+            }
+          });
+    
+          return filteredCourse;
+        });
+        state.selectedCourse = selectedCourses;
+      }
     },
+    
+    
     sliceFirstFiveCourses: (state) => {
       state.selectedCourse = state.selectedCourse.slice(0, 5);
     },
+    sliceBenefites : (state,action) =>{
+      const { count } = action.payload;
+      state.fewBenefite= state.benefitesData.slice(0,count)
+    }
+  
   },
 });
 
-export const { showSomeCourse, sliceFirstFiveCourses } = courseSlice.actions;
+export const { showSomeCourse, sliceFirstFiveCourses ,  sliceBenefites } = courseSlice.actions;
 
 // ------------------------------------
 // Pricing Slice

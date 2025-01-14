@@ -1,6 +1,6 @@
 // mohammad ________________________________________________________________________________________
 export interface Course {
-  id: string;
+  id: number;
   title: string;
   name: string;
   category: Category[];
@@ -8,7 +8,16 @@ export interface Course {
   image: string;
   btn: string;
   coursePageData: CoursePageData[];
+  coursePageDataUl : items[]
+  
 
+}
+export interface lessonsLK{
+    id: number,
+    title: string,
+    duration: string,
+    lessonNum: string,
+  
 }
 export interface CoursePageData {
   id: number;
@@ -33,12 +42,13 @@ export interface CoursePageData {
     },
 ]
   secTitle: string;
-  ul: items[];
+  
 }
 export interface items {
   id: number;
   num: string;
   desc: string;
+  lessons :lessonsLK[]
 }
 
 interface Category {
@@ -91,6 +101,7 @@ export interface DataPropsInput {
   onChangeInput?: (event: React.ChangeEvent<HTMLInputElement>) => void;
   defaultValue?: string | number;
 }  
+
 
 export interface DataPropsButtonSubmit {
   textButton: string;
@@ -181,7 +192,9 @@ export interface BasicHome {
   varwidth?: string;
   fontSize?: string;
   flex? : string;
+  href?: string;
 }
+// haneen ___________________________________________________________________________________
 export interface TopBanner {
   text1: string;
   text2: string;
@@ -196,7 +209,36 @@ interface navData {
   path: string;
   text: string;
 }
+export interface SideBarProps {
+  isMenuOpen: boolean;
+  setIsMenuOpen: (value: boolean) => void;
+  navData: { path: string; text: string }[]; // Define structure for `navData`
+}
 
+export interface formDataHH {
+  title: string;
+  p: string;
+  data: DataPropsInput[];
+  link?: string;
+  dataBtn: DataPropsButtonSubmit;
+  formType: "login" | "signup"; 
+  labelCheck :  React.ReactNode;
+  googleBtn : string;
+  dataLink?: dataLinkHH[];
+
+}
+export interface LinkPropsHH 
+{
+    data?: dataLinkHH[]
+    arrow: string;
+}
+
+export interface dataLinkHH
+{
+    linkPath: string;
+    ptext: string;
+    location: string;
+}
 export interface footerData {
   copyRight: string;
   logo: string;
@@ -218,3 +260,15 @@ interface Socila {
   title: string;
   icon: Array<string>;
 }
+// -------benefits-------- //
+export interface benefit{
+  id?:number,
+  imag:string,
+  numberB:string,
+  title:string,
+  par:string
+}
+ export interface parCommon{
+  changeColor?:boolean,
+  par:string
+ }

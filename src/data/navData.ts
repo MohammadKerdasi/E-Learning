@@ -20,14 +20,6 @@ export const nav =
         path: '/Contact',
         text: 'Contact'
     },
-    {
-        path: '/SignUp',
-        text: 'Sign Up'
-    },
-    {
-        path: '/Login',
-        text: 'Login'
-    },
 ]
 
 

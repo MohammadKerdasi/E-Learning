@@ -10,6 +10,9 @@ export default {
       fontFamily: {
         primary: 'Be Vietnam Pro, sans-serif',
       },
+      boxShadow: {
+        "videoLK" : ' 0px 0px 0px 4px #FFF4E5;'
+      },
       colors: {
         'Orange/50': '#FF9500',
         'Orange/70': '#FFBF66',
@@ -35,8 +38,10 @@ export default {
       },
       spacing: {
         '4.5' : '18px',
+        '6.8' : '26px',
         '7.5': '30px',
         '5px': '5px',
+        '13' : '50px',
         '60': '60px',
         '154': '154px',
         '63': '63px',
@@ -44,6 +49,8 @@ export default {
         '30px': '30px',
         '100px': '100px',
         '72px': '72px',
+        '18' :'74px',
+        '13.8' : '54px',
         'paddingBottom150': '150px',
         'paddingBottom100': '100px',
         'paddingBottom50': '50px',
@@ -59,13 +66,12 @@ export default {
         '17': '66px',
       },
       fontSize: {
-        '38': '38px',
-        '28': '28px',
         '2.5xl' : '28px',
         '4.5xl': '38px',
         '18' :  '18px',
         '1.5xl': '22px',
-        '7.5xl': '80px'
+        '7.5xl': '80px',
+        '5.5xl': '50px'
       },
       lineHeight: {
         '27': '27px',
@@ -84,10 +90,8 @@ export default {
         '11': '42px',
         '12': '57px',
         '13': '72px',
-        '27' : "27px",
-        '21' : "21px",
         '36' : '36px',
-        
+         
       },
       margin : 
       {
