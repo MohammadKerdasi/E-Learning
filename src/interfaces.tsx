@@ -51,32 +51,38 @@ export interface items {
   lessons :lessonsLK[]
 }
 
+interface Category {
+  id: number;
+  name: string;
+}
+
+
 // Noura ________________________________________________________________________________________
 export interface DataPropsVideoSection {
   img: string;
   alt: string;
-}
+}    
 export interface DataPropsButton {
   link: string;
   textLink: string;
   className?: string;
-}
+}  
 export interface DataPropsButtonIcon {
   icon: string;
   className?: string;
   classNameIcon?: string;
-}
+}  
 export interface DataPropsDynamicTitle {
   orangeText: string;
   blackText: string;
-}
+}  
 export interface DataPropsHeadline {
   text: string;
   para: string;
   className?: string;
   classTitle?: string;
   classPara?: string;
-}
+}  
 
 export interface DataPropsInput {
   label: string;
@@ -93,13 +99,14 @@ export interface DataPropsInput {
   onClickIcon?:  (event: React.MouseEvent<HTMLImageElement>) => void;
   onClickTextarea?:  (event: React.MouseEvent<HTMLTextAreaElement>) => void;
   onChangeInput?: (event: React.ChangeEvent<HTMLInputElement>) => void;
-  value?: string | number;
-}
+  defaultValue?: string | number;
+}  
+
 
 export interface DataPropsButtonSubmit {
   textButton: string;
    classButtonSubmit?: string;
-}
+}   
 
 export interface Submission {
   firstName: string;
@@ -108,26 +115,26 @@ export interface Submission {
   phone: string;
   subject: string;
   message: string;
-}
+}  
 
 export interface FormState {
   submissions: Submission[];
-}
+}  
 
 export interface ContactBox {
   href:string;
   icon: string;
   text:string;
-}
+}  
 
 export interface SocialIcons {
   src: string;
-}
+}  
 
 export interface SocialIconsBox {
   icons: SocialIcons[];
   text:string;
-}
+}  
 
 // nahla ________________________________________________________________________________________
 export interface Pricing {
@@ -137,38 +144,52 @@ export interface Pricing {
   features: {
     text: string;
     availability: boolean;
-  }[];
-}
+  }[];  
+}  
 export interface PricingTabsNAProps {
   categories: string[];
-}
+  className? : string
+}  
 
 
 export interface Accordion {
   question: string;
   answer: string;
   id: number;
-}
+}  
 
 export interface AccordionNAProps {
   accordion: Accordion;
   isOpen: boolean;
   onToggle: () => void;
-}
+}  
 
 export interface AccordionListProps {
   accordions: Accordion[];
+}  
+
+export interface AboutCardsProps {
+  img: string,
+  head: string,
+  desc: string
 }
 
-interface Category {
-  id: number;
-  name: string;
+export interface JoinProps {
+  img: string;
+  text: string;
+  orangeText: string;
+  desc: string;
+  btn: string;
+  link: string
 }
+
+
+
 export interface BasicHome {
   text: string;
   par: string;
   btn?: string;
-  varwidth: string;
+  varwidth?: string;
   fontSize?: string;
   flex? : string;
   href?: string;

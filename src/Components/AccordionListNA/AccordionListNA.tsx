@@ -11,7 +11,7 @@ const AccordionListNA: React.FC<AccordionListProps> = ({ accordions }) => {
     
   };
   return (
-    <div className="flex flex-col gap-y-7.5 w-[887px]">
+    <div className="flex flex-col gap-y-7.5">
       {accordions.map((accordion) => (
         <AccordionNA
           key={accordion.id}
