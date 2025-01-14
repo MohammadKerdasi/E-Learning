@@ -5,9 +5,9 @@ import TitleH3 from "./TitleH3";
 
 export default function CardBenefit({numberB,title,par,imag}:benefit) {
   return (
-    <div className="bg-white rounded-[10px] 2xl:rounded-xl p-7.5 lg:p-[40px] 2xl:p-13 text-neutral-800 lg:h-[370px] 2xl:h-[464px] flex flex-col justify-between">
+    <div className="bg-white rounded-[10px] 2xl:rounded-xl p-7.5 lg:p-[40px] 2xl:p-13 text-neutral-800 flex flex-col justify-between md:justify-start">
          <TitleAsNumber numberB={numberB}/>
-         <div className="py-7.5 lg:py-0">
+         <div className="py-7.5 lg:py-">
           <div className="pb-2.5 2xl:pb-3.5">
           <TitleH3 title={title}/>
           </div>
