@@ -1,7 +1,13 @@
+import { useState } from "react";
 import { DataPropsInput } from "../../interfaces";
 
 export default function InputNM({ data }: { data: DataPropsInput }) {
   const { className, name, classLabel, label, type, placeholder, classInput, icon, classIcon, classParent, onClickInput, onClickIcon, onClickTextarea, onChangeInput, value } = data;
+  const [isPasswordVisible, setIsPasswordVisible] = useState(false);
+  const handleIconClick = () => {
+    setIsPasswordVisible(!isPasswordVisible);
+    if (onClickIcon) onClickIcon();
+  };
   return (
     <div className={`${name === 'message'
       ? 'h-[171px] lg:h-[181px] desktop:h-[213px]'
@@ -28,7 +34,7 @@ export default function InputNM({ data }: { data: DataPropsInput }) {
           />
         ) : (
           <input
-            type={type}
+            type={name === 'password' && !isPasswordVisible ? 'password' : 'text'}
             id={name}
             name={name}
             placeholder={placeholder}
@@ -42,7 +48,7 @@ export default function InputNM({ data }: { data: DataPropsInput }) {
         {name === 'password' && (
           <img src={icon} alt="icon"
             className={classIcon}
-            onClick={onClickIcon} />
+            onClick={handleIconClick}/>
         )}
       </div>
     </div>

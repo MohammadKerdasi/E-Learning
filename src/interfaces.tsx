@@ -210,7 +210,7 @@ interface navData {
 export interface SideBarProps {
   isMenuOpen: boolean;
   setIsMenuOpen: (value: boolean) => void;
-  navData: { path: string; text: string }[]; // Define structure for `navData`
+  navData: { path: string; text: string }[]; 
 }
 
 export interface formDataHH {
@@ -266,6 +266,9 @@ export interface datatest{
   theName: string,
   btn:string
 }
+export interface CardsState {
+  cards: datatest[];
+}
 // -------benefits-------- //
 export interface benefit{
   id?:number,
@@ -278,3 +281,12 @@ export interface benefit{
   changeColor?:boolean,
   par:string
  }
+ export interface SingleCardState {
+  card: CardsState | null; 
+}
+
+export interface SliderButtonProps
+{
+    onClick :() => void;
+    img : string;
+}
