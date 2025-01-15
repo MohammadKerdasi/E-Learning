@@ -8,7 +8,7 @@ export default function Contact() {
       <HeadlineNM data={dataHaedLineNm} />
       <SectionFormContactNM />
       {/* For testing without responsive design */}
-       {/* <SubmissionsTable />  */}
+        <SubmissionsTable />  
     </div>
   )
 }

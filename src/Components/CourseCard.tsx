@@ -17,7 +17,7 @@ export default function CourseCard({ course }: CourseCardProps) {
         <div className="py-6 desktop:py-7.5">
         <div className="flex flex-col gap-y-3.5 xl:flex-row justify-between xl:items-center mb-6 desktop:mb-7.5">
           <div className="flex justify-start items-center gap-2.5">
-            {course.category.map((item,index)=>{
+            {course.category?.map((item,index)=>{
             return(
               <button key={index} className="leading-4.5 desktop:leading-5.5 border border-White/95 rounded-lg px-4 py-2.5 text-Grey/30 font-normal text-sm desktop:text-lg">{item.name}</button>
 
