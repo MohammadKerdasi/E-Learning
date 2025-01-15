@@ -1,7 +1,7 @@
-import { AboutCardNA } from "../../Components/AboutCardNA/AboutCardNA";
+import { AboutCardNA } from "../../components/AboutCardNA/AboutCardNA";
 import HeadlineNM from "../../components/ContactNM/HeadlineNM";
 import HomeBasicLK from "../../components/HomeBasicLK/HomeBasicLK";
-import { JoinSectionNA } from "../../Components/JoinSectionNA/JoinSectionNA";
+import { JoinSectionNA } from "../../components/JoinSectionNA/JoinSectionNA";
 import { achievementData, dataHaedAboutNA, goalData, joinData } from "../../data/dataNa";
 
 export default function AboutUs() {
