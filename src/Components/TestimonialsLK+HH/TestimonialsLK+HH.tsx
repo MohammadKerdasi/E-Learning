@@ -1,7 +1,12 @@
+import { useSelector } from "react-redux";
 import HomeBasicLK from "../HomeBasicLK/HomeBasicLK";
 import CardLKHH from "./CardLK+HH";
+import { RootState } from "../../redux/store";
+import { datatest } from "../../interfaces";
 
 export default function TestimonialsLKHH() {
+  const cards: datatest[] = useSelector((state: RootState) => state.cards.cards.slice(0, 4));
+
   return (
     <div className="">
       <HomeBasicLK
@@ -11,12 +16,16 @@ export default function TestimonialsLKHH() {
         btn="View All"
       />
       <div className="grid grid-cols-1 md:grid-cols-2 gap-5 desktop:gap-7.5 pt-10 lg:pt-[60px] desktop:pt-20">
-        <CardLKHH/>
-        <CardLKHH/>
-        <CardLKHH/>
-        <CardLKHH/>
-
-
+        {cards?.map((e,i) => (
+          <CardLKHH key={i}
+            id={e.id}
+            par={e.par}
+            btn={e.btn}
+            theName={e.theName}
+            imag={e.imag}
+          />
+        ))
+        }
       </div>
 
     </div>
