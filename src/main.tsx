@@ -12,6 +12,7 @@ import Pricing from './pages/Pricing/Pricing.tsx';
 import Contact from './pages/Contact/Contact.tsx';
 import CoursesOpen from './pages/CoursesOoen/CoursesOpen.tsx';
 import Auth from './pages/Auth/Auth.tsx';
+import ProtectedRoute from './hooks/ProtectedRoute.tsx';
 
 const routes = createBrowserRouter(
   [
@@ -30,7 +31,14 @@ const routes = createBrowserRouter(
         },
         {
           path: 'OpenPage/:id',
-          element: <CoursesOpen/>
+          element: <ProtectedRoute/>,
+          children: 
+          [
+            {
+              path:'',
+              element: <CoursesOpen/>
+            },
+          ]
         },
         {
           path: 'About',
