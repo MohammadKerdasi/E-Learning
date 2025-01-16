@@ -12,3 +12,4 @@ export default function Contact() {
     </div>
   )
 }
+//py-10 lg:p-20 desktop:py-paddingBottom150

@@ -12,7 +12,7 @@ export default function Pricing() {
     (state: RootState) => state.pricing.filteredPricingCards
   );
   return (
-    <>
+    <div className="py-10 lg:p-20 desktop:py-paddingBottom150">
       <HeadlineNM data={dataHaedPricingNA} />
       <div className="px-4 lg:px-20 desktop:px-40">
         <PricingTabsNA categories={categories} className="m-auto w-fit mb-12.5"/>
@@ -26,6 +26,6 @@ export default function Pricing() {
       <QuestionsSection />
 
       </div>
-    </>
+    </div>
   );
 }

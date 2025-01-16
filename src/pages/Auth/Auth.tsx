@@ -40,3 +40,4 @@ export default function Auth() {
     </section>
   )
 }
+//py-10 lg:p-20 desktop:py-paddingBottom150
