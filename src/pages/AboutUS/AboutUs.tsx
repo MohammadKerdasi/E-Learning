@@ -6,7 +6,7 @@ import { achievementData, dataHaedAboutNA, goalData, joinData } from "../../data
 
 export default function AboutUs() {
   return (
-    <div>
+    <div className="py-10 lg:p-20 desktop:py-paddingBottom150">
       <HeadlineNM data={dataHaedAboutNA} />
       <div className="px-4 lg:px-20 desktop:px-40">
         <div className="pb-paddingBottom150 max-desktop:pb-100 max-md:pb-12.5">
