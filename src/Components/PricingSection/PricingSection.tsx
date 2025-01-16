@@ -23,7 +23,7 @@ const PricingSection = () => {
         <PricingTabsNA categories={categories} />
       </div>
 
-      <div className="flex justify-between px-5-80 py-20 gap-7.5 bg-white rounded-xl max-md:flex-wrap">
+      <div className="flex justify-between px-5-80 py-20 gap-7.5 bg-white rounded-xl max-lg:flex-wrap max-lg:justify-center">
         {filteredPricingCards.map((item: Pricing, i: number) => (
           <PricingCardNA key={i} pricing={item} />
         ))}

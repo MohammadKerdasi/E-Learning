@@ -4,12 +4,11 @@ import SectionFormContactNM from "../../components/SectionFormContactNM/SectionF
 import { dataHaedLineNm } from '../../data/dataHeadlineNM'
 export default function Contact() {
   return (
-    <div className="mx-4 lg:mx-5 desktop:mx-[30px] 
-    pt-paddingBottom50 lg:pt-20 desktop:pt-[109px]">
+    <div>
       <HeadlineNM data={dataHaedLineNm} />
       <SectionFormContactNM />
-      {/* for testing  */}
-       <SubmissionsTable /> 
+      {/* For testing without responsive design */}
+        <SubmissionsTable />  
     </div>
   )
 }

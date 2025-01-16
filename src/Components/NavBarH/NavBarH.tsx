@@ -1,17 +1,13 @@
 import { NavLink } from "react-router-dom";
 import { navProps } from "../../interfaces";
 import { useEffect, useState } from "react";
-import { useSelector } from "react-redux";
-import { RootState } from "../../redux/store"; // استبدل بمسار ملف Redux store
 import menu from "../../assets/images/nav/icon/toggle.svg";
-import Button from "../HomeHero/Button";
-import { data1, data2 } from "../../data/dataNavButtonHH";
 import SideBar from "../SideBar/SideBar";
+import CurrentUser from "../CurrentUser/CurrentUser";
 
 export default function NavBarH({ logo, navData }: navProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
-  const { isAuthenticated, currentUser } = useSelector((state: RootState) => state.auth);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -24,8 +20,8 @@ export default function NavBarH({ logo, navData }: navProps) {
     <nav
       className={`sticky top-0 z-50 desktop:pt-5 pt-4 pb-5 desktop:pb-6 flex items-center justify-between  transition-all duration-300 ${
         isScrolled
-          ? "bg-White/97 tablet:mx-0 mx-0 shadow-lg px-4 desktop:mx-0 lg:px-20 desktop:px-[162px]"
-          : "desktop:px-nav desktop:mx-7.5 tablet:mx-5 mx-4 lg:px-60"
+          ? "bg-White/97 tablet:mx-0 mx-0 shadow-lg px-4 desktop:mx-0 lg:px-20 l600:px-[162px]"
+          : "1600:px-nav desktop:mx-7.5 tablet:mx-5 mx-4 lg:px-60"
       }`}
     >
       <div className="flex justify-between gap-50 items-center">
@@ -47,19 +43,9 @@ export default function NavBarH({ logo, navData }: navProps) {
           ))}
         </ul>
       </div>
+      {/* user name and sign up login button */}
       <div className="flex items-center gap-5">
-        {isAuthenticated ? (
-          <div className="flex items-center gap-3">
-            <span className="text-sm desktop:text-lg font-medium">
-               {currentUser?.name}
-            </span>
-          </div>
-        ) : (
-          <>
-            <Button data={data2} />
-            <Button data={data1} />
-          </>
-        )}
+        <CurrentUser/>
         <div className="lg:hidden block">
           <button onClick={() => setIsMenuOpen(!isMenuOpen)}>
             <img src={menu} alt="menu" />

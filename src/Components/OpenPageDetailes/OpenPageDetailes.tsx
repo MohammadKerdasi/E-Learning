@@ -39,8 +39,8 @@ export default function OpenPageDetailes() {
                     }
                     return (
                         <div key={index} className="pt-12.5 lg:pt-20 desktop:pt-[110px]">
-                          <div >
                           <HeadlineNM data={data} addingData='Course'/>
+                          <div >
                           </div>
                             <div>
                                 <VideoSection img={item.image} alt={item.title} />
