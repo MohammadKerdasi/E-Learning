@@ -5,6 +5,7 @@ import menu from "../../assets/images/nav/icon/toggle.svg";
 import SideBar from "../SideBar/SideBar";
 import CurrentUser from "../CurrentUser/CurrentUser";
 
+
 export default function NavBarH({ logo, navData }: navProps) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
