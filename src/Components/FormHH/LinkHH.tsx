@@ -14,7 +14,6 @@ export default function LinkHH({data , arrow} : LinkPropsHH) {
         <img src={arrow} alt='arrow' className="  desktop:w-6 w-5  desktop:h-6 h-5"/>
        </Link>
         )}
-     
     </div>
   )
 }
