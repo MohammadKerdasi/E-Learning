@@ -117,7 +117,8 @@ export default {
         // 'tablet': '640px',
         // 'laptop': '1024px', نستخدم بدالها lg
         'desktop': '1441px',
-        '1600': '1600px'
+        '1600': '1600px',
+        '1250': '1250px'
       },
 
       keyframes: {
