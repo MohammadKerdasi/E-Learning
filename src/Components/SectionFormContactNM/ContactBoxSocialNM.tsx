@@ -6,9 +6,9 @@ export default function ContactBoxSocialNM({ data }: { data: SocialIconsBox }) {
     return (
         <div className="flex items-center flex-col gap-3.5 desktop:gap-5
         border-[1px] border-White/95 rounded-lg
-        bg-White/99 px-30px py-[29px] lg:py-[29.75px] lg:px-30px
+        bg-White/99 px-7.5 py-[29px] lg:py-[29.75px] lg:px-7.5
         desktop:py-[26.87px] text-sm lg:text-base desktop:text-lg
-        leading-5.6 lg:leading-6 desktop:leading-27 text-Grey/30">
+        leading-5.6 lg:leading-6 desktop:leading-6.5 text-Grey/30">
             <div className="flex gap-2.5 desktop:gap-3.5">
                 {icons.map((icon, index: number) => (
                     <IconBoxNM

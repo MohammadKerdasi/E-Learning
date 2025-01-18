@@ -10,14 +10,14 @@ import TestimonialsLKHH from "../../components/TestimonialsLK+HH/TestimonialsLK+
 
 export default function Home() {
   return (
-    <div className="px-4 py-10 lg:p-20 desktop:py-paddingBottom150 lg:px-20 desktop:px-40">
+    <div className="px-4 lg:px-20 desktop:px-40">
       <HomeHero />
-      <div className="my-10 lg:my-20 desktop:my-100px">
+      <div className="my-10 lg:my-20 desktop:my-25">
         <VideoSection img={imgVideo} alt="teamwork" />
       </div>
       <BenefitsLK/>
       <OurCoursesLM />
-      <TestimonialsLKHH/>
+      <TestimonialsLKHH/> 
       <PricingSection />
       <QuestionsSection />
     </div>

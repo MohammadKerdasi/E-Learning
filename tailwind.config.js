@@ -70,6 +70,7 @@ export default {
         '57' : '57.6%',     
         '1860px': '1860px',
         'nav' : '132px',
+        '25' : '100px',
       },
       fontSize: {
         '2.5xl' : '28px',

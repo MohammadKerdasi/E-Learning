@@ -6,10 +6,10 @@ import DynamicTitle from './DynamicTitle'
 
 export default function HeroTitle() {
     return (
-        <div className="h:[76px] lg:h-[78px] desktop:h-[100px] 
+        <div className="h-[76px] lg:h-[78px] desktop:h-25 
         lg:mx-[55.5px] mx-0 ml-[1px] flex gap-2.5 px-3.5 lg:pl-3 
-        lg:pr-6 desktop:pl-5 desktop:pr-[30px] 
-        py-3.5 border border-1 border-White/95 rounded-[11px] 
+        lg:pr-6 desktop:pl-5 desktop:pr-7.5 
+        py-3.5 border-[1px] border-White/95 rounded-[11px] 
         bg-White/99 relative">
             <ButtonIcon icon={icon} className="bg-Orange/95" />
             <DynamicTitle orangeText="Unlock"
