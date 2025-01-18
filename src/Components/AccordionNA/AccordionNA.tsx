@@ -4,14 +4,14 @@ import more from "./../../assets/images/home/questions/icon/moreArrow.svg";
 
 const AccordionNA = ({ accordion, isOpen, onToggle }: AccordionNAProps) => {
   return (
-    <div className="border border-White/95 py-10 px-12.5 rounded-xl max-lg:px-6 max-lg:py-5 gap-2 max-lg:w-[550px]">
+    <div className="border border-White/95 py-10 px-12.5 rounded-xl max-lg:px-6 max-lg:py-5 gap-2">
       <div
-        className={`flex justify-between items-center  cursor-pointer  ${
+        className={`flex justify-between items-center  cursor-pointer ${
           isOpen ? "border-b border-White/95 pb-8" : ""
         }`}
         onClick={onToggle}
       >
-        <h3 className="text-xl font-medium capitalize max-2xl:text-lg w-10/12 max-lg:text-base">{accordion.question}</h3>
+        <h3 className="text-xl font-medium capitalize max-2xl:text-lg w-10/12 max-lg:text-base max-sm:w-[68%] ">{accordion.question}</h3>
 
         <div className="flex justify-center items-center w-13 h-13 rounded-md bg-Orange/95 max-2xl:w-11 max-2xl:h-11">
           <img

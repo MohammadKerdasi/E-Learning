@@ -7,7 +7,7 @@ import TitleLK from "../TitleLK/TitleLK";
 
 export default function HomeBasicLK({text,par,btn,varwidth,fontSize,flex,href}:BasicHome) {
   return (
-    <div className="flex justify-between items-end flex-wrap gap-y-5">
+    <div className="flex justify-between items-end flex-wrap gap-y-12.5 max-desktop:gap-y-10 max-md:gap-y-5 w-full">
         <div className={`flex flex-col ${varwidth}`}>
         <TitleLK text={text} fontSize={fontSize}  />
         <PargraphCommonLK par={par} changeColor={true}/>

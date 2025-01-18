@@ -191,7 +191,7 @@ export const dataHaedPricingNA: DataPropsHeadline = {
 }
 
 export const dataHaedAboutNA: DataPropsHeadline = {
-    text: "about skillbridge",
+    text: "About Skillbridge",
     para: "Welcome to our platform, where we are passionate about empowering individuals to master the world of design and development. We offer a wide range of online courses designed to equip learners with the skills and knowledge needed to succeed in the ever-evolving digital landscape.",
     className: "pt-100px",
     classTitle: 'pt-0 lg:pt-[55.5px] desktop:pt-[45px] capitalize',

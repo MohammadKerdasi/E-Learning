@@ -37,29 +37,28 @@ export const courseSlice = createSlice({
             return acc.map((item) => {
               if (typeof key === 'string' && key.includes(',')) {
                 const keys = key.split(',').map((k) => k.trim());
-                return keys.reduce((res: Record<string, any>, k) => {
-                  res[k] = item[k]; 
+                return keys.reduce((res: Record<string, string | number>, k) => {
+                  res[k] = item[k as keyof typeof item];
                   return res;
-                }, {});
+                }, {} as Record<string, string | number>);
               }
-              return item[key];
+              return item[key as keyof typeof item];
             });
           }
-          return acc && acc[key];
+          return acc && acc[key as keyof typeof acc];
         }, obj);
       };
     
       if (id) {
         state.customCard = state.courses.filter((blogItem) => blogItem.id == id);
         const selectedCoursesById = state.customCard.map((courseData) => {
-          const filteredCourse: Record<string, any> = {}; 
+          const filteredCourse: Record<keyof Course, any> = {} as Record<keyof Course, any>;
     
           keepKeys.forEach((key) => {
             if (typeof key === 'string' && key.includes('.')) {
-           
-              filteredCourse[key.split('.')[0]] = getValueByPath(courseData, key); 
+              filteredCourse[key.split('.')[0] as keyof Course] = getValueByPath(courseData, key);
             } else {
-              filteredCourse[key] = courseData[key as keyof Course];
+              filteredCourse[key as keyof Course] = courseData[key as keyof Course];
             }
           });
     
@@ -70,14 +69,13 @@ export const courseSlice = createSlice({
     
       if (typeof id !== 'number') {
         const selectedCourses = state.courses.map((courseData) => {
-          const filteredCourse: Record<string , any> = {}; 
+          const filteredCourse: Record<keyof Course, any> = {} as Record<keyof Course, any>;
     
           keepKeys.forEach((key) => {
             if (typeof key === 'string' && key.includes('.')) {
-             
-              filteredCourse[key.split('.')[0]] = getValueByPath(courseData, key); 
+              filteredCourse[key.split('.')[0] as keyof Course] = getValueByPath(courseData, key);
             } else {
-              filteredCourse[key] = courseData[key as keyof Course];
+              filteredCourse[key as keyof Course] = courseData[key as keyof Course];
             }
           });
     
@@ -86,6 +84,7 @@ export const courseSlice = createSlice({
         state.selectedCourse = selectedCourses;
       }
     },
+    
     
     
     sliceFirstFiveCourses: (state) => {
