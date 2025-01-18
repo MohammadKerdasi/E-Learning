@@ -23,15 +23,17 @@ export default function CoursesCardsMK({ course }: CourseCardProps) {
             flex="block my-auto mx-0"
           />
           <div className="grid grid-cols-3 desktop:gap-7.5 laptop:gap-[20px] gap-[10px]">
-            {data.coursePageImgs && data.coursePageImgs.length > 0 ? (
-              data.coursePageImgs.map((img) => (
-                <img
-                  key={img.id}
-                  src={img.src}
-                  alt=""
-                  className="w-full h-auto desktop:my-7.5 my-[24px] "
-                />
-              ))
+            {course.coursePageImgs ? (
+              Object.values(course.coursePageImgs).map(
+                (img: string, index: number) => (
+                  <img
+                    key={index}
+                    src={img}
+                    alt={`Image ${index + 1}`}
+                    className="w-full h-auto desktop:my-7.5 my-[24px]"
+                  />
+                )
+              )
             ) : (
               <p>No images available.</p>
             )}
@@ -54,23 +56,30 @@ export default function CoursesCardsMK({ course }: CourseCardProps) {
             </p>
           </div>
           <div className="flex flex-col border border-White/95 desktop:rounded-xl laptop:rounded-[10px] rounded-lg">
-            {course.coursePageData.map((item ,index) => (
+            {course.coursePageData.map((item, index) => (
               <div key={index}>
-                <p className="py-[20px] px-7.5 font-semibold desktop:text-2xl border-b-2 border-white/95">{item.secTitle}</p>
-              
+                <p className="py-[20px] px-7.5 font-semibold desktop:text-2xl border-b-2 border-white/95">
+                  {item.secTitle}
+                </p>
               </div>
             ))}
-              <div className="flex desktop:justify-around justify-between flex-wrap desktop:flex-row laptop:flex-row flex-col w-full laptop:pt-[6px] laptop:pb-7.5 px-[24px] py-[24px]   ">
-             {course.coursePageDataUl.map((item ,index) => (
-                    <div className="desktop:w-[17.5%] laptop:w-[170px] first:p-0 last:p-0 last:border-0 laptop:border-e laptop:border-e-white/95 laptop:border-b-1 border-b border-white/95 " key={index}>
-                      <div className="mx-auto my-0 desktop:pe-[50px] laptop:pe-[40px] py-[20px]  ">
-                      <p className="desktop:text-[50px] laptop:text-[40px] text-[30px] font-extrabold desktop:mb-[20px] laptop:mb-[14px] mb-[12px]  ">{item.num}</p>
-                      <p className="font-medium desktop:text-lg laptop:text-[16px] text-sm">{item.desc}</p>
-                      </div>
-                    </div>
-                  ))}
-                 
+            <div className="flex desktop:justify-around justify-between flex-wrap desktop:flex-row laptop:flex-row flex-col w-full laptop:pt-[6px] laptop:pb-7.5 px-[24px] py-[24px]   ">
+              {course.coursePageDataUl.map((item, index) => (
+                <div
+                  className="desktop:w-[17.5%] laptop:w-[170px] first:p-0 last:p-0 last:border-0 laptop:border-e laptop:border-e-white/95 laptop:border-b-1 border-b border-white/95 "
+                  key={index}
+                >
+                  <div className="mx-auto my-0 desktop:pe-[50px] laptop:pe-[40px] py-[20px]  ">
+                    <p className="desktop:text-[50px] laptop:text-[40px] text-[30px] font-extrabold desktop:mb-[20px] laptop:mb-[14px] mb-[12px]  ">
+                      {item.num}
+                    </p>
+                    <p className="font-medium desktop:text-lg laptop:text-[16px] text-sm">
+                      {item.desc}
+                    </p>
                   </div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       ))}
