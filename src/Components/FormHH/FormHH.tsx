@@ -50,13 +50,13 @@ export default function FormHH({
     const requiredFields = ['email', 'password'];
     for (const field of requiredFields) {
       if (!formState[field] || formState[field].trim() === '') {
-        showToast(`${field} is required.`, 'error'); // استخدم showToast بدلاً من setErrorMessage
+        showToast(`${field} is required.`, 'error'); 
         return;
       }
     }
   
     if (formState.password && formState.password.length < 8) {
-      showToast('Password must be at least 8 characters long.', 'error'); // استخدم showToast بدلاً من setErrorMessage
+      showToast('Password must be at least 8 characters long.', 'error');
       return;
     }
   
@@ -72,16 +72,16 @@ export default function FormHH({
         dispatch(signup(newUser));
         showToast('User signed up successfully!', 'success');
         navigate("/auth/login");
-      } catch (error) {
-        showToast(error.message || "An unexpected error occurred.", 'error'); // عرض التوست في حالة حدوث خطأ
+      } catch (error : any) {
+        showToast(error.message || "An unexpected error occurred.", 'error');
       }
     } else if (formType === "login") {
       try {
         dispatch(login({ email: formState.email, password: formState.password }));
         showToast('Logged in successfully!', 'success');
-        navigate("/home");
+        navigate("/");
       } catch (error : any) {
-        showToast(error.message || "An unexpected error occurred.", 'error'); // عرض التوست في حالة حدوث خطأ
+        showToast(error.message || "An unexpected error occurred.", 'error'); 
       }
     }
   };
