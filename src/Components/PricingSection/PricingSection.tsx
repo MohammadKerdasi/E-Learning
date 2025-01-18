@@ -19,6 +19,7 @@ const PricingSection = () => {
           text="Our Pricing"
           par="Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in."
           varwidth="w-full md:w-[73%]"
+          fontSize="mb-4 max-desktop:mb-3.5 max-lg:mb-1.5"
         />
         <PricingTabsNA categories={categories} />
       </div>
