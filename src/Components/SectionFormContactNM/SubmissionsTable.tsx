@@ -6,7 +6,7 @@ export default function SubmissionsTable() {
     const submissions: Submission[] = useSelector((state: RootState) => state.contactForm.submissions);
 
     return (
-        <div className="pb-100px px-4 lg:px-60 desktop:px-[132px] ">
+        <div className="pb-25 px-4 lg:px-15 desktop:px-[132px] ">
             <h3 className='text-3xl font-bold mb-5'>Testing</h3>
             <table className="min-w-full bg-white border border-gray-200">
                 <thead>

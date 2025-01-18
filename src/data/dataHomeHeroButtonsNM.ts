@@ -6,5 +6,5 @@ export const data1 = {
 export const data2 = {
     link: '/Pricing',
     textLink: 'View Pricing',
-    className: 'h-[49px] desktop:h-63 border border-1 border-White/95 w-[127px] desktop:w-[159px] bg-White/100 text-Grey/15 hover:border-Orange/50 hover:text-Orange/50'
+    className: 'h-[49px] desktop:h-63 border-[1px] border-White/95 w-[127px] desktop:w-[159px] bg-White/100 text-Grey/15 hover:border-Orange/50 hover:text-Orange/50'
 }

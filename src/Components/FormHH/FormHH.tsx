@@ -12,6 +12,7 @@ import GoogleBtn from "./GoogleBtn";
 import googleIcon from '../../assets/images/login-signup/icon/google-icon.svg'
 import arrow from '../../assets/images/login-signup/icon/arrow.png'
 import LinkHH from "./LinkHH";
+import { showToast } from "../../utils/toast";
 
 export default function FormHH({
   title,
@@ -27,6 +28,11 @@ export default function FormHH({
   const dispatch = useDispatch(); 
   const [formState, setFormState] = useState<{ [key: string]: string }>({});
   const navigate = useNavigate();
+  const [isPasswordVisible, setIsPasswordVisible] = useState(false);
+
+  const handleIconClick = () => {
+    setIsPasswordVisible(!isPasswordVisible);
+  };
   useEffect(() => {
     setFormState({});
   }, [formType]);
@@ -41,34 +47,42 @@ export default function FormHH({
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
   
-    const requiredFields = [ 'email', 'password'];
+    const requiredFields = ['email', 'password'];
     for (const field of requiredFields) {
       if (!formState[field] || formState[field].trim() === '') {
-        alert(`${field} is required.`);
+        showToast(`${field} is required.`, 'error'); // استخدم showToast بدلاً من setErrorMessage
         return;
       }
     }
   
     if (formState.password && formState.password.length < 8) {
-      alert("Password must be at least 8 characters long.");
+      showToast('Password must be at least 8 characters long.', 'error'); // استخدم showToast بدلاً من setErrorMessage
       return;
     }
   
     if (formType === "signup") {
       const newUser = {
-        id: Date.now().toString(), 
+        id: Date.now().toString(),
         name: formState.name,
         email: formState.email,
         password: formState.password,
       };
   
-      dispatch(signup(newUser));
-      console.log("User signed up:", newUser);
-      navigate("/auth/login");
+      try {
+        dispatch(signup(newUser));
+        showToast('User signed up successfully!', 'success');
+        navigate("/auth/login");
+      } catch (error) {
+        showToast(error.message || "An unexpected error occurred.", 'error'); // عرض التوست في حالة حدوث خطأ
+      }
     } else if (formType === "login") {
-      dispatch(login({ email: formState.email, password: formState.password }));
-      console.log("User logged in:", formState);
-      navigate("/home");
+      try {
+        dispatch(login({ email: formState.email, password: formState.password }));
+        showToast('Logged in successfully!', 'success');
+        navigate("/home");
+      } catch (error : any) {
+        showToast(error.message || "An unexpected error occurred.", 'error'); // عرض التوست في حالة حدوث خطأ
+      }
     }
   };
 
@@ -83,6 +97,8 @@ export default function FormHH({
           key={`input-${index}`}
           data={{
             ...data,
+            type: data.name === 'password' ? (isPasswordVisible ? 'text' : 'password'): data.type,
+            onClickIcon: handleIconClick,
             onChangeInput: (e) => handleInputChange(data.name, e.target.value),
             value: formState[data.name] || "",
           }}

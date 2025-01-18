@@ -71,6 +71,7 @@ export default {
         '57' : '57.6%',     
         '1860px': '1860px',
         'nav' : '132px',
+        '25' : '100px',
       },
       fontSize: {
         '2.5xl' : '28px',
@@ -117,7 +118,8 @@ export default {
         // 'tablet': '640px',
         // 'laptop': '1024px', نستخدم بدالها lg
         'desktop': '1441px',
-        '1600': '1600px'
+        '1600': '1600px',
+        '1250': '1250px'
       },
 
       keyframes: {
