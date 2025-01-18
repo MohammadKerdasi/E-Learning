@@ -8,7 +8,7 @@ export default function FooterH({copyRight , Socila ,logo , Info , Section} : fo
     <footer className=" bg-white desktop:px-40  px-5 lg:px-20">
       <div className=" md:pt-100 md:pb-12.5 pt-12.5 mb-5 gap-y-6 flex lg:flex-nowrap flex-wrap justify-between">
         <div className="flex flex-col md:gap-10 gap-7.5">
-          <img src={logo} className="  desktop:w-54 w-11" alt="logo" />
+          <img src={logo} className="desktop:w-[54px] lg:w-11 w-10" alt="logo"  />
           <div>
           {Info.map((e,i) => (
           <div key={i} className=" flex gap-1.5 md:mb-5 mb-3">

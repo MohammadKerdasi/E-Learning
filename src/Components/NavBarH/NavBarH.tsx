@@ -21,19 +21,19 @@ export default function NavBarH({ logo, navData }: navProps) {
     <nav
       className={`sticky top-0 z-50 desktop:pt-5 pt-4 pb-5 desktop:pb-6 flex items-center justify-between  transition-all duration-300 ${
         isScrolled
-          ? "bg-White/97 tablet:mx-0 mx-0 shadow-lg px-4 desktop:mx-0 lg:px-20 l600:px-[162px]"
-          : "1600:px-nav desktop:mx-7.5 tablet:mx-5 mx-4 lg:px-60"
+          ? "bg-White/97 tablet:mx-0 mx-0 shadow-lg px-4 desktop:mx-0 desktop:px-40 lg:px-20 "
+          : " desktop:px-nav lg:px-15 desktop:mx-7.5 tablet:mx-5 mx-4 "
       }`}
     >
-      <div className="flex justify-between gap-50 items-center">
-        <img src={logo} className="desktop:w-54 tablet:w-11" alt="logo" />
+      <div className="flex justify-between gap-12.5 items-center">
+        <img src={logo} className="desktop:w-[54px] lg:w-11 w-10" alt="logo" />
         <ul className="lg:flex hidden">
           {navData.map((e, i) => (
             <li key={i}>
               <NavLink
                 className={({ isActive }) =>
                   isActive
-                    ? "py-3.5 px-5 rounded-lg font-normal bg-White/95 h-full transition-all text-sm desktop:text-lg duration-300"
+                    ? "py-3.5 px-5 rounded-lg font-normal  bg-White/95 h-full transition-all text-sm desktop:text-lg desktop:leading-6.5 duration-300"
                     : "py-3.5 px-5 rounded-lg font-normal  h-full text-sm desktop:text-lg "
                 }
                 to={e.path}
