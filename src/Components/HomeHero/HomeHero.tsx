@@ -17,21 +17,21 @@ const logos = [
 export default function HomeHero() {
     return (
         <div className="max-w-largeScreen m-auto desktop:text-lg
-         h-max desktop:pt-[100px] lg:pt-20 pt-10 flex 
+        h-max desktop:pt-25 lg:pt-20 pt-10 flex 
         flex-col items-center justify-center">
             <HeroTitle />
             <div className="mt-4 desktop:mt-5 mb-1.5 desktop:mb-2.5">
                 <H1 text="with Online Design and Development Courses." />
             </div>
-            <p className="leading:[21px] desktop:leading-27 
-            text-center text-Grey/15">
+            <p className="leading-5.6 desktop:leading-6.5 
+            text-center text-Grey/15 mx-7.5 lg:mx-0">
                 Learn from Industry Experts and Enhance Your Skills.
             </p>
-            <div className="flex gap-3 mt-[50px] desktop:mt-60">
+            <div className="flex gap-3 mt-12.5 desktop:mt-15">
                 <Button data={data1} />
                 <Button data={data2} />
             </div>
-            <div className="w-full mt-30px lg:mt-100px">
+            <div className="w-full mt-7.5 lg:mt-25">
                 <LogoSlider logos={logos} />
             </div>
         </div>
