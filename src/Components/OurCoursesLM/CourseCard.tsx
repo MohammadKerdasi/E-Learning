@@ -16,7 +16,7 @@ export default function CourseCard({ course }: CourseCardProps) {
       <img
         src={firstImage}
         alt={course.title}
-        className="w-full object-cover"
+        className="w-full object-cover desktop:min-h-[380px] lg:min-h-[267px] max-h-[172px] "
       />
 
       <div className="py-6 desktop:py-7.5">

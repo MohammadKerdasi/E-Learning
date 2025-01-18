@@ -12,9 +12,6 @@ export default function CardBenefit({ numberB, title, par, imag }: benefit) {
           <TitleH3 title={title} />
         </div>
         <PargraphCommonLK par={par} />
-        <p className="text-Grey/30 font-normal text-sm lg:text-base 2xl:text-lg">
-          {par}
-        </p>
       </div>
       <div className="flex justify-end">
         <div className="size-13.8 2xl:size-18 rounded-md 2xl:rounded-lg flex justify-center items-center border border-White/95 bg-White/99">
