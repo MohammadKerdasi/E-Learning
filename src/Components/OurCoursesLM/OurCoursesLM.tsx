@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from "react-redux";
 import HomeBasicLK from "../HomeBasicLK/HomeBasicLK";
-import CourseCard from "../CourseCard";
+import CourseCard from "./CourseCard";
 import { Course } from "./../../interfaces";
 import { useEffect } from "react";
 import { showSomeCourse } from "../../redux/slice";
@@ -21,6 +21,7 @@ export default function OurCoursesLM() {
           "name",
           "title",
           "btn",
+          "coursePageImgs.src1" ,
           "id",
         ],
       })
@@ -28,8 +29,9 @@ export default function OurCoursesLM() {
     console.log(selectedBlogs);
     
   },[dispatch]);
+  
   return (
-    <div className="py-13 lg:py-25">
+    <div className="py-10 lg:py-20 desktop:py-25">
       <HomeBasicLK
         varwidth="w-full md:w-[73%]"
         text="Our Courses"
@@ -38,7 +40,7 @@ export default function OurCoursesLM() {
         href={`/Courses`}
       />
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-7.5 pt-[40px] lg:pt-[60px] desktop:pt-20">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-7.5 pt-10 lg:pt-15 desktop:pt-20">
         {selectedBlogs.map((course: Course) => {
           return <CourseCard key={course.id} course={course} />;
         })}

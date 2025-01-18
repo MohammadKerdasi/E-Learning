@@ -1,10 +1,5 @@
 import { Course } from "../interfaces"
-import Course_img1 from '../assets/images/home/our-courses/design.png'
 import Course_img2 from '../assets/images/home/our-courses/adv-javascript.png'
-import Course_img3 from '../assets/images/home/our-courses/frontend.png'
-import Course_img4 from '../assets/images/home/our-courses/graphic-design.png'
-import Course_img5 from '../assets/images/home/our-courses/mobile-app.png'
-import Course_img6 from '../assets/images/home/our-courses/ui-ux.png'
 import CoursesPage_img1 from '../assets/images/courses/all-courses/Image (11).png'
 import CoursesPage_img2 from '../assets/images/courses/all-courses/Image (12).png'
 import CoursesPage_img3 from '../assets/images/courses/all-courses/Image (13).png'
@@ -33,7 +28,6 @@ export const courses: Course[] = [
       {id:2,name:'Beginner'}
       ],
       description: 'Learn the fundamentals of web design, including HTML, CSS, and responsive design principles. Develop the skills to create visually appealing and user-friendly websites.',
-      image: Course_img1,
       btn:'Get it Now',
       coursePageData : [
         {
@@ -46,27 +40,20 @@ export const courses: Course[] = [
             href : '',
             }
           ,
-          coursePageImgs :
-          [
-            {
-              id: 1,
-              src : CoursesPage_img1
-            },
-            {
-              id: 2,
-              src : CoursesPage_img2
-            },
-            {
-              id: 3,
-              src : CoursesPage_img3
-            },
-          ],
+          
 
           secTitle : 'Curriculum',
       
 
         }
-      ]
+      ],
+      coursePageImgs :
+          {
+              src1 : CoursesPage_img1,
+              src2 : CoursesPage_img2,
+              src3 : CoursesPage_img3,
+            }
+          
       ,coursePageDataUl : [
         {
           id : 1,
@@ -206,7 +193,6 @@ export const courses: Course[] = [
         {id:2,name:'Intermediate'}
         ],
       description: 'Master the art of creating intuitive user interfaces (UI) and enhancing user experiences (UX). Learn design principles, wireframing, prototyping, and usability testing techniques.',
-      image:Course_img6,
       btn:'Get it Now',
       coursePageData : [
         {
@@ -219,26 +205,18 @@ export const courses: Course[] = [
             href : '',
             }
           ,
-          coursePageImgs :
-          [
-            {
-              id: 1,
-              src : CoursesPage_img4
-            },
-            {
-              id: 2,
-              src : CoursesPage_img5
-            },
-            {
-              id: 3,
-              src : CoursesPage_img6
-            },
-          ],
+         
           secTitle : 'Curriculum',
          
 
         }
-      ]
+      ],
+      coursePageImgs :
+      {
+          src1 : CoursesPage_img4,
+          src2 : CoursesPage_img5,
+          src3 : CoursesPage_img6,
+      }
       ,coursePageDataUl : [
         {
           id : 1,
@@ -378,7 +356,6 @@ export const courses: Course[] = [
         {id:2,name:'Intermediate'}
         ],
       description: 'Dive into the world of mobile app development. Learn to build native iOS and Android applications using industry-leading frameworks like Swift and Kotlin.',
-      image: Course_img5,
       btn:'Get it Now',
       coursePageData : [
         {
@@ -391,26 +368,21 @@ export const courses: Course[] = [
             href : '',
             }
           ,
-          coursePageImgs :
-          [
-            {
-              id: 1,
-              src : CoursesPage_img7
-            },
-            {
-              id: 2,
-              src : CoursesPage_img8
-            },
-            {
-              id: 3,
-              src : CoursesPage_img9
-            },
-          ],
+          
           secTitle : 'Curriculum',
       
 
         }
       ],
+      coursePageImgs :
+            {
+              src1 : CoursesPage_img7,
+          
+              src2 : CoursesPage_img8,
+           
+              src3 : CoursesPage_img9,
+            },
+          
       coursePageDataUl : [
         {
           id : 1,
@@ -549,7 +521,7 @@ export const courses: Course[] = [
         {id:2,name:'Beginner'}
         ],
       description: 'Discover the fundamentals of graphic design, including typography, color theory, layout design, and image manipulation techniques. Create visually stunning designs for print and digital media.',
-      image: Course_img4,
+     
       btn:'Get it Now',
       coursePageData : [
         {
@@ -562,26 +534,21 @@ export const courses: Course[] = [
             href : '',
             }
           ,
-          coursePageImgs :
-          [
-            {
-              id: 1,
-              src : CoursesPage_img10
-            },
-            {
-              id: 2,
-              src : CoursesPage_img11
-            },
-            {
-              id: 3,
-              src : CoursesPage_img12
-            },
-          ],
+          
           secTitle : 'Curriculum',
          
 
         }
       ],
+      coursePageImgs :
+          {
+              src1 : CoursesPage_img10,
+          
+              src2 : CoursesPage_img11,
+        
+              src3 : CoursesPage_img12,
+         
+          },
       coursePageDataUl : [
         {
           id : 1,
@@ -721,7 +688,6 @@ export const courses: Course[] = [
         {id:2,name:'Intermediate'}
         ],
       description: 'Become proficient in front-end web development. Learn HTML, CSS, JavaScript, and popular frameworks like Bootstrap and React. Build interactive and responsive websites.',
-      image: Course_img3,
       btn:'Get it Now',
       coursePageData : [
         {
@@ -733,24 +699,21 @@ export const courses: Course[] = [
             href: '',
           },
 
-          coursePageImgs: [
-            {
-              id: 1,
-              src: CoursesPage_img13
-            },
-            {
-              id: 2,
-              src: CoursesPage_img14
-            },
-            {
-              id: 3,
-              src: CoursesPage_img15
-            },
-          ],
+          
           secTitle: 'Curriculum',
-          // ul: []
+          
         }
       ],
+      coursePageImgs: 
+        {
+          
+          src1: CoursesPage_img13,
+       
+          src2: CoursesPage_img14,
+        
+          src3: CoursesPage_img15,
+        },
+      
       coursePageDataUl : [
       
             {
@@ -891,7 +854,6 @@ export const courses: Course[] = [
         {id:2,name:'Advance'}
         ],
       description: 'Take your JavaScript skills to the next level. Explore advanced concepts like closures, prototypes, asynchronous programming, and ES6 features. Build complex applications with confidence.',
-      image: Course_img2,
       btn:'Get it Now',
       coursePageData : [
         {
@@ -904,17 +866,21 @@ export const courses: Course[] = [
             href : '',
             }
           ,
-          coursePageImgs :
-          {
-            img_1 : CoursesPage_img1 ,
-            img_2 : CoursesPage_img2 ,
-            img_3 : CoursesPage_img3 ,
-          },
+          
           secTitle : 'Curriculum',
           
 
         }
       ]
+      ,coursePageImgs :
+        {
+          
+          src1: Course_img2,
+    
+          src2 :  CoursesPage_img2 ,
+        
+          src3 : CoursesPage_img3 
+        }
       , coursePageDataUl :[
         {
           id : 1,

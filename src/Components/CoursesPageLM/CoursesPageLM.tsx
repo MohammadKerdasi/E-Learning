@@ -11,7 +11,7 @@ export default function CoursesPageLM() {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(showSomeCourse({ keepKeys: ['image', 'description', 'category', 'name', 'title', 'btn', 'id', 'coursePageData', 'CoursePageImg','coursePageDataUl.num,desc'] }));
+    dispatch(showSomeCourse({ keepKeys: ['coursePageImgs', 'description', 'category', 'name', 'title', 'btn', 'id', 'coursePageData', 'CoursePageImg','coursePageDataUl.num,desc'] }));
     dispatch(sliceFirstFiveCourses())
     console.log(selectedCourses);
     

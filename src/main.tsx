@@ -13,6 +13,7 @@ import Contact from './pages/Contact/Contact.tsx';
 import CoursesOpen from './pages/CoursesOoen/CoursesOpen.tsx';
 import Auth from './pages/Auth/Auth.tsx';
 import ProtectedRoute from './hooks/ProtectedRoute.tsx';
+import Error from './pages/Error/Error.tsx';
 
 const routes = createBrowserRouter(
   [
@@ -58,10 +59,11 @@ const routes = createBrowserRouter(
         },
         {
           path : '*',
-          element: <Home/>
+          element: <Error/>
         }
       ],
     },
+    
   ],
   {
     basename : '/E-Learning/'

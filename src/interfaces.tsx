@@ -5,19 +5,15 @@ export interface Course {
   name: string;
   category: Category[];
   description: string;
-  image: string;
   btn: string;
   coursePageData: CoursePageData[];
-  coursePageDataUl : items[]
-  
+  coursePageDataUl : items[];
+  coursePageImgs : {
+      src1 : string,
+      src2 : string,
+      src3 : string,
+  }
 
-}
-export interface lessonsLK{
-    id: number,
-    title: string,
-    duration: string,
-    lessonNum: string,
-  
 }
 export interface CoursePageData {
   id: number;
@@ -27,23 +23,18 @@ export interface CoursePageData {
     view: string;
     href: string;
   };
-  coursePageImgs : [
-    {
-      id : number,
-      src : string,
-    },
-    {
-      id : number,
-      src : string,
-    },
-    {
-      id : number,
-      src : string,
-    },
-]
   secTitle: string;
   
 }
+// lourina ___________________________________________________________________________________________
+export interface lessonsLK{
+    id: number,
+    title: string,
+    duration: string,
+    lessonNum: string,
+  
+}
+
 export interface items {
   id: number;
   num: string;
@@ -55,8 +46,41 @@ interface Category {
   id: number;
   name: string;
 }
+export interface TitleInterface{
+  text: string;
+  fontSize?: string;
+  adding?:string
+}
+ export interface BasicHome {
+  text: string;
+  par: string;
+  btn?: string;
+  varwidth?: string;
+  fontSize?: string;
+  flex? : string;
+  href?: string;
+}
 
+export interface datatest{
+  id:number,
+  par:string,
+  imag:string,
+  theName: string,
+  btn:string
+}
 
+export interface benefit{
+  id?:number,
+  imag:string,
+  numberB:string,
+  title:string,
+  par:string
+}
+
+export interface parCommon{
+  changeColor?:boolean,
+  par:string
+ }
 // Noura ________________________________________________________________________________________
 export interface DataPropsVideoSection {
   img: string;
@@ -183,15 +207,7 @@ export interface JoinProps {
 
 
 
-export interface BasicHome {
-  text: string;
-  par: string;
-  btn?: string;
-  varwidth?: string;
-  fontSize?: string;
-  flex? : string;
-  href?: string;
-}
+
 // haneen ___________________________________________________________________________________
 export interface TopBanner {
   text1: string;
@@ -258,29 +274,11 @@ interface Socila {
   title: string;
   icon: Array<string>;
 }
-// -------Testmonials----- //
-export interface datatest{
-  id:number,
-  par:string,
-  imag:string,
-  theName: string,
-  btn:string
-}
+
 export interface CardsState {
   cards: datatest[];
 }
-// -------benefits-------- //
-export interface benefit{
-  id?:number,
-  imag:string,
-  numberB:string,
-  title:string,
-  par:string
-}
- export interface parCommon{
-  changeColor?:boolean,
-  par:string
- }
+
  export interface SingleCardState {
   card: CardsState | null; 
 }
