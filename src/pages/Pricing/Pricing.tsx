@@ -12,12 +12,12 @@ export default function Pricing() {
     (state: RootState) => state.pricing.filteredPricingCards
   );
   return (
-    <div>
+    <div className="pb-25 max-desktop:pb-20 max-sm:pb-12.5">
       <HeadlineNM data={dataHaedPricingNA} />
       <div className="px-4 lg:px-20 desktop:px-40">
-        <PricingTabsNA categories={categories} className="m-auto w-fit mb-12.5"/>
+        <PricingTabsNA categories={categories} className="m-auto w-fit mb-12.5 max-md:mb-10"/>
 
-        <div className="flex justify-between px-5-80 py-20 gap-7.5 bg-white rounded-xl max-md:flex-wrap">
+        <div className="flex justify-between px-5-80 py-20 gap-7.5 bg-white rounded-xl max-md:flex-wrap max-desktop:py-12.5 max-sm:p-5">
           {filteredPricingCards.map((item, i: number) => (
             <PricingCardNA key={i} pricing={item} />
           ))}
