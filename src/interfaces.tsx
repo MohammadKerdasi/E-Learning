@@ -1,7 +1,7 @@
 // mohammad ________________________________________________________________________________________
 export interface Course {
   id: number;
-  title: string;
+  title : string;
   name: string;
   category: Category[];
   description: string;
@@ -49,7 +49,7 @@ interface Category {
 export interface TitleInterface{
   text: string;
   fontSize?: string;
-  adding?:string
+  adding?:string;
 }
  export interface BasicHome {
   text: string;
@@ -218,6 +218,7 @@ export interface TopBanner {
 export interface navProps {
   logo: string;
   navData: navData[];
+  className? : string;
 }
 interface navData {
   path: string;

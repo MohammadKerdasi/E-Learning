@@ -14,9 +14,9 @@ const logos = [
     zapier, spotify, zoom, amazon, adope, notion, netflex
 ]
 
-export default function HomeHero() {
+export default function HomeHero({pargraph} : {pargraph : string}) {
     return (
-        <div className="max-w-largeScreen m-auto desktop:text-lg
+        <div className="desktop:text-lg
         h-max desktop:pt-25 lg:pt-20 pt-10 flex 
         flex-col items-center justify-center">
             <HeroTitle />
@@ -25,7 +25,7 @@ export default function HomeHero() {
             </div>
             <p className="leading-5.6 desktop:leading-6.5 
             text-center text-Grey/15 mx-7.5 lg:mx-0">
-                Learn from Industry Experts and Enhance Your Skills.
+                {pargraph}
             </p>
             <div className="flex gap-3 mt-12.5 desktop:mt-15">
                 <Button data={data1} />

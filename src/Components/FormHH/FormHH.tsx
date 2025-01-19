@@ -1,17 +1,17 @@
 import { useDispatch } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
 import {formDataHH } from "../../interfaces";
-import PargraphCommonLK from "../PargraphCommonLK/PargraphCommonLK";
-import InputNM from "../SectionFormContactNM/InputNM";
-import TitleLK from "../TitleLK/TitleLK";
-import ButtonSubmit from "../SectionFormContactNM/ButtonSubmitNM";
+import PargraphCommonLK from "./../../components/PargraphCommonLK/PargraphCommonLK";
+import InputNM from "./../../components/SectionFormContactNM/InputNM";
+import TitleLK from "./../../components/TitleLK/TitleLK";
+import ButtonSubmit from "./../../components/SectionFormContactNM/ButtonSubmitNM";
 import { signup, login } from "../../redux/authSlice"; 
 import { useState, useEffect } from "react";
-import CheckboxWithLabelH from "../CheckboxWithLabel/CheckboxWithLabelH";
-import GoogleBtn from "./GoogleBtn";
+import CheckboxWithLabelH from "./../../components/CheckboxWithLabel/CheckboxWithLabelH";
+import GoogleBtn from "./../../components/FormHH/GoogleBtn";
 import googleIcon from '../../assets/images/login-signup/icon/google-icon.svg'
 import arrow from '../../assets/images/login-signup/icon/arrow.png'
-import LinkHH from "./LinkHH";
+import LinkHH from "./../../components/FormHH/LinkHH";
 import { showToast } from "../../utils/toast";
 
 export default function FormHH({
@@ -50,13 +50,13 @@ export default function FormHH({
     const requiredFields = ['email', 'password'];
     for (const field of requiredFields) {
       if (!formState[field] || formState[field].trim() === '') {
-        showToast(`${field} is required.`, 'error'); // استخدم showToast بدلاً من setErrorMessage
+        showToast(`${field} is required.`, 'error'); 
         return;
       }
     }
   
     if (formState.password && formState.password.length < 8) {
-      showToast('Password must be at least 8 characters long.', 'error'); // استخدم showToast بدلاً من setErrorMessage
+      showToast('Password must be at least 8 characters long.', 'error');
       return;
     }
   
@@ -72,22 +72,22 @@ export default function FormHH({
         dispatch(signup(newUser));
         showToast('User signed up successfully!', 'success');
         navigate("/auth/login");
-      } catch (error) {
-        showToast(error.message || "An unexpected error occurred.", 'error'); // عرض التوست في حالة حدوث خطأ
+      } catch (error : any) {
+        showToast(error.message || "An unexpected error occurred.", 'error');
       }
     } else if (formType === "login") {
       try {
         dispatch(login({ email: formState.email, password: formState.password }));
         showToast('Logged in successfully!', 'success');
-        navigate("/home");
+        navigate("/");
       } catch (error : any) {
-        showToast(error.message || "An unexpected error occurred.", 'error'); // عرض التوست في حالة حدوث خطأ
+        showToast(error.message || "An unexpected error occurred.", 'error'); 
       }
     }
   };
 
   return (
-    <form onSubmit={handleSubmit} className={` 1600:w-[41.25%] lg:w-[42.19%] desktop:p-12.5 md:p-10 p-7.5  desktop:rounded-xl md:rounded-[10px] bg-white`}>
+    <form onSubmit={handleSubmit} className={` 1600:w-[41.25%] lg:w-[42.19%] desktop:p-12.5 md:p-10 p-7.5  desktop:rounded-xl rounded-[10px] bg-white`}>
       <div className=" flex flex-col text-center justify-center items-center desktop:mb-50 md:mb-10 mb-7.5  text- ">
         <TitleLK text={title} fontSize="desktop:!text-5xl desktop:mb-3 md:mb-2 mb-2 md:!text-[38px] md:!leading-[48px] !leading-[35.42px] !text-[28px]" />
         <PargraphCommonLK par={p} />

@@ -6,9 +6,9 @@ import IconBoxNM from "../SectionFormContactNM/IconBoxNM";
 export default function FooterH({copyRight , Socila ,logo , Info , Section} : footerData) {
   return (
     <footer className=" bg-white desktop:px-40  px-5 lg:px-20">
-      <div className=" md:pt-100 md:pb-12.5 pt-12.5 mb-5 gap-y-6 flex lg:flex-nowrap flex-wrap justify-between">
+      <div className=" desktop:pt-25 desktop:pb-12.5 lg:pt-15 lg:pb-7.5 pt-12.5 pb-5 gap-y-6 flex lg:flex-nowrap flex-wrap justify-between">
         <div className="flex flex-col md:gap-10 gap-7.5">
-          <img src={logo} className="  desktop:w-54 w-11" alt="logo" />
+          <img src={logo} className="desktop:w-[54px] lg:w-11 w-10" alt="logo"  />
           <div>
           {Info.map((e,i) => (
           <div key={i} className=" flex gap-1.5 md:mb-5 mb-3">
@@ -43,7 +43,7 @@ export default function FooterH({copyRight , Socila ,logo , Info , Section} : fo
              ))}
         </div>
       </div>
-      <div className="text-center md:pt-12.5 md:pb-7.5 pt-5 pb-6 border-t border-White/95 ">
+      <div className="text-center  desktop:pt-12.5  desktop:pb-7.5 lg:pt-7.5 lg:pb-5 pt-5 pb-6 border-t border-White/95 ">
         <p className=" text-Grey/40  desktop:text-lg text-sm font-normal leading-27">{copyRight}</p>
       </div>
     </footer>
