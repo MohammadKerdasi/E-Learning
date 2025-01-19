@@ -72,6 +72,7 @@ export default {
         '1860px': '1860px',
         'nav' : '132px',
         '25' : '100px',
+        '2000': '2000px'
       },
       fontSize: {
         '2.5xl' : '28px',
