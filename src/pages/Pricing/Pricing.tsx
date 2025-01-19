@@ -12,7 +12,7 @@ export default function Pricing() {
     (state: RootState) => state.pricing.filteredPricingCards
   );
   return (
-    <div className="pb-25 max-w-2000 m-auto max-desktop:pb-20 max-sm:pb-12.5">
+    <div className="pb-10 lg:pb-20 desktop:pb-paddingBottom150 max-w-2000 m-auto">
       <HeadlineNM data={dataHaedPricingNA} />
       <div className="px-4 lg:px-20 desktop:px-40">
         <PricingTabsNA categories={categories} className="m-auto w-fit mb-12.5 max-md:mb-10"/>
