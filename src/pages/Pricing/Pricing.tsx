@@ -17,7 +17,7 @@ export default function Pricing() {
       <div className="px-4 lg:px-20 desktop:px-40">
         <PricingTabsNA categories={categories} className="m-auto w-fit mb-12.5 max-md:mb-10"/>
 
-        <div className="flex justify-between px-5-80 py-20 gap-7.5 bg-white rounded-xl max-md:flex-wrap max-desktop:py-12.5 max-sm:p-5">
+        <div className="flex justify-between px-5-80 py-20 gap-7.5 bg-white rounded-xl max-1250:flex-wrap max-1250:justify-center max-desktop:py-12.5 max-sm:p-5">
           {filteredPricingCards.map((item, i: number) => (
             <PricingCardNA key={i} pricing={item} />
           ))}
