@@ -12,9 +12,9 @@ const AccordionNA = ({ accordion, isOpen, onToggle }: AccordionNAProps) => {
         entries.forEach((entry) => {
           if (entry.target instanceof HTMLElement) {
             if (entry.isIntersecting) {
-              entry.target.classList.add("-translate-y-10");
+              entry.target.classList.add("-translate-y-6");
             } else {
-              entry.target.classList.remove( "-translate-y-10");
+              entry.target.classList.remove( "-translate-y-6");
             }
           }
         });
