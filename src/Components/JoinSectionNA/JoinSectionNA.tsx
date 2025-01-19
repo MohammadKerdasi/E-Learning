@@ -14,7 +14,7 @@ export const JoinSectionNA = ({ join }: { join: JoinProps }) => {
         <p className="pt-5 text-Grey/30 text-lg max-desktop:text-base max-desktop:pt-4 max-md:text-sm">{join.desc}</p>
       </div>
 
-      <Link to={join.link} className="bg-Orange/50 text-white capitalize w-[129px] max-desktop:w-[103px] py-4.5 z-10 text-lg rounded-lg font-semibold text-center max-desktop:text-sm  hover:bg-neutral-800 hover:text-White/97 transition duration-500 ease-in-out cursor-pointer"> {join.btn} </Link>
+      <Link to={join.link} className="bg-Orange/50 text-white capitalize w-[129px] max-desktop:w-[103px] py-4.5 max-desktop:py-[14.5px] z-10 text-lg rounded-lg font-semibold text-center max-desktop:text-sm  hover:bg-neutral-800 hover:text-White/97 transition duration-500 ease-in-out cursor-pointer"> {join.btn} </Link>
 
       <img src={join.img} alt="shape" className="absolute w-[500px] right-[9%] max-sm:w-[190px] max-sm:bottom-0 max-sm:-right-[4%]"/>
     </div>
