@@ -17,7 +17,7 @@ export default function CoursesCardsMK({ course }: CourseCardProps) {
           <HomeBasicLK
             varwidth="w-full md:w-[73%]"
             fontSize="desktop:!text-[24px] desktop:leading-36 desktop:pb-10 md:!text-[20px] md:leading-7.5 md:pb-6 leading-27 !text-18 pb-1"
-            text={data.title}
+            text={course.title}
             par={data.desc}
             btn={data.btn.view}
             flex="block my-auto mx-0"
