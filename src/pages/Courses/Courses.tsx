@@ -9,6 +9,6 @@ export default function Courses() {
       <div className="px-4 lg:px-20 desktop:px-40">
         <CoursesPageLM />
       </div>
-      </div>
+    </div>
   )
 }
