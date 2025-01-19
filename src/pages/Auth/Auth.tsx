@@ -1,6 +1,6 @@
 import { useLocation } from "react-router-dom";
-import FormHH from "../../Components/FormHH/FormHH";
-import SliderSectionHH from "../../Components/SliderSectionHH/SliderSectionHH";
+import FormHH from "../../components/FormHH/FormHH";
+import SliderSectionHH from "../../components/SliderSectionHH/SliderSectionHH";
 import { dataLoginLink, dataLoginSubmit, dataSignUpLink, dataSignUpSubmit, LoginInputs, SignupInputs } from "../../data/dataInputHH";
 
 

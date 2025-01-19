@@ -1,6 +1,6 @@
 
 import { Course } from "../../interfaces";
-import PargraphCommonLK from "../PargraphCommonLK/PargraphCommonLK";
+import PargraphCommonLK from "./../../components/PargraphCommonLK/PargraphCommonLK";
 
 interface CourseCardProps {
   course: Course;
@@ -16,7 +16,7 @@ export default function CourseCard({ course }: CourseCardProps) {
       <img
         src={firstImage}
         alt={course.title}
-        className="w-full object-cover"
+        className="w-full object-cover desktop:min-h-[380px] lg:min-h-[267px] max-h-[172px] rounded-lg "
       />
 
       <div className="py-6 desktop:py-7.5">

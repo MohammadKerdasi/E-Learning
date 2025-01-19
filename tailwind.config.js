@@ -66,12 +66,14 @@ export default {
         // 'paddingBottom100': '100px',
         // 'paddingBottom50': '50px',
         'largeScreen': '1597px',
+        '5-100': '6.5%',
         '5-80': '5%',
         '5.5-30': '5.5%',
         '57' : '57.6%',     
         '1860px': '1860px',
         'nav' : '132px',
         '25' : '100px',
+        '2000': '2000px'
       },
       fontSize: {
         '2.5xl' : '28px',
@@ -90,6 +92,7 @@ export default {
         '7.5' : '30px',
         '36' : '36px',
         '11': '42px',
+        '11.5': '43px',
         '12': '57px',
         '15' : '60px',
         '13.8': '72px',
@@ -104,7 +107,6 @@ export default {
       {
         // '50' : '50px' استخدمنا بدالها 12.5 بالبادينغ
       },
-     
       width :
       {
         // '54' : '54px', استبدلناها ب 13.8
@@ -121,7 +123,6 @@ export default {
         '1600': '1600px',
         '1250': '1250px'
       },
-
       keyframes: {
         scroll: {
           '0%': { transform: 'translateX(0)' },
@@ -144,4 +145,4 @@ export default {
     },
   },
   plugins: [],
-}
+};
