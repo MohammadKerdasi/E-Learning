@@ -11,7 +11,7 @@ import {
 
 export default function AboutUs() {
   return (
-    <div className="max-w-2000 pb-25 max-desktop:pb-20 max-sm:pb-12.5">
+    <div className="max-w-2000 m-auto pb-25 max-desktop:pb-20 max-sm:pb-12.5">
       <HeadlineNM data={dataHaedAboutNA} />
       <div className="px-4 lg:px-20 desktop:px-40">
         <div className="pb-25 max-desktop:pb-20 max-md:pb-12.5">
