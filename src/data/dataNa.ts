@@ -183,19 +183,13 @@ export const accordionData: Accordion[] = [
 ]
 
 export const dataHaedPricingNA: DataPropsHeadline = {
-    text: "Our pricings",
+    text: "Our Pricings",
     para: "Welcome to SkillBridge's Pricing Plan page, where we offer two comprehensive options to cater to your needs: Free and Pro. We believe in providing flexible and affordable pricing options for our services. Whether you're an individual looking to enhance your skills or a business seeking professional development solutions, we have a plan that suits you. Explore our pricing options below and choose the one that best fits your requirements.",
-    // className: "pt-100px",
-    // classTitle: 'pt-0 lg:pt-[55.5px] desktop:pt-[45px] capitalize',
-    // classPara: 'w-[46.867679197%]'
 }
 
 export const dataHaedAboutNA: DataPropsHeadline = {
     text: "About Skillbridge",
     para: "Welcome to our platform, where we are passionate about empowering individuals to master the world of design and development. We offer a wide range of online courses designed to equip learners with the skills and knowledge needed to succeed in the ever-evolving digital landscape.",
-    // className: "pt-100px",
-    // classTitle: 'pt-0 lg:pt-[55.5px] desktop:pt-[45px] capitalize',
-    // classPara: 'w-[46.867679197%]'
 }
 
 export const achievementData: AboutCardsProps[] = [
