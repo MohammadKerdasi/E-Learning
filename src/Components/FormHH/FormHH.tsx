@@ -87,7 +87,7 @@ export default function FormHH({
   };
 
   return (
-    <form onSubmit={handleSubmit} className={` 1600:w-[41.25%] lg:w-[42.19%] desktop:p-12.5 md:p-10 p-7.5  desktop:rounded-xl md:rounded-[10px] bg-white`}>
+    <form onSubmit={handleSubmit} className={` 1600:w-[41.25%] lg:w-[42.19%] desktop:p-12.5 md:p-10 p-7.5  desktop:rounded-xl rounded-[10px] bg-white`}>
       <div className=" flex flex-col text-center justify-center items-center desktop:mb-50 md:mb-10 mb-7.5  text- ">
         <TitleLK text={title} fontSize="desktop:!text-5xl desktop:mb-3 md:mb-2 mb-2 md:!text-[38px] md:!leading-[48px] !leading-[35.42px] !text-[28px]" />
         <PargraphCommonLK par={p} />

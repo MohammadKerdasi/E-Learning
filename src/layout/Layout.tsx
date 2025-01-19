@@ -7,11 +7,10 @@ import arrow from '../assets/images/TopBanner/icon/Icon .png';
 import logo from '../assets/images/nav/image/big-logo.svg';
 import { nav } from "../data/navData";
 import { footerInfo, footerSection, footerSocial } from "../data/footerData";
-import ScrollToTopNM from "../components/ScrollToTopNM/ScrollToTopNM";
+import ScrollToTopNM from "../Components/ScrollToTopNM/ScrollToTopNM";
 import { ToastProvider } from "../utils/toast";
 import { useState } from "react";
 import Intro from "../components/Intro/Intro";
-
 export default function Layout() {
   const [showIntro, setShowIntro] = useState(true);
 
