@@ -3,7 +3,7 @@ import { AboutCardsProps } from '../../interfaces'
 export const AboutCardNA = ({ aboutCardData }: { aboutCardData: AboutCardsProps }) => {
   return (
     <div className='p-12.5 w-[48%] bg-white rounded-xl max-desktop:p-10 max-md:w-full'>
-        <div className='w-17 h-17 flex justify-center items-center rounded-lg border border-Orange/90 bg-Orange/97 max-desktop:w-14 max-desktop:h-14 '>
+        <div className='w-17 h-17 flex justify-center items-center rounded-lg border border-Orange/90 animate-border-gradient bg-Orange/97 max-desktop:w-14 max-desktop:h-14 '>
             <img src={aboutCardData.img} alt={aboutCardData.head} />
         </div>
 
