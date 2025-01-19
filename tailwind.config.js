@@ -107,7 +107,6 @@ export default {
       {
         // '50' : '50px' استخدمنا بدالها 12.5 بالبادينغ
       },
-     
       width :
       {
         // '54' : '54px', استبدلناها ب 13.8
@@ -124,7 +123,6 @@ export default {
         '1600': '1600px',
         '1250': '1250px'
       },
-
       keyframes: {
         scroll: {
           '0%': { transform: 'translateX(0)' },
@@ -147,4 +145,4 @@ export default {
     },
   },
   plugins: [],
-}
+};
