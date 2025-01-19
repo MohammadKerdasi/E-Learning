@@ -1,5 +1,5 @@
 import { benefit } from "../../interfaces";
-import PargraphCommonLK from "../PargraphCommonLK/PargraphCommonLK";
+import PargraphCommonLK from "./../../components/PargraphCommonLK/PargraphCommonLK";
 import TitleAsNumber from "./TitleAsNumber";
 import TitleH3 from "./TitleH3";
 

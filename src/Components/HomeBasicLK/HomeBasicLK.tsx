@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { BasicHome } from "../../interfaces";
-import PargraphCommonLK from "../PargraphCommonLK/PargraphCommonLK";
-import TitleLK from "../TitleLK/TitleLK";
+import PargraphCommonLK from "./../../components/PargraphCommonLK/PargraphCommonLK";
+import TitleLK from "./../../components/TitleLK/TitleLK";
 
 
 

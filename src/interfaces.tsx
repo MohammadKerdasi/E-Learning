@@ -218,6 +218,7 @@ export interface TopBanner {
 export interface navProps {
   logo: string;
   navData: navData[];
+  className? : string;
 }
 interface navData {
   path: string;

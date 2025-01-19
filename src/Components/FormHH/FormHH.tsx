@@ -1,17 +1,17 @@
 import { useDispatch } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
 import {formDataHH } from "../../interfaces";
-import PargraphCommonLK from "../PargraphCommonLK/PargraphCommonLK";
-import InputNM from "../SectionFormContactNM/InputNM";
-import TitleLK from "../TitleLK/TitleLK";
-import ButtonSubmit from "../SectionFormContactNM/ButtonSubmitNM";
+import PargraphCommonLK from "./../../components/PargraphCommonLK/PargraphCommonLK";
+import InputNM from "./../../components/SectionFormContactNM/InputNM";
+import TitleLK from "./../../components/TitleLK/TitleLK";
+import ButtonSubmit from "./../../components/SectionFormContactNM/ButtonSubmitNM";
 import { signup, login } from "../../redux/authSlice"; 
 import { useState, useEffect } from "react";
-import CheckboxWithLabelH from "../CheckboxWithLabel/CheckboxWithLabelH";
-import GoogleBtn from "./GoogleBtn";
+import CheckboxWithLabelH from "./../../components/CheckboxWithLabel/CheckboxWithLabelH";
+import GoogleBtn from "./../../components/FormHH/GoogleBtn";
 import googleIcon from '../../assets/images/login-signup/icon/google-icon.svg'
 import arrow from '../../assets/images/login-signup/icon/arrow.png'
-import LinkHH from "./LinkHH";
+import LinkHH from "./../../components/FormHH/LinkHH";
 import { showToast } from "../../utils/toast";
 
 export default function FormHH({

@@ -1,4 +1,3 @@
-import React from 'react'
 import { AboutCardsProps } from '../../interfaces'
 
 export const AboutCardNA = ({ aboutCardData }: { aboutCardData: AboutCardsProps }) => {

@@ -1,4 +1,4 @@
-import TitleLK from "../TitleLK/TitleLK";
+import TitleLK from "./../../components/TitleLK/TitleLK";
 import { DataPropsHeadline } from '../../interfaces'
 export default function HeadlineNM({ data , addingData}: { data: DataPropsHeadline , addingData?:string}) {
     const { text, para } = data;

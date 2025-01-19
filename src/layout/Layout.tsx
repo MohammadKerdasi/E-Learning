@@ -10,7 +10,7 @@ import { footerInfo, footerSection, footerSocial } from "../data/footerData";
 import ScrollToTopNM from "../components/ScrollToTopNM/ScrollToTopNM";
 import { ToastProvider } from "../utils/toast";
 import { useState } from "react";
-import Intro from "./../components/Intro/Intro.jsx";
+import Intro from "../components/Intro/Intro";
 
 export default function Layout() {
   const [showIntro, setShowIntro] = useState(true);

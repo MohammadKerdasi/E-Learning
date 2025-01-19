@@ -1,5 +1,5 @@
 import { useEffect, useRef } from "react";
-import { Accordion, AccordionNAProps } from "../../interfaces";
+import { AccordionNAProps } from "../../interfaces";
 import x from "./../../assets/images/home/our-pricing/icon/Union.svg";
 import more from "./../../assets/images/home/questions/icon/moreArrow.svg";
 

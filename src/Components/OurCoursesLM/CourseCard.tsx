@@ -1,6 +1,6 @@
 
 import { Course } from "../../interfaces";
-import PargraphCommonLK from "../PargraphCommonLK/PargraphCommonLK";
+import PargraphCommonLK from "./../../components/PargraphCommonLK/PargraphCommonLK";
 
 interface CourseCardProps {
   course: Course;

@@ -1,5 +1,5 @@
 import { datatest } from "../../interfaces";
-import PargraphCommonLK from "../PargraphCommonLK/PargraphCommonLK";
+import PargraphCommonLK from "./../../components/PargraphCommonLK/PargraphCommonLK";
 
 export default function CardLKHH({ par, imag, btn, theName }: datatest) {
   return (
