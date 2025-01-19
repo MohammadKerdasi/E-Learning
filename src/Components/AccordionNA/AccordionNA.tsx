@@ -12,9 +12,9 @@ const AccordionNA = ({ accordion, isOpen, onToggle }: AccordionNAProps) => {
         entries.forEach((entry) => {
           if (entry.target instanceof HTMLElement) {
             if (entry.isIntersecting) {
-              entry.target.classList.add("-translate-y-0");
+              entry.target.classList.add("-translate-y-6");
             } else {
-              entry.target.classList.remove("-translate-y-0");
+              entry.target.classList.remove( "-translate-y-6");
             }
           }
         });
@@ -36,7 +36,7 @@ const AccordionNA = ({ accordion, isOpen, onToggle }: AccordionNAProps) => {
   return (
     <div
       ref={accordionRef}
-      className="translate-y-10 transition-all duration-300 ease-linear border border-White/95 py-10 px-12.5 rounded-xl max-lg:px-6 max-lg:py-5 gap-2"
+      className="transition-all duration-700 ease-in-out border border-White/95 py-10 px-12.5 rounded-xl max-lg:px-6 max-lg:py-5 gap-2"
     >
       <div
         className={`flex justify-between items-center cursor-pointer ${

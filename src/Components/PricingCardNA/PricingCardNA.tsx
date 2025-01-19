@@ -18,7 +18,7 @@ const PricingCardNA = ({ pricing }: { pricing: Pricing }) => {
     <div
       className={`transform transition-all duration-800 ease-linear ${
         animate ? "scale-0 opacity-100" : "scale-100 opacity-100"
-      } bg-white p-7.5 pt-12.5 w-2/4 border-White/95 border rounded-xl max-md:w-full max-lg:px-5 max-lg:w-[550px]`}
+      } bg-White/99 p-7.5 pt-12.5 w-2/4 border-White/95 border rounded-xl max-md:w-full max-lg:px-5 max-lg:w-[550px]`}
     >
       <h2 className="w-full text-center bg-Orange/97 border border-Orange/90 rounded-md text-1.5xl capitalize py-3 font-medium max-desktop:text-lg max-lg:text-base leading-36">
         {pricing.plan}

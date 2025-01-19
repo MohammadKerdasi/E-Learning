@@ -5,7 +5,7 @@ export const JoinSectionNA = ({ join }: { join: JoinProps }) => {
   return (
     <div className="bg-white rounded-xl p-20 flex justify-between items-center max-desktop:p-15 relative overflow-hidden max-md:flex-wrap max-md:p-7.5 max-md:gap-y-10">
       <div className="max-w-[1008px] z-10 max-1600:w-[70%] max-lg:w-9/12 max-md:w-full">
-        <h2 className="max-desktop:text-4.5xl text-5xl font-semibold leading-12 max-md:leading-8.5 max-md:text-2.5xl">
+        <h2 className="max-desktop:text-4.5xl text-5xl font-semibold leading-12 max-md:leading-8.5 max-md:text-2.5xl relative">
           <span className="text-Orange/50 capitalize">{join.orangeText}</span>
 
           <span className="text-Grey/15">{join.text}</span>
