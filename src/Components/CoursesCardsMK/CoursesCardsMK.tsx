@@ -63,17 +63,17 @@ export default function CoursesCardsMK({ course }: CourseCardProps) {
                 </p>
               </div>
             ))}
-            <div className="flex desktop:justify-around justify-between flex-wrap desktop:flex-row laptop:flex-row flex-col w-full laptop:pt-[6px] laptop:pb-7.5 px-[24px] py-[24px]   ">
+            <div className="flex desktop:justify-around justify-between flex-wrap lg:flex-row flex-col w-full laptop:pt-[6px] laptop:pb-7.5 px-[24px] py-[24px]   ">
               {course.coursePageDataUl.map((item, index) => (
                 <div
-                  className="desktop:w-[17.5%] laptop:w-[170px] first:p-0 last:p-0 last:border-0 laptop:border-e laptop:border-e-white/95 laptop:border-b-1 border-b border-white/95 "
+                  className="desktop:w-[17.5%] lg:w-[15%] first:p-0 last:p-0 last:border-0 1250:border-e 1250:border-e-white/95 lg:border-b-1 border-b border-white/95 "
                   key={index}
                 >
                   <div className="mx-auto my-0 desktop:pe-[50px] laptop:pe-[40px] py-[20px]  ">
-                    <p className="desktop:text-[50px] laptop:text-[40px] 1250:text-[50px] text-[30px] font-extrabold desktop:mb-[20px] laptop:mb-[14px] mb-[12px]  ">
+                    <p className="desktop:text-[50px] laptop:text-[40px] lg:text-[50px] md:text-[40px] text-[30px] font-extrabold desktop:mb-[20px] lg:mb-[16px] mb-[12px]  ">
                       {item.num}
                     </p>
-                    <p className="font-medium desktop:text-lg laptop:text-[16px] 1250:text-[20px] 1250:pt-4 text-sm">
+                    <p className="font-medium desktop:text-lg laptop:text-[16px] 1250:text-[14px] text-sm">
                       {item.desc}
                     </p>
                   </div>
