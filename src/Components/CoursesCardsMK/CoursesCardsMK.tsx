@@ -70,10 +70,10 @@ export default function CoursesCardsMK({ course }: CourseCardProps) {
                   key={index}
                 >
                   <div className="mx-auto my-0 desktop:pe-[50px] laptop:pe-[40px] py-[20px]  ">
-                    <p className="desktop:text-[50px] laptop:text-[40px] text-[30px] font-extrabold desktop:mb-[20px] laptop:mb-[14px] mb-[12px]  ">
+                    <p className="desktop:text-[50px] laptop:text-[40px] 1250:text-[50px] text-[30px] font-extrabold desktop:mb-[20px] laptop:mb-[14px] mb-[12px]  ">
                       {item.num}
                     </p>
-                    <p className="font-medium desktop:text-lg laptop:text-[16px] text-sm">
+                    <p className="font-medium desktop:text-lg laptop:text-[16px] 1250:text-[20px] 1250:pt-4 text-sm">
                       {item.desc}
                     </p>
                   </div>
