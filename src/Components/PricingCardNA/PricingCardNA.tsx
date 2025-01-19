@@ -1,21 +1,38 @@
+import { useEffect, useState } from "react";
 import { Pricing } from "../../interfaces";
 import x from "./../../assets/images/home/our-pricing/icon/Union.svg";
 import check from "./../../assets/images/home/our-pricing/icon/Vector (Stroke).svg";
 
 const PricingCardNA = ({ pricing }: { pricing: Pricing }) => {
+  const [animate, setAnimate] = useState(false);
+
+  useEffect(() => {
+    setAnimate(true);
+
+    const timeout = setTimeout(() => setAnimate(false), 250);
+
+    return () => clearTimeout(timeout);
+  }, [pricing]);
+
   return (
-    <div className="bg-White/99 p-7.5 pt-12.5 w-2/4 border-White/95 border rounded-xl max-md:w-full max-lg:px-5 max-lg:w-[550px]">
-      <h2 className="w-full text-center bg-Orange/97 border border-Orange/90 rounded-md text-1.5xl capitalize py-3 font-medium max-desktop:text-lg max-lg:text-base">
+    <div
+      className={`transform transition-all duration-800 ease-linear ${
+        animate ? "scale-0 opacity-100" : "scale-100 opacity-100"
+      } bg-white p-7.5 pt-12.5 w-2/4 border-White/95 border rounded-xl max-md:w-full max-lg:px-5 max-lg:w-[550px]`}
+    >
+      <h2 className="w-full text-center bg-Orange/97 border border-Orange/90 rounded-md text-1.5xl capitalize py-3 font-medium max-desktop:text-lg max-lg:text-base leading-36">
         {pricing.plan}
       </h2>
-      <p className="text-center text-7.5xl font-semibold py-12.5 max-desktop:text-6xl max-lg:py-7.5">
+      <p className="text-center text-7.5xl font-semibold py-12.5 max-desktop:text-6xl max-lg:py-7.5 leading-12 max-desktop:leading-11.5">
         ${pricing.price}
-        <span className="text-xl font-medium text-Grey/30 max-desktop:text-base">/month</span>
+        <span className="text-xl font-medium text-Grey/30 max-desktop:text-base">
+          /month
+        </span>
       </p>
 
-      <div className=" bg-white border border-White/95 pt-10 max-lg:pt-5 rounded-xl">
-        <div className="px-10 max-xl:px-5 flex flex-col items-center ">
-          <h4 className="font-medium text-xl capitalize mb-7.5  max-lg:mb-5  max-desktop:text-lg">
+      <div className="bg-white border border-White/95 pt-10 max-lg:pt-5 rounded-xl">
+        <div className="px-10 max-xl:px-5 flex flex-col items-center">
+          <h4 className="font-medium text-xl capitalize mb-7.5 max-lg:mb-5 max-desktop:text-lg">
             Available features
           </h4>
           <ul className="flex flex-col items-center px-5.5-30 gap-y-5 mb-10 w-full max-desktop:px-0">
@@ -32,13 +49,11 @@ const PricingCardNA = ({ pricing }: { pricing: Pricing }) => {
                         : "border border-White/95"
                     }`}
                   >
-                    {
-                      <img
-                        src={feature.availability ? check : x}
-                        alt="availability"
-                        className="max-desktop:w-2.7 max-desktop:h-2.3"
-                      />
-                    }
+                    <img
+                      src={feature.availability ? check : x}
+                      alt="availability"
+                      className="max-desktop:w-2.7 max-desktop:h-2.3"
+                    />
                   </div>
                   {feature.text}
                 </li>
