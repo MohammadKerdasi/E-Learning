@@ -36,7 +36,7 @@ const AccordionNA = ({ accordion, isOpen, onToggle }: AccordionNAProps) => {
   return (
     <div
       ref={accordionRef}
-      className="transition-all duration-700 ease-in-out border border-White/95 py-10 px-12.5 rounded-xl max-lg:px-6 max-lg:py-5 gap-2"
+      className="transition-all duration-700 ease-in-out border border-White/95 p-12.5 max-desktop:p-10 rounded-xl max-md:p-6 gap-2"
     >
       <div
         className={`flex justify-between items-center cursor-pointer ${
@@ -66,10 +66,10 @@ const AccordionNA = ({ accordion, isOpen, onToggle }: AccordionNAProps) => {
             : "max-h-0 opacity-0 scale-95"
         }`}
       >
-        <p className="text-Grey/30 capitalize text-lg py-12.5 max-2xl:text-base max-lg:text-sm">
+        <p className="text-Grey/30 capitalize text-lg py-12.5 max-desktop:py-10 max-2xl:text-base max-lg:text-sm max-md:py-5">
           {accordion.answer}
         </p>
-        <div className="bg-White/95 rounded-lg flex justify-between items-center px-7.5 py-8.5 gap-3 max-lg:py-3 max-md:px-5">
+        <div className="bg-White/95 rounded-lg flex justify-between items-center px-7.5 py-8.5 gap-3 max-lg:py-3 max-md:px-5  max-desktop:py-7 max-desktop:px-6">
           <p className="text-lg font-medium max-2xl:text-base w-10/12 max-lg:text-sm">
             Enrollment Process for Different Courses
           </p>
