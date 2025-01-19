@@ -19,7 +19,7 @@ const AccordionNA = ({ accordion, isOpen, onToggle }: AccordionNAProps) => {
           }
         });
       },
-      { threshold: 0.1 }
+      { threshold: 0.5 }
     );
 
     if (accordionRef.current) {
