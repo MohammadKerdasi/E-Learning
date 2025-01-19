@@ -4,7 +4,7 @@ import SectionFormContactNM from "../../components/SectionFormContactNM/SectionF
 import { dataHaedLineNm } from '../../data/dataHeadlineNM'
 export default function Contact() {
   return (
-    <div>
+    <div className="max-w-2000 m-auto">
       <HeadlineNM data={dataHaedLineNm} />
       <SectionFormContactNM />
       {/* For testing without responsive design */}
@@ -12,4 +12,3 @@ export default function Contact() {
     </div>
   )
 }
-//py-10 lg:p-20 desktop:py-paddingBottom150
