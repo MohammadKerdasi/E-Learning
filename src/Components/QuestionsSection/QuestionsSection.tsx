@@ -4,7 +4,7 @@ import HomeBasicLK from "../HomeBasicLK/HomeBasicLK";
 
 const QuestionsSection = () => {
   return (
-    <section className="flex justify-center items-start bg-white my-100px px-5-80 py-20 gap-29 max-1250:flex-wrap rounded-xl max-lg:flex-wrap max-desktop:gap-20">
+    <section className="flex justify-center items-start bg-white my-100px px-5-100 py-25 max-desktop:py-20 max-sm:p-6 gap-29 max-1250:flex-wrap rounded-xl max-lg:flex-wrap max-desktop:gap-20 mt-25 max-desktop:mt-20 max-sm:mt-10">
       <HomeBasicLK
         text="Frequently Asked Questions"
         par="Still you have any questions? Contact our Team via support@skillbridge.com"

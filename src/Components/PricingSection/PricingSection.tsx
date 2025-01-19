@@ -14,7 +14,7 @@ const PricingSection = () => {
 
   return (
     <section>
-      <div className="mb-20 mt-100px flex justify-between items-end max-md:flex-wrap max-md:justify-center gap-y-8">
+      <div className="mb-20 max-md:mb-10 mt-100px flex justify-between items-end max-md:flex-wrap max-md:justify-center gap-y-8">
         <HomeBasicLK
           text="Our Pricing"
           par="Lorem ipsum dolor sit amet consectetur. Tempus tincidunt etiam eget elit id imperdiet et. Cras eu sit dignissim lorem nibh et. Ac cum eget habitasse in velit fringilla feugiat senectus in."
@@ -24,7 +24,7 @@ const PricingSection = () => {
         <PricingTabsNA categories={categories} />
       </div>
 
-      <div className="flex justify-between px-5-80 py-20 gap-7.5 bg-white rounded-xl max-lg:flex-wrap max-lg:justify-center">
+      <div className="flex justify-between px-5-80 py-20 gap-7.5 bg-white rounded-xl max-lg:flex-wrap max-lg:justify-center max-desktop:py-12.5 max-sm:px-5 max-sm:py-7.5">
         {filteredPricingCards.map((item: Pricing, i: number) => (
           <PricingCardNA key={i} pricing={item} />
         ))}
