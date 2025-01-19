@@ -14,8 +14,8 @@ export default function CardOpenPage({card}: {card:items}) {
         {card.lessons.map((lessons : lessonsLK, un:number) => {
         const isConditionMet = card.id === 1 && lessons.id === 2;
         return (
-          <div key={un} className={`flex justify-start sm:justify-between gap-y-6 sm:items-center flex-col sm:flex-row p-[24px] lg:px-[4.364%] lg:py-5 1600:px-7.5 1600:py-6 rounded-md border ${isConditionMet ? 'border-Orange/80 shadow-videoLK' : 'border-White/97'}`}>
-            <div className="w-[67%]">
+          <div key={un} className={`w-full flex justify-start sm:justify-between gap-y-6 sm:items-center flex-col sm:flex-row p-[24px] lg:px-[4.364%] lg:py-5 1600:px-7.5 1600:py-6 rounded-md border ${isConditionMet ? 'border-Orange/80 shadow-videoLK' : 'border-White/97'}`}>
+            <div className="w-full sm:w-[67%]">
               <h3 className="text-base font-medium desktop:text-xl desktop:leading-7.5 text-Grey/20 pb-1.5">{lessons.title}</h3>
               <h5 className="desktop:text-lg desktop:leading-6.5 font-normal text-sm text-Grey/35">{lessons.lessonNum}</h5>
             </div>
