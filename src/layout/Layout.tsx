@@ -10,7 +10,7 @@ import { footerInfo, footerSection, footerSocial } from "../data/footerData";
 import ScrollToTopNM from "../components/ScrollToTopNM/ScrollToTopNM";
 import { ToastProvider } from "../utils/toast";
 import { useState } from "react";
-import Intro from "./../components/Intro/Intro.jsx"; // Import the Intro component
+import Intro from "./../components/Intro/Intro.jsx";
 
 export default function Layout() {
   const [showIntro, setShowIntro] = useState(true);
@@ -21,19 +21,14 @@ export default function Layout() {
 
   return (
     <div className="text-sm lg:text-base desktop:text-lg">
-      {/* Show Intro component only at the beginning */}
       {showIntro && <Intro onComplete={handleIntroComplete} />}
-
       <ScrollToTopNM />
       <TopBanner text1="Free Courses" text2="Sale Ends Soon, Get It Now" img1={star} img2={arrow} />
-
-      {/* Adding opacity to NavBarH based on showIntro */}
       <NavBarH
         logo={logo}
         navData={nav}
         className={`transition-opacity duration-1000 ${showIntro ? "opacity-0" : "opacity-100"}`}
       />
-
       <Outlet />
       <ToastProvider />
       <FooterH copyRight="© 2023 Skillbridge. All rights reserved." logo={logo} Info={footerInfo} Section={footerSection} Socila={footerSocial} />
