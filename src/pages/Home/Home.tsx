@@ -10,7 +10,7 @@ import TestimonialsLKHH from "../../components/TestimonialsLK+HH/TestimonialsLK+
 
 export default function Home() {
   return (
-    <div className="px-4 lg:px-20 desktop:px-40 max-w-2000 m-auto  desktop:pb-paddingBottom150 lg:pb-25 pb-12.5">
+    <div className="px-4 lg:px-20 desktop:px-40 max-w-2000 m-auto ">
       <HomeHero />
       <div className="my-10 lg:my-20 desktop:my-25">
         <VideoSection img={imgVideo} alt="teamwork" />
