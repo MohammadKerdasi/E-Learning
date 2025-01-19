@@ -7,7 +7,7 @@ import { dataLoginLink, dataLoginSubmit, dataSignUpLink, dataSignUpSubmit, Login
 export default function Auth() {
   const location = useLocation();
   return (
-    <section className="max-w-2000 desktop:pt-25 md:pt-20 pt-12.5 desktop:pb-paddingBottom150 md:pb-25 pb-12.5 px-4 lg:px-20 1600:px-40 flex lg:flex-row flex-col-reverse justify-between gap-y-[50px]">
+    <section className="max-w-2000 m-auto desktop:pt-25 md:pt-20 pt-12.5 desktop:pb-paddingBottom150 md:pb-25 pb-12.5 px-4 lg:px-20 1600:px-40 flex lg:flex-row flex-col-reverse justify-between gap-y-[50px]">
       <SliderSectionHH/>
       {location.pathname === '/auth/login'?
       ( <FormHH 
