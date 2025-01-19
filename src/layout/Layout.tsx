@@ -8,10 +8,12 @@ import logo from '../assets/images/nav/image/big-logo.svg'
 import { nav } from "../data/navData";
 import { footerInfo, footerSection, footerSocial } from "../data/footerData";
 import ScrollToTopNM from "../Components/ScrollToTopNM/ScrollToTopNM";
+import { ToastProvider } from "../utils/toast";
 
 export default function Layout() {
   return (
     <div className="text-sm lg:text-base desktop:text-lg">
+      <ToastProvider/>
       <ScrollToTopNM />
       <TopBanner text1="Free Courses" text2="Sale Ends Soon, Get It Now" img1={star} img2={arrow}/>
       <NavBarH logo={logo} navData={nav}/>
